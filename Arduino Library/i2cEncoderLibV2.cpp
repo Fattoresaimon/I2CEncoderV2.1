@@ -18,269 +18,279 @@
 /*********************************** Public functions *************************************/
 /** Class costructor **/
 i2cEncoderLibV2::i2cEncoderLibV2(uint8_t add) {
-	_add = add;
+  _add = add;
 }
 
 /** Used for initialize the encoder **/
 void i2cEncoderLibV2::begin(uint8_t conf) {
 
-	Wire.begin();
-	writeEncoder(REG_GCONF, conf);
-	_gconf = conf;
+  Wire.begin();
+  writeEncoder(REG_GCONF, conf);
+  _gconf = conf;
 }
 
 /*********************************** Read functions *************************************/
 
 /** Return the GP1 Configuration**/
 uint8_t i2cEncoderLibV2::readGP1conf(void) {
-	return (readEncoderByte(REG_GP1CONF));
+  return (readEncoderByte(REG_GP1CONF));
 }
 
 /** Return the GP1 Configuration**/
 uint8_t i2cEncoderLibV2::readGP2conf(void) {
-	return (readEncoderByte(REG_GP2CONF));
+  return (readEncoderByte(REG_GP2CONF));
 }
 
 /** Return the GP1 Configuration**/
 uint8_t i2cEncoderLibV2::readGP3conf(void) {
-	return (readEncoderByte(REG_GP3CONF));
+  return (readEncoderByte(REG_GP3CONF));
 }
 
 /** Return the INT pin configuration**/
 uint8_t i2cEncoderLibV2::readInterruptConfig(void) {
-	return (readEncoderByte(REG_INTCONF));
+  return (readEncoderByte(REG_INTCONF));
 }
 
 
 /** Return true if the status of the econder changed, otherwise return false **/
 bool i2cEncoderLibV2::updateStatus(void) {
-	_stat = readStatus();
-	if (_stat == 0)
-		return false;
-	else
-		return true;
+  _stat = readEncoderByte(REG_ESTATUS);
+  if (_stat == 0)
+    return false;
+  else
+    return true;
 }
 
 /** Check if a particular status match, return true is match otherwise false. Before require updateStatus() **/
 bool i2cEncoderLibV2::readStatus(uint8_t s) {
-	if ((_stat & s) == 0)
-		return false;
-	else
-		return true;
+  if ((_stat & s) == 0)
+    return false;
+  else
+    return true;
 }
 
 /** Return the status of the encoder **/
 uint8_t i2cEncoderLibV2::readStatus(void) {
-	return (readEncoderByte(REG_ESTATUS));
+  return _stat;
 }
 
 
 
 /** Return the PWM LED R value  **/
 uint8_t i2cEncoderLibV2::readLEDR(void) {
-	return ((uint8_t) readEncoderByte(REG_RLED));
+  return ((uint8_t) readEncoderByte(REG_RLED));
 }
 
 /** Return the PWM LED G value  **/
 uint8_t i2cEncoderLibV2::readLEDG(void) {
-	return ((uint8_t) readEncoderByte(REG_GLED));
+  return ((uint8_t) readEncoderByte(REG_GLED));
 }
 
 /** Return the PWM LED B value  **/
 uint8_t i2cEncoderLibV2::readLEDB(void) {
-	return ((uint8_t) readEncoderByte(REG_BLED));
+  return ((uint8_t) readEncoderByte(REG_BLED));
 }
 
 /** Return the 32 bit value of the encoder counter  **/
 float i2cEncoderLibV2::readCounterFloat(void) {
-	return (readEncoderFloat(REG_CVALB4));
+  return (readEncoderFloat(REG_CVALB4));
 }
 
 /** Return the 32 bit value of the encoder counter  **/
 int32_t i2cEncoderLibV2::readCounterLong(void) {
-	return ((int32_t) readEncoderLong(REG_CVALB4));
+  return ((int32_t) readEncoderLong(REG_CVALB4));
 }
 
 /** Return the 16 bit value of the encoder counter  **/
 int16_t i2cEncoderLibV2::readCounterInt(void) {
-	return ((int16_t) readEncoderInt(REG_CVALB2));
+  return ((int16_t) readEncoderInt(REG_CVALB2));
 }
 
 /** Return the 8 bit value of the encoder counter  **/
 int8_t i2cEncoderLibV2::readCounterByte(void) {
-	return ((int8_t) readEncoderByte(REG_CVALB1));
+  return ((int8_t) readEncoderByte(REG_CVALB1));
 }
 
 /** Return the Maximum threshold of the counter **/
 int32_t i2cEncoderLibV2::readMax(void) {
-	return ((int32_t) readEncoderLong(REG_CMAXB4));
+  return ((int32_t) readEncoderLong(REG_CMAXB4));
 }
 
 /** Return the Minimum threshold of the counter **/
 int32_t i2cEncoderLibV2::readMin(void) {
-	return ((int32_t) readEncoderLong(REG_CMINB4));
+  return ((int32_t) readEncoderLong(REG_CMINB4));
 }
 
 /** Return the Maximum threshold of the counter **/
 float i2cEncoderLibV2::readMaxFloat(void) {
-	return (readEncoderFloat(REG_CMAXB4));
+  return (readEncoderFloat(REG_CMAXB4));
 }
 
 /** Return the Minimum threshold of the counter **/
 float i2cEncoderLibV2::readMinFloat(void) {
-	return (readEncoderFloat(REG_CMINB4));
+  return (readEncoderFloat(REG_CMINB4));
 
 }
 
 /** Return the Steps increment **/
 int32_t i2cEncoderLibV2::readStep(void) {
-	return (readEncoderInt(REG_ISTEPB4));
+  return (readEncoderInt(REG_ISTEPB4));
 }
 
 /** Return the Steps increment **/
 float i2cEncoderLibV2::readStepFloat(void) {
-	return (readEncoderFloat(REG_ISTEPB4));
+  return (readEncoderFloat(REG_ISTEPB4));
 
 }
 
 /** Write GP1 register, used when GP1 is set to output or PWM **/
 uint8_t i2cEncoderLibV2::readGP1(void) {
-	return (readEncoderByte(REG_GP1REG));
+  return (readEncoderByte(REG_GP1REG));
 }
 
 /** Write GP2 register, used when GP2 is set to output or PWM **/
 uint8_t i2cEncoderLibV2::readGP2(void) {
-	return (readEncoderByte(REG_GP2REG));
+  return (readEncoderByte(REG_GP2REG));
 }
 
 /** Write GP3 register, used when GP3 is set to output or PWM **/
 uint8_t i2cEncoderLibV2::readGP3(void) {
-	return (readEncoderByte(REG_GP3REG));
+  return (readEncoderByte(REG_GP3REG));
 }
 
 /** Write the EEPROM memory**/
 uint8_t i2cEncoderLibV2::readEEPROM(uint8_t add) {
-	if (add <= 0x7f) {
-		if ((_gconf & EEPROM_BANK1) != 0) {
-			_gconf = _gconf & 0xBF;
-			writeEncoder(REG_GCONF, _gconf);
-		}
-		return (readEncoderByte((REG_EEPROMS + add)));
-	} else {
-		if ((_gconf & EEPROM_BANK1) == 0) {
-			_gconf = _gconf | 0x40;
-			writeEncoder(REG_GCONF, _gconf);
-		}
-		return (readEncoderByte(add));
-	}
+  if (add <= 0x7f) {
+    if ((_gconf & EEPROM_BANK1) != 0) {
+      _gconf = _gconf & 0xBF;
+      writeEncoder(REG_GCONF, _gconf);
+    }
+    return (readEncoderByte((REG_EEPROMS + add)));
+  } else {
+    if ((_gconf & EEPROM_BANK1) == 0) {
+      _gconf = _gconf | 0x40;
+      writeEncoder(REG_GCONF, _gconf);
+    }
+    return (readEncoderByte(add));
+  }
 }
 
 /*********************************** Write functions *************************************/
 /** Write the GP1 configuration**/
 void i2cEncoderLibV2::writeGP1conf(uint8_t gp1) {
-	writeEncoder(REG_GP1CONF, gp1);
+  writeEncoder(REG_GP1CONF, gp1);
 }
 
 /** Write the GP2 configuration**/
 void i2cEncoderLibV2::writeGP2conf(uint8_t gp2) {
-	writeEncoder(REG_GP2CONF, gp2);
+  writeEncoder(REG_GP2CONF, gp2);
 }
 
 /** Write the GP3 configuration**/
 void i2cEncoderLibV2::writeGP3conf(uint8_t gp2) {
-	writeEncoder(REG_GP3CONF, gp2);
+  writeEncoder(REG_GP3CONF, gp2);
 }
 
 /** Write the interrupt configuration **/
 void i2cEncoderLibV2::writeInterruptConfig(uint8_t interrupt) {
-	writeEncoder(REG_INTCONF, interrupt);
+  writeEncoder(REG_INTCONF, interrupt);
 }
 
 /** Write the counter value **/
 void i2cEncoderLibV2::writeCounter(int32_t value) {
-	writeEncoder(REG_CVALB4, value);
+  writeEncoder(REG_CVALB4, value);
 }
 
 /** Write the counter value **/
 void i2cEncoderLibV2::writeCounter(float value) {
-	writeEncoder(REG_CVALB4, value);
+  writeEncoder(REG_CVALB4, value);
 }
 
 /** Write the maximum threshold value **/
 void i2cEncoderLibV2::writeMax(int32_t max) {
-	writeEncoder(REG_CMAXB4, max);
+  writeEncoder(REG_CMAXB4, max);
 }
 
 /** Write the maximum threshold value **/
 void i2cEncoderLibV2::writeMax(float max) {
-	writeEncoder(REG_CMAXB4, max);
+  writeEncoder(REG_CMAXB4, max);
 }
 
 /** Write the minimum threshold value **/
 void i2cEncoderLibV2::writeMin(int32_t min) {
-	writeEncoder(REG_CMINB4, min);
+  writeEncoder(REG_CMINB4, min);
 }
 
 /** Write the minimum threshold value **/
 void i2cEncoderLibV2::writeMin(float min) {
-	writeEncoder(REG_CMINB4, min);
+  writeEncoder(REG_CMINB4, min);
 }
 
 /** Write the Step increment value **/
 void i2cEncoderLibV2::writeStep(int32_t step) {
-	writeEncoder(REG_ISTEPB4, step);
+  writeEncoder(REG_ISTEPB4, step);
 }
 
 /** Write the Step increment value **/
 void i2cEncoderLibV2::writeStep(float step) {
-	writeEncoder(REG_ISTEPB4, step);
+  writeEncoder(REG_ISTEPB4, step);
 }
 
 /** Write the PWM value of the led A **/
 void i2cEncoderLibV2::writeLEDR(uint8_t rled) {
-	writeEncoder(REG_RLED, rled);
+  writeEncoder(REG_RLED, rled);
 }
 
 /** Write the PWM value of the led B **/
 void i2cEncoderLibV2::writeLEDG(uint8_t gled) {
-	writeEncoder(REG_GLED, gled);
+  writeEncoder(REG_GLED, gled);
 }
 
 /** Write the PWM value of the led B **/
 void i2cEncoderLibV2::writeLEDB(uint8_t bled) {
-	writeEncoder(REG_BLED, bled);
+  writeEncoder(REG_BLED, bled);
 }
 
 /** Write GP1 register, used when GP1 is set to output or PWM **/
 void i2cEncoderLibV2::writeGP1(uint8_t gp1) {
-	writeEncoder(REG_GP1REG, gp1);
+  writeEncoder(REG_GP1REG, gp1);
 }
 
 /** Write GP2 register, used when GP2 is set to output or PWM **/
 void i2cEncoderLibV2::writeGP2(uint8_t gp2) {
-	writeEncoder(REG_GP2REG, gp2);
+  writeEncoder(REG_GP2REG, gp2);
 }
 
 /** Write GP3 register, used when GP3 is set to output or PWM **/
 void i2cEncoderLibV2::writeGP3(uint8_t gp3) {
-	writeEncoder(REG_GP3REG, gp3);
+  writeEncoder(REG_GP3REG, gp3);
+}
+
+/** Write Fade timing in ms **/
+void i2cEncoderLibV2::writeFadeRGB(uint8_t fade) {
+  writeEncoder(REG_FADERGB, fade);
+}
+
+/** Write Fade timing in ms **/
+void i2cEncoderLibV2::writeFadeGP(uint8_t fade) {
+  writeEncoder(REG_FADEGP, fade);
 }
 
 /** Write the EEPROM memory**/
 void i2cEncoderLibV2::writeEEPROM(uint8_t add, uint8_t data) {
-	if (add <= 0x7f) {
-		if ((_gconf & EEPROM_BANK1) != 0) {
-			_gconf = _gconf & 0xBF;
-			writeEncoder(REG_GCONF, _gconf);
-		}
-		writeEncoder((REG_EEPROMS + add), data);
-	} else {
-		if ((_gconf & EEPROM_BANK1) == 0) {
-			_gconf = _gconf | 0x40;
-			writeEncoder(REG_GCONF, _gconf);
-		}
-		writeEncoder(add, data);
-	}
+  if (add <= 0x7f) {
+    if ((_gconf & EEPROM_BANK1) != 0) {
+      _gconf = _gconf & 0xBF;
+      writeEncoder(REG_GCONF, _gconf);
+    }
+    writeEncoder((REG_EEPROMS + add), data);
+  } else {
+    if ((_gconf & EEPROM_BANK1) == 0) {
+      _gconf = _gconf | 0x40;
+      writeEncoder(REG_GCONF, _gconf);
+    }
+    writeEncoder(add, data);
+  }
 }
 
 /*********************************** Private functions *************************************/
@@ -288,105 +298,105 @@ void i2cEncoderLibV2::writeEEPROM(uint8_t add, uint8_t data) {
 
 /** Read 1 byte from the encoder **/
 uint8_t i2cEncoderLibV2::readEncoderByte(uint8_t reg) {
-	byte rdata = 0xFF;
+  byte rdata = 0xFF;
 
-	Wire.beginTransmission(_add);
-	Wire.write(reg);
-	Wire.endTransmission();
-	Wire.requestFrom(_add, 1);
-	if (Wire.available()) {
-		rdata = Wire.read();
-	}
-//	delay(5);
-	return rdata;
+  Wire.beginTransmission(_add);
+  Wire.write(reg);
+  Wire.endTransmission();
+  Wire.requestFrom(_add, 1);
+  if (Wire.available()) {
+    rdata = Wire.read();
+  }
+  //	delay(5);
+  return rdata;
 }
 
 /** Read 2 bytes from the encoder **/
 int16_t i2cEncoderLibV2::readEncoderInt(uint8_t reg) {
-	Wire.beginTransmission(_add);
-	Wire.write(reg);
-	Wire.endTransmission();
-	Wire.requestFrom(_add, 4);
-	if (Wire.available()) {
-		_tem_data.bval[1] = Wire.read();
-		_tem_data.bval[0] = Wire.read();
-	}
-	return ((int16_t) _tem_data.val);
+  Wire.beginTransmission(_add);
+  Wire.write(reg);
+  Wire.endTransmission();
+  Wire.requestFrom(_add, 4);
+  if (Wire.available()) {
+    _tem_data.bval[1] = Wire.read();
+    _tem_data.bval[0] = Wire.read();
+  }
+  return ((int16_t) _tem_data.val);
 }
 
 /** Read 4 bytes from the encoder **/
 int32_t i2cEncoderLibV2::readEncoderLong(uint8_t reg) {
 
-	Wire.beginTransmission(_add);
-	Wire.write(reg);
-	Wire.endTransmission();
-	Wire.requestFrom(_add, 4);
-	if (Wire.available()) {
-		_tem_data.bval[3] = Wire.read();
-		_tem_data.bval[2] = Wire.read();
-		_tem_data.bval[1] = Wire.read();
-		_tem_data.bval[0] = Wire.read();
-	}
-	return ((int32_t) _tem_data.val);
+  Wire.beginTransmission(_add);
+  Wire.write(reg);
+  Wire.endTransmission();
+  Wire.requestFrom(_add, 4);
+  if (Wire.available()) {
+    _tem_data.bval[3] = Wire.read();
+    _tem_data.bval[2] = Wire.read();
+    _tem_data.bval[1] = Wire.read();
+    _tem_data.bval[0] = Wire.read();
+  }
+  return ((int32_t) _tem_data.val);
 }
 
 /** Read 4 bytes from the encoder **/
 float i2cEncoderLibV2::readEncoderFloat(uint8_t reg) {
-	Wire.beginTransmission(_add);
-	Wire.write(reg);
-	Wire.endTransmission();
-	Wire.requestFrom(_add, 4);
-	if (Wire.available()) {
-		_tem_data.bval[3] = Wire.read();
-		_tem_data.bval[2] = Wire.read();
-		_tem_data.bval[1] = Wire.read();
-		_tem_data.bval[0] = Wire.read();
-	}
-	return ((float) _tem_data.fval);
+  Wire.beginTransmission(_add);
+  Wire.write(reg);
+  Wire.endTransmission();
+  Wire.requestFrom(_add, 4);
+  if (Wire.available()) {
+    _tem_data.bval[3] = Wire.read();
+    _tem_data.bval[2] = Wire.read();
+    _tem_data.bval[1] = Wire.read();
+    _tem_data.bval[0] = Wire.read();
+  }
+  return ((float) _tem_data.fval);
 }
 
 /***************************** Write function to the encoder ********************************/
 /** Send to the encoder 1 byte **/
 void i2cEncoderLibV2::writeEncoder(uint8_t reg, uint8_t data) {
 
-	Wire.beginTransmission(_add);
-	Wire.write(reg);
-	Wire.write(data);
-	Wire.endTransmission();
-	delay(5);
+  Wire.beginTransmission(_add);
+  Wire.write(reg);
+  Wire.write(data);
+  Wire.endTransmission();
+  delay(5);
 
 }
 
 /** Send to the encoder 4 byte **/
 void i2cEncoderLibV2::writeEncoder(uint8_t reg, int32_t data) {
-	uint8_t temp[4];
-	_tem_data.val = data;
-	temp[0] = _tem_data.bval[3];
-	temp[1] = _tem_data.bval[2];
-	temp[2] = _tem_data.bval[1];
-	temp[3] = _tem_data.bval[0];
-	Wire.beginTransmission(_add);
-	Wire.write(reg);
-	Wire.write(temp, 4);
-	Wire.endTransmission();
-	delay(5);
+  uint8_t temp[4];
+  _tem_data.val = data;
+  temp[0] = _tem_data.bval[3];
+  temp[1] = _tem_data.bval[2];
+  temp[2] = _tem_data.bval[1];
+  temp[3] = _tem_data.bval[0];
+  Wire.beginTransmission(_add);
+  Wire.write(reg);
+  Wire.write(temp, 4);
+  Wire.endTransmission();
+  delay(5);
 
 }
 
 /** Send to the encoder 4 byte **/
 void i2cEncoderLibV2::writeEncoder(uint8_t reg, float data) {
 
-	uint8_t temp[4];
-	_tem_data.fval = data;
-	temp[0] = _tem_data.bval[3];
-	temp[1] = _tem_data.bval[2];
-	temp[2] = _tem_data.bval[1];
-	temp[3] = _tem_data.bval[0];
-	Wire.beginTransmission(_add);
-	Wire.write(reg);
-	Wire.write(temp, 4);
-	Wire.endTransmission();
-	delay(5);
+  uint8_t temp[4];
+  _tem_data.fval = data;
+  temp[0] = _tem_data.bval[3];
+  temp[1] = _tem_data.bval[2];
+  temp[2] = _tem_data.bval[1];
+  temp[3] = _tem_data.bval[0];
+  Wire.beginTransmission(_add);
+  Wire.write(reg);
+  Wire.write(temp, 4);
+  Wire.endTransmission();
+  delay(5);
 
 }
 
