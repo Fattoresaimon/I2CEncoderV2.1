@@ -1,0 +1,25 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: EncoderI2Cv2_4Layer.PcbDoc   12/08/2018  18:33:58
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : EncoderI2Cv2_4Layer-RoundHoles.TXT
+ASCII SlotHoles File : EncoderI2Cv2_4Layer-SlotHoles.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      12mil (0.305mm)                                           Round             55        PTH        0.00inch (0.00mm)
+T2      15mil (0.381mm)                                           Round             1         PTH        0.00inch (0.00mm)
+T3      18mil (0.457mm)                                           Round             2         PTH        0.00inch (0.00mm)
+T4      35mil (0.9mm)                                             Round             4         PTH        0.00inch (0.00mm)
+T5      39mil (1mm)                                               Round             10        PTH        0.00inch (0.00mm)
+T6      43mil (1.1mm)                                             Round             3         PTH        0.00inch (0.00mm)
+T7      44mil (1.118mm)                                           Round             3         PTH        0.00inch (0.00mm)
+T8      44mil (1.118mm)                                           Slot              2         PTH        0.00inch (0.00mm)
+T9      48mil (1.219mm)                                           Round             20        PTH        0.00inch (0.00mm)
+T10     98mil (2.5mm)                                             Slot              2         NPTH       0.00inch (0.00mm)
+T11     118mil (3mm)                                              Round             2         NPTH       0.00inch (0.00mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              104
+
+Total Processing Time (hh:mm:ss) : 00:00:01
