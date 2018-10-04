@@ -1,7 +1,7 @@
 //
 //    FILE: i2cEncoderLibV2.h
 // VERSION: 0.1..
-// PURPOSE: Libreary for the i2c encoder board with arduinp
+// PURPOSE: Library for I2C Encoder V2 board with Arduino
 // LICENSE: GPL v3 (http://www.gnu.org/licenses/gpl.html)
 //
 // DATASHEET:
@@ -55,18 +55,25 @@ uint8_t i2cEncoderLibV2::readInterruptConfig(void) {
 /** Return true if the status of the econder changed, otherwise return false **/
 bool i2cEncoderLibV2::updateStatus(void) {
   _stat = readEncoderByte(REG_ESTATUS);
-  if (_stat == 0)
+
+  if (_stat == 0) {
+    _stat2 = 0;
     return false;
-  else
-    return true;
+  }
+  if ((_stat & INT2) != 0) {
+    _stat2 = readEncoderByte(REG_I2STATUS);
+  } else {
+    _stat2 = 0;
+  }
+  return true;
 }
 
 /** Check if a particular status match, return true is match otherwise false. Before require updateStatus() **/
 bool i2cEncoderLibV2::readStatus(uint8_t s) {
-  if ((_stat & s) == 0)
-    return false;
-  else
+  if ((_stat & s) != 0) {
     return true;
+  }
+  return false;
 }
 
 /** Return the status of the encoder **/
@@ -75,6 +82,31 @@ uint8_t i2cEncoderLibV2::readStatus(void) {
 }
 
 
+/** Check if a particular status of the Int2 match, return true is match otherwise false. Before require updateStatus() **/
+bool i2cEncoderLibV2::readInt2(uint8_t s) {
+  if ((_stat2 & s)  != 0) {
+    return true;
+  }
+  return false;
+}
+
+/** Return the Int2 status of the encoder. Before require updateStatus()  **/
+uint8_t i2cEncoderLibV2::readInt2(void) {
+  return _stat2;
+}
+
+/** Return Fade process status  **/
+uint8_t i2cEncoderLibV2::readFadeStatus(void) {
+  return readEncoderByte(REG_FSTATUS);
+}
+
+/** Check if a particular status of the Fade process match, return true is match otherwise false. **/
+bool i2cEncoderLibV2::readFadeStatus(uint8_t s) {
+  if ((readEncoderByte(REG_FSTATUS) & s) == 1)
+    return true;
+
+  return false;
+}
 
 /** Return the PWM LED R value  **/
 uint8_t i2cEncoderLibV2::readLEDR(void) {
@@ -137,28 +169,48 @@ int32_t i2cEncoderLibV2::readStep(void) {
   return (readEncoderInt(REG_ISTEPB4));
 }
 
-/** Return the Steps increment **/
+/** Return the Steps increment, in float variable **/
 float i2cEncoderLibV2::readStepFloat(void) {
   return (readEncoderFloat(REG_ISTEPB4));
 
 }
 
-/** Write GP1 register, used when GP1 is set to output or PWM **/
+/** Read GP1 register value **/
 uint8_t i2cEncoderLibV2::readGP1(void) {
   return (readEncoderByte(REG_GP1REG));
 }
 
-/** Write GP2 register, used when GP2 is set to output or PWM **/
+/** Read GP2 register value **/
 uint8_t i2cEncoderLibV2::readGP2(void) {
   return (readEncoderByte(REG_GP2REG));
 }
 
-/** Write GP3 register, used when GP3 is set to output or PWM **/
+/** Read GP3 register value **/
 uint8_t i2cEncoderLibV2::readGP3(void) {
   return (readEncoderByte(REG_GP3REG));
 }
 
-/** Write the EEPROM memory**/
+/** Read Anti-bouncing period register **/
+uint8_t i2cEncoderLibV2::readAntibouncingPeriod(void) {
+  return (readEncoderByte(REG_ANTBOUNC));
+}
+
+/** Read Double push period register **/
+uint8_t i2cEncoderLibV2::readDoublePushPeriod(void) {
+  return (readEncoderByte(REG_DPPERIOD));
+}
+
+/** Read the fade period of the RGB LED**/
+uint8_t i2cEncoderLibV2::readFadeRGB(void) {
+  return (readEncoderByte(REG_FADERGB));
+}
+
+/** Read the fade period of the GP LED**/
+uint8_t i2cEncoderLibV2::readFadeGP(void) {
+  return (readEncoderByte(REG_FADEGP));
+}
+
+/** Read the EEPROM memory**/
 uint8_t i2cEncoderLibV2::readEEPROM(uint8_t add) {
   if (add <= 0x7f) {
     if ((_gconf & EEPROM_BANK1) != 0) {
@@ -187,8 +239,8 @@ void i2cEncoderLibV2::writeGP2conf(uint8_t gp2) {
 }
 
 /** Write the GP3 configuration**/
-void i2cEncoderLibV2::writeGP3conf(uint8_t gp2) {
-  writeEncoder(REG_GP3CONF, gp2);
+void i2cEncoderLibV2::writeGP3conf(uint8_t gp3) {
+  writeEncoder(REG_GP3CONF, gp3);
 }
 
 /** Write the interrupt configuration **/
@@ -236,19 +288,24 @@ void i2cEncoderLibV2::writeStep(float step) {
   writeEncoder(REG_ISTEPB4, step);
 }
 
-/** Write the PWM value of the led A **/
+/** Write the PWM value of the RGB LED red **/
 void i2cEncoderLibV2::writeLEDR(uint8_t rled) {
   writeEncoder(REG_RLED, rled);
 }
 
-/** Write the PWM value of the led B **/
+/** Write the PWM value of the RGB LED green **/
 void i2cEncoderLibV2::writeLEDG(uint8_t gled) {
   writeEncoder(REG_GLED, gled);
 }
 
-/** Write the PWM value of the led B **/
+/** Write the PWM value of the RGB LED blue **/
 void i2cEncoderLibV2::writeLEDB(uint8_t bled) {
   writeEncoder(REG_BLED, bled);
+}
+
+/** Write 24bit color code **/
+void i2cEncoderLibV2::writeRGBCode(uint32_t rgb) {
+  writeEncoder24bit(REG_RLED, rgb);
 }
 
 /** Write GP1 register, used when GP1 is set to output or PWM **/
@@ -264,6 +321,16 @@ void i2cEncoderLibV2::writeGP2(uint8_t gp2) {
 /** Write GP3 register, used when GP3 is set to output or PWM **/
 void i2cEncoderLibV2::writeGP3(uint8_t gp3) {
   writeEncoder(REG_GP3REG, gp3);
+}
+
+/** Write Anti-bouncing period register **/
+void i2cEncoderLibV2::writeAntibouncingPeriod(uint8_t bounc) {
+  writeEncoder(REG_ANTBOUNC, bounc);
+}
+
+/** Write Anti-bouncing period register **/
+void i2cEncoderLibV2::writeDoublePushPeriod(uint8_t dperiod) {
+  writeEncoder(REG_DPPERIOD, dperiod);
 }
 
 /** Write Fade timing in ms **/
@@ -363,9 +430,12 @@ void i2cEncoderLibV2::writeEncoder(uint8_t reg, uint8_t data) {
   Wire.write(reg);
   Wire.write(data);
   Wire.endTransmission();
-  delay(5);
+  //  delay(1);
 
 }
+
+
+
 
 /** Send to the encoder 4 byte **/
 void i2cEncoderLibV2::writeEncoder(uint8_t reg, int32_t data) {
@@ -379,11 +449,11 @@ void i2cEncoderLibV2::writeEncoder(uint8_t reg, int32_t data) {
   Wire.write(reg);
   Wire.write(temp, 4);
   Wire.endTransmission();
-  delay(5);
+  // delay(1);
 
 }
 
-/** Send to the encoder 4 byte **/
+/** Send to the encoder 4 byte for floating number **/
 void i2cEncoderLibV2::writeEncoder(uint8_t reg, float data) {
 
   uint8_t temp[4];
@@ -396,7 +466,22 @@ void i2cEncoderLibV2::writeEncoder(uint8_t reg, float data) {
   Wire.write(reg);
   Wire.write(temp, 4);
   Wire.endTransmission();
-  delay(5);
+  //  delay(1);
 
 }
 
+
+/** Send to the encoder 3 byte **/
+void i2cEncoderLibV2::writeEncoder24bit(uint8_t reg, uint32_t data) {
+  uint8_t temp[3];
+  _tem_data.val = data;
+  temp[0] = _tem_data.bval[2];
+  temp[1] = _tem_data.bval[1];
+  temp[2] = _tem_data.bval[0];
+  Wire.beginTransmission(_add);
+  Wire.write(reg);
+  Wire.write(temp, 3);
+  Wire.endTransmission();
+  // delay(1);
+
+}
