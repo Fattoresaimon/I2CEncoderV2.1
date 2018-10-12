@@ -13,7 +13,7 @@ The I2C Encoder V2 also has an open-drain interrupt pin. It is set to logic low 
 
 
 ## Where you can get this board?
-This project is not available yet, but you can join the [waitlist!](http://www.duppa.net/i2c-encoder-v2-waitlist/)
+This project is avaiable on our [Tindie store!](https://www.tindie.com/products/Saimon/i2c-encoder-v2/)
 
 
 
