@@ -21,7 +21,7 @@ This project is not available yet, but you can join the [waitlist!](http://www.d
 * [Arduino Library:](/Arduino%20Library) Ready to use library for the Arduino boards, with some examples.
 * [Firmware:](/Firmware) Project folder of Microchip MPLAB X contain the code running inside of the PIC16F18345
 * [Hardware:](/Hardware) Folder containing the gerber file, schematic and BOM. The original project is not available.
-* [Datasheet EncoderI2C V2:](EncoderI2CV2_v1.2.pdf) Datasheet of the board with the description of the registers and some useful information.
+* [Datasheet EncoderI2C V2:](EncoderI2CV2_v1.3.pdf) Datasheet of the board with the description of the registers and some useful information.
 
 ** The HW project is also available on [CircuitMaker.](https://workspace.circuitmaker.com/Projects/Details/Simone--Caron/I2C-Encoder-V2) **
 
