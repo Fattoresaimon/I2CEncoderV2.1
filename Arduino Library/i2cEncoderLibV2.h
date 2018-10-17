@@ -75,7 +75,7 @@
 #define RMOD_X1			0x00
 
 #define RGB_ENCODER          0x20
-#define STANDARD_ENCODER     0x00
+#define STD_ENCODER     0x00
 
 #define EEPROM_BANK1     0x40
 #define EEPROM_BANK2     0x00
