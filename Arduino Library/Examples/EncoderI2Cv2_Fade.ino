@@ -83,7 +83,7 @@ void setup(void)
   RGBEncoder.updateStatus();
 
   //Configure the Standard Encoder
-  STDEncoder.begin(INT_DATA | WRAP_DISABLE | DIRE_LEFT | IPUP_ENABLE | RMOD_X1 | STANDARD_ENCODER);
+  STDEncoder.begin(INT_DATA | WRAP_DISABLE | DIRE_LEFT | IPUP_ENABLE | RMOD_X1 | STD_ENCODER);
   STDEncoder.writeGP1conf(GP_PWM | GP_PULL_DI | GP_INT_DI);  // Configure the GP pins in PWM for drive the RGB LED
   STDEncoder.writeGP2conf(GP_PWM | GP_PULL_DI | GP_INT_DI);  // Configure the GP pins in PWM for drive the RGB LED
   STDEncoder.writeGP3conf(GP_PWM | GP_PULL_DI | GP_INT_DI);  // Configure the GP pins in PWM for drive the RGB LED
