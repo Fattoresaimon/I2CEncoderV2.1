@@ -24,6 +24,7 @@ import i2cEncoderLibV2
 
 ## Connection with Arduino UNO
 In the examples the connection with the Arduino UNO is the following:
+
 | I2C Encoder V2 | Raspberry Pi3 NAME | Raspberry Pi3 Pin#  |
 | ---------- | ---------- | ---------- |
 | - | Ground | 9 or 6 |
