@@ -19,6 +19,7 @@ The installation is very simple:
 
 ## Connection with Arduino UNO
 In the examples the connection with the Arduino UNO is the following:
+
 | I2C Encoder V2 | Arduino UNO |
 | ---------- | ---------- |
 | - | GND|
@@ -26,5 +27,6 @@ In the examples the connection with the Arduino UNO is the following:
 | SDA | A4 |
 | SCL | A5 |
 | INT | A3 |
+
 
 The INT pin is used as GPIO, you can change in the code according to your preference.
