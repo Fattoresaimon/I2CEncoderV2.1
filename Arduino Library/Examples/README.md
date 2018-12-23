@@ -28,5 +28,26 @@ In the examples the connection with the Arduino UNO is the following:
 | SCL | A5 |
 | INT | A3 |
 
+## Connection with ESP32
+In the examples the connection with the ESP32 dev board is the following:
 
-The INT pin is used as GPIO, you can change in the code according to your preference.
+| I2C Encoder V2 | ESP32 |
+| ---------- | ---------- |
+| - | GND|
+| + | 3.3V|
+| SDA | G21 |
+| SCL | G22 |
+| INT | G23 |
+
+## Connection with ESP8266
+In the examples the connection with the ESP8266 is the following:
+
+| I2C Encoder V2 | ESP8266 |
+| ---------- | ---------- |
+| - | GND|
+| + | 3.3V|
+| SDA | 4 |
+| SCL | 5 |
+| INT | 16 |
+
+The INT pin is used as GPIO, you can change in the code according to your preference.``
