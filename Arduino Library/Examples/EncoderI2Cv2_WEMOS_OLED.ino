@@ -11,7 +11,7 @@
   When the encoder is turned right the BLUE led turn ON
   When the encoder is pushed, the GREEN led turn ON
 
-  Connections with Arduino UNO:
+  Connections with WEMOS:
   - -> GND
   + -> 3.3V
   SDA -> D2
