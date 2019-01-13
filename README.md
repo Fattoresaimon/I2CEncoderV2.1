@@ -19,9 +19,10 @@ This project is avaiable on our [Tindie store!](https://www.tindie.com/products/
 
 ## Repository Structure
 * [Arduino Library:](/Arduino%20Library) Ready to use library for the Arduino boards, with some examples.
+* [Raspberry Library:](/Raspberry%20Library) Ready to use library in Python for the Raspberry board with example.
 * [Firmware:](/Firmware) Project folder of Microchip MPLAB X contain the code running inside of the PIC16F18345
-* [Hardware:](/Hardware) Folder containing the gerber file, schematic and BOM. The original project is not available.
-* [Datasheet EncoderI2C V2:](EncoderI2CV2_v1.5.pdf) Datasheet of the board with the description of the registers and some useful information.
+* [Hardware:](/Hardware) Folder containing the gerber file, schematic and BOM. 
+* [Datasheet EncoderI2C V2:](EncoderI2CV2_v1.6.pdf) Datasheet of the board with the description of the registers and some useful information.
 
 ** The HW project is also available on [CircuitMaker.](https://workspace.circuitmaker.com/Projects/Details/Simone--Caron/I2C-Encoder-V2) **
 
