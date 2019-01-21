@@ -31,11 +31,11 @@ void setup(void)
       DIRE_LEFT= Encoder left direction increase the value
       IPUP_ENABLE= INT pin have the pull-up enabled.
       RMOD_X1= Encoder configured as X1.
-      RGB_ENCODER= type of encoder is RGB, change to STD_ENCODER in case you are using a normal rotary encoder.
+      RGB_ENCODER= type of encoder is RGB, change to STANDARD_ENCODER in case you are using a normal rotary encoder.
   */
 
   Encoder.begin(INT_DATA | WRAP_DISABLE | DIRE_LEFT | IPUP_ENABLE | RMOD_X1 | RGB_ENCODER);
-//  Encoder.begin(INT_DATA | WRAP_DISABLE | DIRE_LEFT | IPUP_ENABLE | RMOD_X1 | STD_ENCODER); // try also this!
+//  Encoder.begin(INT_DATA | WRAP_DISABLE | DIRE_LEFT | IPUP_ENABLE | RMOD_X1 | STANDARD_ENCODER); // try also this!
 //  Encoder.begin(INT_DATA | WRAP_ENABLE | DIRE_LEFT | IPUP_ENABLE | RMOD_X1 | RGB_ENCODER);  // try also this!
   
   Encoder.writeCounter((int32_t)0); /* Reset the counter value */
