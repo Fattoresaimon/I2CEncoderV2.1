@@ -17,7 +17,7 @@ This project is avaiable on our [Tindie store!](https://www.tindie.com/products/
 
 
 ## Repository Structure
-* [Arduino Library:](https://github.com/Fattoresaimon/ArduinoDuPPaLib) Ready to use library for the Arduino IDE, with some examples.
+* [Arduino Library:](https://github.com/Fattoresaimon/ArduinoDuPPaLib) Repository where you can find the Arduino IDE library for the DuPPa boards
 * [Raspberry Library:](/Raspberry%20Library) Ready to use library in Python for the Raspberry board with example.
 * [Firmware:](/Firmware) Project folder of Microchip MPLAB X contain the code running inside of the PIC16F18345
 * [Hardware:](/Hardware) Folder containing the gerber file, schematic and BOM. 
