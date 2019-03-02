@@ -11,14 +11,13 @@ Every time when encoder rotates at least one step, the counter value increases o
 When the counter value is outside of the limit set by the thresholds registers, the counter value can be wrapped or can stuck on the threshold value reached.
 The I2C Encoder V2 also has an open-drain interrupt pin. It is set to logic low every time an interrupt occurs, the source of interrupt can be customized.
 
-
 ## Where you can get this board?
 This project is avaiable on our [Tindie store!](https://www.tindie.com/products/Saimon/i2c-encoder-v2/)
 
 
 
 ## Repository Structure
-* [Arduino Library:](/Arduino%20Library) Ready to use library for the Arduino boards, with some examples.
+* [Arduino Library:](https://github.com/Fattoresaimon/ArduinoDuPPaLib) Ready to use library for the Arduino IDE, with some examples.
 * [Raspberry Library:](/Raspberry%20Library) Ready to use library in Python for the Raspberry board with example.
 * [Firmware:](/Firmware) Project folder of Microchip MPLAB X contain the code running inside of the PIC16F18345
 * [Hardware:](/Hardware) Folder containing the gerber file, schematic and BOM. 
