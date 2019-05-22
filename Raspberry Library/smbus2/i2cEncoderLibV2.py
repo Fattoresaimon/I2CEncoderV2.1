@@ -157,7 +157,7 @@ class i2cEncoderLibV2:
 
 		if (self.stat == 0):
 			self.stat2 = 0
-		return False
+			return False
   
 		if (self.stat & INT2) != 0 :
 			self.stat2 = self.readEncoder8(REG_I2STATUS)
