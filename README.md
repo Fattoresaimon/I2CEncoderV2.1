@@ -23,7 +23,21 @@ This project is avaiable on our [Tindie store!](https://www.tindie.com/products/
 * [Hardware:](/Hardware) Folder containing the gerber file, schematic and BOM. 
 * [Datasheet EncoderI2C V2:](EncoderI2CV2_v1.6.pdf) Datasheet of the board with the description of the registers and some useful information.
 
-** The HW project is also available on [CircuitMaker.](https://workspace.circuitmaker.com/Projects/Details/Simone--Caron/I2C-Encoder-V2) **
+**The HW project is also available on [CircuitMaker](https://workspace.circuitmaker.com/Projects/Details/Simone--Caron/I2C-Encoder-V2)**
+
+
+
+
+
+## Third-party libraries
+
+* [C# / nanoFramework]( https://github.com/andylyonette/I2cEncoderV2)  thanks to  [Andy Lyonette](https://www.hackster.io/andy-lyonette)
+* [PSOC](https://github.com/rudydevolder/DUPPA-i2cEncoder-for-PSOC) thanks to Rudy De Volder
+
+   
+
+
+
 
 
 **If you want to donate for my work, i would really appreciate it. You can donate here with this link. Thank you!**
