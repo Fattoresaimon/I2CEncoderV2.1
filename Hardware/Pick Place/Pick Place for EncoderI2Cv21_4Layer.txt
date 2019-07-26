@@ -1,0 +1,29 @@
+========================================================================================================================
+File Design Information:
+
+Date:       09/05/19
+Time:       12:10
+Revision:   162
+Variant:    No variations
+Units used: mm
+
+Designator Layer        Footprint        Center-X(mm) Center-Y(mm) Rotation Description                                                             MouserCode           PartNumber         Value       
+SJ8        BottomLayer  SJ_2small        -9.0500      8.7250       270      ""                                                                      ""                   ""                 ""          
+R2         BottomLayer  R0402            -6.9500      9.4000       180      Resistor                                                                603-RC0402FR-074K7L  RC0402FR-074K7L    4k7         
+R1         BottomLayer  R0402            -6.9500      8.1250       180      Resistor                                                                603-RC0402FR-074K7L  RC0402FR-074K7L    4k7               
+L1         BottomLayer  L0402            -3.7000      3.2000       45       "Ferrite Bead"                                                          815-ACML-0402HC-301T ACML-0402HC-301-T  300R@100MHz 
+U1         BottomLayer  MCHP-QFN-ML20_L  0.0000       0.0000       225      "8-bit Microcontrollers - MCU 8-BIT MCU 14KB Flash 1KB RAM, 256 EEPROM" 579-PIC16F18345-I/GZ PIC16F18345-I/GZ   ""          
+R11        BottomLayer  R0402            2.5000       -4.7500      90       Resistor                                                                603-RC0402FR-0710KL  RC0402FR-0710KL    10k         
+R10        BottomLayer  R0402            -2.5000      -4.7500      90       Resistor                                                                603-RC0402FR-0710KL  RC0402FR-0710KL    10k         
+R9         BottomLayer  R0402            -1.2500      -4.7500      90       Resistor                                                                603-RC0402FR-0710KL  RC0402FR-0710KL    10k         
+R8         BottomLayer  R0402            1.2500       -4.7500      90       Resistor                                                                603-RC0402FR-0710KL  RC0402FR-0710KL    10k         
+R4         BottomLayer  R0402            2.9000       4.1000       90       Resistor                                                                603-AC0402FR-0742R2L AC0402FR-0742R2L   42r2        
+R3         BottomLayer  R0402            4.2000       4.1000       90       Resistor                                                                603-AC0402FR-0742R2L AC0402FR-0742R2L   42r2        
+C4         BottomLayer  C0402            3.7500       -4.7500      270      Capacitor                                                               81-GCM155R71E473KA5D GCM155R71E473KA55D 47n/16V     
+C3         BottomLayer  C0402            -3.7500      -4.7500      270      Capacitor                                                               81-GCM155R71E473KA5D GCM155R71E473KA55D 47n/16V     
+C1         BottomLayer  C0603            -4.9629      4.1000       225      Capacitor                                                               963-EMK107ABJ475MA-T CC0603KRX5R7BB475  4u7/16V     
+C2         BottomLayer  C0402            -2.8000      2.3000       225      Capacitor                                                               603-CC402KRX5R8BB104 GRM155R61C104KA88D 100n/16V    
+R12        BottomLayer  R0402            -5.0250      -4.7500      90       Resistor                                                                603-RC0402FR-0710KL  RC0402FR-0710KL    10k         
+R5         BottomLayer  R0402            1.6000       4.1000       90       Resistor                                                                603-RC0402FR-07107RL RC0402FR-07107RL   107r        
+R6         BottomLayer  R0402            5.5018       4.1000       90       Resistor                                                                603-RC0402FR-0747RL  RC0402FR-0747RL    47r         
+R7         BottomLayer  R0402            6.8000       4.1000       90       Resistor                                                                603-RC0402FR-0747RL  RC0402FR-0747RL    47r         
