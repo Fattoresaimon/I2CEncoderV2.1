@@ -462,7 +462,7 @@ class i2cEncoderLibV2:
 # Send to the encoder 3 byte #
 	def writeEncoder24(self,add, value):
 		data=[0,0,0,0]
-		s = struct.pack('>i',value)
+		s = struct.pack('>i',int(value))
 		data = struct.unpack('BBB',s[1:4])
 		self.i2cbus.write_i2c_block_data(self.i2cadd, add, data)
 		return -1
@@ -470,7 +470,7 @@ class i2cEncoderLibV2:
 # Send to the encoder 4 byte #
 	def writeEncoder32(self,add, value):
 		data=[0,0,0,0]
-		s = struct.pack('>i',value)
+		s = struct.pack('>i',int(value))
 		data = struct.unpack('BBBB',s)
 		self.i2cbus.write_i2c_block_data(self.i2cadd, add, data)
 		return -1
