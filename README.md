@@ -47,8 +47,9 @@ This project is avaiable on our [Tindie store!](https://www.tindie.com/products/
 
 ## Licensing
 
-Hardware and firmware are licensed under GPL-3 license
-Documentation is licensed under a Creative Commons BY-SA 4.0 international license
+Hardware and firmware are licensed under GPL-3 license.
+
+Documentation is licensed under a Creative Commons BY-SA 4.0 international license.
 
 
 **If you want to donate for my work, i would really appreciate it. You can donate here with this link. Thank you!**
