@@ -1,5 +1,7 @@
 # I2C Encoder V2.1
 --------------------------------------------------------------------------------
+![OSHW](OSHW_mark_IT000004.png)
+
 ## This repository is for the HW version 2.1!
 In the bottom edge it's written the board version. 
 If it's written V2.1 you are in the right palce, if it's writte V2.0 you need to go [here](https://github.com/Fattoresaimon/I2CEncoderV2.1/releases/tag/V2.0.0).
