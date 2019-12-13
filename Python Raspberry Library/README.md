@@ -1,19 +1,16 @@
-# I2C Encoder V2 Python library 
+# I2C Encoder V2.1 Python library 
 --------------------------------------------------------------------------------
 
 ## Introduction
 
 Here you can find the library and some examples for Raspberry Pi.
-For more details of the functionality of the board please read the [Datasheet](https://github.com/Fattoresaimon/I2CEncoderV2/blob/master/EncoderI2CV2_v1.3.pdf) 
+For more details of the functionality of the board please read the [Datasheet](../EncoderI2CV2.1_v1.0.pdf) 
 
 ## Installation
 
-There are two versions of the library. The library under the folder [smbus](https://github.com/Fattoresaimon/I2CEncoderV2/tree/master/Raspberry%20Library/smbus)  uses the library smbus, while the library under the folder  [smbus2](https://github.com/Fattoresaimon/I2CEncoderV2/tree/master/Raspberry%20Library/smbus2) uses the library  [smbus2](https://github.com/kplindegaard/smbus2).
-The smbus2 is better optimized for the I2C transaction respect to the smbus. 
-
 The installation is very simple:
 
-* Download the file **i2cEncoderLibV2.py**
+* Download the file [**i2cEncoderLibV2.py** ](Source/i2cEncoderLibV2.py) 
 * Put the file in the folder where you have the source files.
 * Import the library in your source files
 ``` python
@@ -25,25 +22,74 @@ import i2cEncoderLibV2
 
 The library makes available the class **i2cEncoderLibV2**
 For initialize the library you have to declare an instance of the class **i2cEncoderLibV2** for each encoders.
+In the istance you have to declare the I2C address of the board
 For example:
 
 ``` python
-import smbus
-import i2cEncoderLibV2
-
-bus=smbus.SMBus(1)
-encoder = i2cEncoderLibV2.i2cEncoderLibV2(bus,0x61)
-```
-Or if you want to use the smbus2
-
-```python
 import smbus2
 import i2cEncoderLibV2
 
-bus=smbus2.SMBus(1)
-encoder = i2cEncoderLibV2.i2cEncoderLibV2(bus,0x61)
+bus = smbus2.SMBus(1)
+encoder = i2cEncoderLibV2.i2cEncoderLibV2(bus, 0x61)
+```
+In this example the I2C address is 0x61: jumpers A0, A5 and A6 are soldered
+
+## Callback Configuration
+
+This library support the callback functionality.
+There is the possibility to link a function to a specific interrupt of the I2C Encoder V2, in this way the function is automatically called when the I2C Encoder V2 generates an interrupts.
+
+A callback function must be declared as the following:
+
+```python
+def NAME_OF_THE_FUNCTION():
+```
+There are 16 possible events:
+
+| Event   | Description   |
+|:-----------:|:----------------------------------|
+| onButtonRelease | Encoder push button is released |
+| onButtonPush | Encoder push button is pushed |
+| onButtonDoublePush | Encoder push button is double pushed |
+| onIncrement | The counter value is incremented |
+| onDecrement | The counter value is decremented |
+| onChange | The counter value is incremented or decremented |
+| onMax | The counter value reach the maximum threshold |
+| onMin | The counter value reach the minimum threshold |
+| onMinMax | The counter value reach the maximum or minimum threshold |
+| onGP1Rise | GP1 configured as input, rising edge |
+| onGP1Fall | GP1 configured as input, falling edge |
+| onGP2Rise | GP2 configured as input, rising edge  |
+| onGP2Fall | GP2 configured as input, falling edge  |
+| onGP3Rise | GP3 configured as input, rising edge  |
+| onGP3Fall | GP3 configured as input, falling edge  |
+| onFadeProcess | Fade process terminated |
+
+#### Examples:
+
+```python
+encoder = i2cEncoderLibV2.i2cEncoderLibV2(bus, 0x61)
+
+...
+
+ # Simple callback that ist's called when the encoder is rotated and blink the green led #
+def EncoderChange():
+    encoder.writeLEDG(100)
+    print ('Changed: %d' % (encoder.readCounter32()))
+    encoder.writeLEDG(0)
+
+...
+
+encoder.onChange = EncoderChange # Attach the event to the callback function#
+
+}
+
 ```
 
+If you need to remove the link with a callback, you just need to define:
+```python
+encoder.onChange = None
+```
 
 ## Methods
 
@@ -53,7 +99,7 @@ This is used for initialize the encoder by writing the configuration register of
 The parameters can be concatenate in OR mode.
 Possible parameters are the following:
 
-|Parameter | Description |
+| Parameter | Description |
 | ---------- | ------------------------------------------------------ |
 | INT_DATA | The Threshold, counter step and counter value are used with integer numbers |
 | FLOAT_DATA | The Threshold, counter step and counter value are used with floating numbers |
@@ -64,8 +110,8 @@ Possible parameters are the following:
 | DIRE_LEFT | Rotate left side to increase the value counter |
 | DIRE_RIGHT | Rotate right side to increase the value counter |
 | | |
-| IPUP_DISABLE | Disable the internall pull-up on the INT pin |
-| IPUP_ENABLE | Enable the internall pull-up on the INT pin |
+| IPUP_DISABLE | Disable the internal pull-up on the INT pin |
+| IPUP_ENABLE | Enable the internal pull-up on the INT pin |
 | | |
 | RMOD_X2 | Encoder in X2 mode |
 | RMOD_X1 | Encoder in X1 mode |
@@ -77,6 +123,13 @@ Possible parameters are the following:
 | EEPROM_BANK2 | Select the second EEPROM bank |
 | | |
 | RESET | Reset the board |
+| | |
+| CLK_STRECH_ENABLE | Enable the I2C clock stretch (only v2.1) |
+| CLK_STRECH_DISABLE | Disable the I2C clock stretch (only v2.1) |
+| | |
+| REL_MODE_ENABLE | Enable the CVAL relative mode (only v2.1)|
+| REL_MODE_DISABLE | Disable the CVAL relative mode (only v2.1) |
+| | |
 
 ###### Examples:
 
@@ -132,14 +185,31 @@ This method  is used for enable or disable the interrupt source selectively. Whe
 | RDEC  | Encoder is rotated in the decrement direction  |
 | RMAX  | Maximum threshold is reached  |
 | RMIN  | Minimum threshold is reached  |
-| INT2  | An event on the interrupt 2 register occurs |
+| INT_2  | An event on the interrupt 2 register occurs |
 
 
+###  void autoconfigInterrupt(void)
 
-##### writeAntibouncingPeriod(bounc)
+This method auto configures the **INTCONF** register according to the attached callback.
+**For the proper use, must be called after the definition of the last event property.**
+
+```python
+encoder.onChange = EncoderChange
+encoder.onButtonPush = EncoderPush
+encoder.onButtonDoublePush = EncoderDoublePush
+encoder.onMax = EncoderMax
+encoder.onMin = EncoderMin
+  # Enable the I2C Encoder V2 interrupts according to the previous attached callback #
+encoder.autoconfigInterrupt()
+
+```
+
+
+##### writeAntibouncingPeriod(bounce)
 
 This method is used for writing the Anti-bouncing period **ANTBOUNC**.
-The I2C encoder V2 will multiplie this value x10.
+This set the period where an opposite rotation  is ignored
+The I2C encoder V2 will multiplies this value by 10 (value x10).
 ###### Examples:
 
 ```python
@@ -150,7 +220,7 @@ encoder.writeAntibouncingPeriod(20)  #Set an anti-bouncing of 200ms
 ##### writeDoublePushPeriod(dperiod)
 
 This method is used for setting the window period  **DPPERIOD** of the double push of the rotary encoder switch. It the value is 0 the double push option is disabled.
-The I2C encoder V2 will multiplie this value x10.
+The I2C encoder V2 will multiply this value x10.
 ###### Examples:
 
 ```python
@@ -177,6 +247,36 @@ This method is used for setting the fade speed **FADEGP** of the RGB LED of the 
   encoder.writeFadeGP(5)  #GP Fade enabled with 5ms step 
 ```
 
+
+### writeGammaRLED(gamma)
+### writeGammaGLED(gmma)
+### writeGammaBLED(gamma)
+### writeGammaGP1(gamma)
+### writeGammaGP2(gamma)
+### writeGammaGP3(gamma)
+
+This method is used to set a gamma correction for the RGB led of the encoder and for the GP pins.
+
+| Parameter   | Description   |
+|:-----------:|:-------------|
+| GAMMA_OFF   | Gamma correction is OFF |
+| GAMMA_1   | Gamma is 1, in this case the PWM is linear |
+| GAMMA_1_8   | Gamma is 1.8 |
+| GAMMA_2   | Gamma is 2 |
+| GAMMA_2_2   | Gamma is 2.2 |
+| GAMMA_2_4   | Gamma is 2.4 |
+| GAMMA_2_6 | Gamma is 2.6 |
+| GAMMA_2_8   | Gamma is 2.8 |
+
+#### Examples:
+
+```python
+  encoder.writeGammaRLED(i2cEncoderLibV2.GAMMA_2)
+  encoder.writeGammaGLED(i2cEncoderLibV2.GAMMA_2)
+  encoder.writeGammaBLED(i2cEncoderLibV2.GAMMA_2)
+```
+
+
 ### Status
 
 ##### updateStatus()
@@ -188,7 +288,7 @@ In case an event of the I2STATUS  register, the I2STATUS is automatically readed
 
 ```python
   if Encoder.updateStatus() == True :
-  # Somthing happens
+  # Something happens
   
 ```
 
@@ -197,19 +297,19 @@ In case an event of the I2STATUS  register, the I2STATUS is automatically readed
 ##### readStatus(status)
 
 Must be called after **updateStatus()**, this method is used for check if some event occurred one the **ESTATUS** register.
-Return value is **true** in case of the event occured, otherwise is **false**
+Return value is **true** in case of the event occurred, otherwise is **false**
 Possible parameter are:
 
 | Parameter   | Description   |
 |:-----------:|:-------------:|
 | PUSHR | Push button of the encoder is released |
 | PUSHP | Push button of the encoder is pressed |
-| PUSHD | Push button of the encoder is doule pushed  |
+| PUSHD | Push button of the encoder is double pushed  |
 | RINC  | Encoder is rotated in the increment direction  |
 | RDEC  | Encoder is rotated in the decrement direction  |
 | RMAX  | Maximum threshold is reached  |
 | RMIN  | Minimum threshold is reached  |
-| INT2  | An event on the interrupt 2 register occurs |
+| INT_2  | An event on the interrupt 2 register occurs |
 
 ###### Example:
 ```python
@@ -244,8 +344,8 @@ Return the status of the register **ESTATUS**
 
 
 ##### readInt2(status)
-Must be called after **updateStatus()**, this method is ued for check if some event occured one the secondary interrupt status **I2STATUS** register.
-Return value is **true** in case of the event occured, otherwise is **false**
+Must be called after **updateStatus()**, this method is used for check if some event occurred one the secondary interrupt status **I2STATUS** register.
+Return value is **true** in case of the event occurred, otherwise is **false**
 Possible parameter are:
 
 | Parameter   | Description   |
@@ -318,6 +418,8 @@ Return the value of the register **FSTATUS**.
 
 
 ### Reading methods
+In this section are listed all the reading method available
+
 
 ##### readCounter32()
 Return the counter value in the format **32bit int**, by reading all the 4 bytes of the counter value registers.
@@ -396,14 +498,14 @@ If the **GP1** is configured as analog, it's possible to read the 8bit of the AD
 
 ##### readGP2()
 Return the value of the GP2REG register. 
-If the **GP2** is configured as input, it's possbile to read the logic status of the pin: *1* when the pin is high, otherwise *0*.
+If the **GP2** is configured as input, it's possible to read the logic status of the pin: *1* when the pin is high, otherwise *0*.
 If the **GP2** is configured as analog, it's possible to read the 8bit of the ADC.
 
 
 
 ##### readGP3()
 Return the value of the GP3REG register. 
-If the **GP3** is configured as input, it's possbile to read the logic status of the pin: *1* when the pin is high, otherwise *0*.
+If the **GP3** is configured as input, it's possible to read the logic status of the pin: *1* when the pin is high, otherwise *0*.
 If the **GP3** is configured as analog, it's possible to read the 8bit of the ADC. 
 
 
@@ -427,6 +529,13 @@ Return the value of the FADERGB register.
 Return the value of the FADEGP register. 
 
 
+### readIDCode()
+Return the ID code of the I2C Encoder V2.1, that is 0x53
+Available only on the V2.1
+
+### readVersion()
+Return the version of the board. 
+Available only on the V2.1
 
 ##### readEEPROM(add)
 Return the value of the EEPROM register. 
@@ -531,14 +640,31 @@ Write the DPPERIOD register.
 Write the FADERGB register.
 
 
-
 ##### writeFadeGP(fade)
 Write the FADEGP register.
 
+
+##### writeGammaRLED(gamma)
+Configure the gamma correction for the red led of the RGB encoder
+
+##### writeGammaGLED(gamma)
+Configure the gamma correction for the green led of the RGB encoder
+
+##### writeGammaBLED(gamma)
+Configure the gamma correction for the blue led of the RGB encoder
+
+##### writeGammaGP1(gamma)
+Configure the gamma correction for the GP1 pin
+
+##### writeGammaGP2(gamma)
+Configure the gamma correction for the GP2 pin
+
+##### writeGammaGP3(gamma)
+Configure the gamma correction for the GP3 pin
 
 
 ##### writeEEPROM(add, data)
 Write the EEPROM memory.
 The input parameter *add* is the address. This method automatically change the first or the second bank.
-The input parameter *data* is the data taht will be written.
+The input parameter *data* is the data that will be written.
 
