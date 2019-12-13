@@ -22,7 +22,7 @@ import i2cEncoderLibV2
 
 The library makes available the class **i2cEncoderLibV2**
 For initialize the library you have to declare an instance of the class **i2cEncoderLibV2** for each encoders.
-In the istance you have to declare the I2C address of the board
+In the instance you have to declare the I2C address of the board
 For example:
 
 ``` python
@@ -95,7 +95,7 @@ encoder.onChange = None
 
 ### Initialization
 #### begin(conf)
-This is used for initialize the encoder by writing the configuration register of the encoder.
+This is used for initialize the encoder by writing the configuration register.
 The parameters can be concatenate in OR mode.
 Possible parameters are the following:
 
@@ -137,6 +137,10 @@ Possible parameters are the following:
 encoder.begin(i2cEncoderLibV2.INT_DATA | i2cEncoderLibV2.WRAP_ENABLE | i2cEncoderLibV2.DIRE_RIGHT | i2cEncoderLibV2.IPUP_ENABLE | i2cEncoderLibV2.RMOD_X1 | i2cEncoderLibV2.RGB_ENCODER)
 ```
 
+###  reset()
+Reset of the board. 
+In this command there is 8ms delay in order to make the board correctly restart.
+
 
 ### Configuration
 
@@ -151,10 +155,10 @@ The interrupt configuration are used only when the pin is configured as digital 
 
 | Parameter   | Description   |
 |:-----------:|:-------------:|
-|GP_PWM| Se the GP pin as PWM output|
-|GP_OUT| Se the GP pin as digital output|
-|GP_AN| Se the GP pin as analog input|
-|GP_IN| Se the GP pin as digital input output|
+|GP_PWM| Set the GP pin as PWM output|
+|GP_OUT| Set the GP pin as digital output|
+|GP_AN| Set the GP pin as analog input|
+|GP_IN| Set the GP pin as digital input output|
 |||
 |GP_PULL_EN| Enable the internal pull-up of the pin|
 |GP_PULL_DI| Disable the internal pull-up of the pin|
@@ -167,14 +171,14 @@ The interrupt configuration are used only when the pin is configured as digital 
 ###### Examples:
 
 ```python
-encoder.writeGP1conf(i2cEncoderLibV2.GP_AN | i2cEncoderLibV2.GP_PULL_DI | i2cEncoderLibV2.GP_INT_DI)  ##Configure the GP1 as analog input with the pull-up and the interrupt disable 
+encoder.writeGP1conf(i2cEncoderLibV2.GP_AN | i2cEncoderLibV2.GP_PULL_DI | i2cEncoderLibV2.GP_INT_DI)  # Configure the GP1 as analog input with the pull-up and the interrupt disable #
 ```
 
 
 
 ##### writeInterruptConfig(interrupt)
 
-This method  is used for enable or disable the interrupt source selectively. When an interrupt event occurs, the INT pin goes low and the event is stored in the status register.
+This method is used for enable or disable the interrupt source selectively. When an interrupt event occurs, the INT pin goes low and the event is stored in the status register.
 
 | Parameter   | Description   |
 |:-----------:|:-------------:|
@@ -213,7 +217,7 @@ The I2C encoder V2 will multiplies this value by 10 (value x10).
 ###### Examples:
 
 ```python
-encoder.writeAntibouncingPeriod(20)  #Set an anti-bouncing of 200ms 
+encoder.writeAntibouncingPeriod(20)  # Set an anti-bouncing of 200ms # 
 ```
 
 
@@ -224,7 +228,7 @@ The I2C encoder V2 will multiply this value x10.
 ###### Examples:
 
 ```python
-encoder.writeDoublePushPeriod(50)  #Set a period for the double push of 500ms 
+encoder.writeDoublePushPeriod(50)  # Set a period for the double push of 500ms #
 ```
 
 
@@ -240,16 +244,16 @@ encoder.writeFadeRGB(1)  #Fade enabled with 1ms step
 
 ##### writeFadeGP(fade)
 
-This method is used for setting the fade speed **FADEGP** of the RGB LED of the rotary encoder. It the value is 0 the fade option is disabled.
+This method is used for setting the fade speed **FADEGP** of the GP pins. It the value is 0 the fade option is disabled.
 ###### Examples:
 
 ```python
-  encoder.writeFadeGP(5)  #GP Fade enabled with 5ms step 
+  encoder.writeFadeGP(5)  # GP Fade enabled with 5ms step #
 ```
 
 
 ### writeGammaRLED(gamma)
-### writeGammaGLED(gmma)
+### writeGammaGLED(gamma)
 ### writeGammaBLED(gamma)
 ### writeGammaGP1(gamma)
 ### writeGammaGP2(gamma)
@@ -529,11 +533,11 @@ Return the value of the FADERGB register.
 Return the value of the FADEGP register. 
 
 
-### readIDCode()
+##### readIDCode()
 Return the ID code of the I2C Encoder V2.1, that is 0x53
 Available only on the V2.1
 
-### readVersion()
+##### readVersion()
 Return the version of the board. 
 Available only on the V2.1
 
