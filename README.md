@@ -38,11 +38,14 @@ This project is avaiable on our [Tindie store!](https://www.tindie.com/products/
 
 
 ## Third-party libraries
-
+* [CircuitPython](https://github.com/bwshockley/CircuitPython-i2cEncoderLibV21) thanks to Benjamin Shockley
 * [C# / nanoFramework]( https://github.com/andylyonette/I2cEncoderV2)  thanks to  [Andy Lyonette](https://www.hackster.io/andy-lyonette)
 * [PSOC](https://github.com/rudydevolder/DUPPA-i2cEncoder-for-PSOC) thanks to Rudy De Volder
 
-   
+  
+## Third-party tutorial
+[Tutorial #226 – Pyboard – Illuminated encoder](https://tutorial.hyperpanel.com/tutorials/tutorial-226-pyboard-illuminated-encoder/) thanks to Carolino Santonastasi
+
 
 
 ## Licensing
