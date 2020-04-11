@@ -51,6 +51,8 @@
 #include <xc.h>
 #include "clc1.h"
 #include "mcc.h"
+#include "..\DataVariable.h"
+
 /**
   Section: CLC1 APIs
 */
@@ -88,7 +90,15 @@ void CLC1_Initialize(void)
 
 void CLC1_ISR(void)
 {
-    CLC_1_Interrupt();
+	if(C_RMOD == true){
+		if ((PORTCbits.RC0 == 0) && (PORTCbits.RC1 == 0))
+			CLC_2_Interrupt();
+		else
+			CLC_1_Interrupt();
+	}else{
+		CLC_1_Interrupt();
+	}
+
     // Clear the CLC interrupt flag
     PIR3bits.CLC1IF = 0;
 }
