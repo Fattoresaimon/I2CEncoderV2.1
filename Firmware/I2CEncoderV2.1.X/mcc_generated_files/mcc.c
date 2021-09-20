@@ -56,11 +56,13 @@ void SYSTEM_Initialize(void)
     WDT_Initialize();
     I2C1_AddressSet();
     I2C1_Initialize();
-    CLC2_Initialize();
     TMR2_Initialize();
-    CLC1_Initialize();
+    TMR0_Initialize();
     TMR3_Initialize();
-   
+    CLC1_Initialize();
+    CLC2_Initialize();
+    CLC3_Initialize();
+    CLC4_Initialize();
 }
 
 void OSCILLATOR_Initialize(void)
@@ -95,8 +97,8 @@ void PMD_Initialize(void)
     PMD3 = 0xE0;
     // MSSP1MD MSSP1 enabled; UART1MD EUSART disabled; MSSP2MD MSSP2 enabled; 
     PMD4 = 0x20;
-    // DSMMD DSM disabled; CLC3MD CLC3 disabled; CLC4MD CLC4 disabled; CLC1MD CLC1 enabled; CLC2MD CLC2 enabled; 
-    PMD5 = 0x19;
+    // DSMMD DSM disabled; CLC3MD CLC3 enabled; CLC4MD CLC4 enabled; CLC1MD CLC1 enabled; CLC2MD CLC2 enabled; 
+    PMD5 = 0x01;
 }
 /**
  End of File

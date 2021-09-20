@@ -97,12 +97,13 @@ void DataInitSet(void) {
     S_CKSRC = false;
     S_RELATIVE = false;
 
-    ANTBOUNC = 25;
+    ANTBOUNC = 1;
     DPPERIOD = 0;
     FADERGB = 0;
     FADEGP = 0;
     DEBOUNCE = 250;
     DoublePush = 0;
+
 }
 
 /**

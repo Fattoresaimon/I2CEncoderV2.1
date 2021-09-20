@@ -83,32 +83,6 @@ void ADC_Initialize(void)
     
 }
 
-void ADC_SelectChannel(adc_channel_t channel)
-{
-    // select the A/D channel
-    ADCON0bits.CHS = channel;    
-    // Turn on the ADC module
-    ADCON0bits.ADON = 1;  
-}
-
-void ADC_StartConversion()
-{
-    // Start the conversion
-    ADCON0bits.ADGO = 1;
-}
-
-
-bool ADC_IsConversionDone()
-{
-    // Start the conversion
-   return ((bool)(!ADCON0bits.ADGO));
-}
-
-adc_result_t ADC_GetConversionResult(void)
-{
-    // Conversion finished, return the result
-    return ((adc_result_t)((ADRESH << 8) + ADRESL));
-}
 
 adc_result_t ADC_GetConversion(adc_channel_t channel)
 {
@@ -131,11 +105,6 @@ adc_result_t ADC_GetConversion(adc_channel_t channel)
 
     // Conversion finished, return the result
     return ((adc_result_t)((ADRESH << 8) + ADRESL));
-}
-
-void ADC_TemperatureAcquisitionDelay(void)
-{
-    __delay_us(200);
 }
 /**
  End of File

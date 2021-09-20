@@ -50,8 +50,9 @@
 
 #include <xc.h>
 #include "clc2.h"
-#include "mcc.h"
-#include "..\DataVariable.h"
+#include "../Encoder.h"
+#include "pin_manager.h"
+
 /**
   Section: CLC2 APIs
 */
@@ -60,26 +61,26 @@ void CLC2_Initialize(void)
 {
     // Set the CLC2 to the options selected in the User Interface
 
-    // LC2G1POL not_inverted; LC2G2POL not_inverted; LC2G3POL inverted; LC2G4POL not_inverted; LC2POL not_inverted; 
-    CLC2POL = 0x04;
-    // LC2D1S CLCIN1 (CLCIN1PPS); 
-    CLC2SEL0 = 0x01;
-    // LC2D2S CLCIN0 (CLCIN0PPS); 
-    CLC2SEL1 = 0x00;
-    // LC2D3S CLCIN0 (CLCIN0PPS); 
-    CLC2SEL2 = 0x00;
-    // LC2D4S CLCIN0 (CLCIN0PPS); 
-    CLC2SEL3 = 0x00;
+    // LC2G1POL not_inverted; LC2G2POL inverted; LC2G3POL not_inverted; LC2G4POL not_inverted; LC2POL not_inverted; 
+    CLC2POL = 0x02;
+    // LC2D1S T0_overflow; 
+    CLC2SEL0 = 0x18;
+    // LC2D2S CLCIN3 (CLCIN3PPS); 
+    CLC2SEL1 = 0x03;
+    // LC2D3S LC4_out; 
+    CLC2SEL2 = 0x07;
+    // LC2D4S CLCIN3 (CLCIN3PPS); 
+    CLC2SEL3 = 0x03;
     // LC2G1D3N disabled; LC2G1D2N disabled; LC2G1D4N disabled; LC2G1D1T enabled; LC2G1D3T disabled; LC2G1D2T disabled; LC2G1D4T disabled; LC2G1D1N disabled; 
     CLC2GLS0 = 0x02;
-    // LC2G2D2N disabled; LC2G2D1N disabled; LC2G2D4N disabled; LC2G2D3N disabled; LC2G2D2T enabled; LC2G2D1T disabled; LC2G2D4T enabled; LC2G2D3T enabled; 
-    CLC2GLS1 = 0xA8;
-    // LC2G3D1N disabled; LC2G3D2N disabled; LC2G3D3N disabled; LC2G3D4N disabled; LC2G3D1T disabled; LC2G3D2T enabled; LC2G3D3T enabled; LC2G3D4T enabled; 
-    CLC2GLS2 = 0xA8;
-    // LC2G4D1N disabled; LC2G4D2N disabled; LC2G4D3N disabled; LC2G4D4N disabled; LC2G4D1T disabled; LC2G4D2T enabled; LC2G4D3T enabled; LC2G4D4T enabled; 
-    CLC2GLS3 = 0xA8;
-    // LC2EN enabled; INTN disabled; INTP enabled; MODE 2-input D flip-flop with R; 
-    CLC2CON = 0x95;
+    // LC2G2D2N enabled; LC2G2D1N disabled; LC2G2D4N disabled; LC2G2D3N enabled; LC2G2D2T disabled; LC2G2D1T disabled; LC2G2D4T disabled; LC2G2D3T disabled; 
+    CLC2GLS1 = 0x14;
+    // LC2G3D1N disabled; LC2G3D2N disabled; LC2G3D3N disabled; LC2G3D4N disabled; LC2G3D1T disabled; LC2G3D2T disabled; LC2G3D3T disabled; LC2G3D4T disabled; 
+    CLC2GLS2 = 0x00;
+    // LC2G4D1N disabled; LC2G4D2N disabled; LC2G4D3N disabled; LC2G4D4N disabled; LC2G4D1T disabled; LC2G4D2T disabled; LC2G4D3T disabled; LC2G4D4T disabled; 
+    CLC2GLS3 = 0x00;
+    // LC2EN enabled; INTN enabled; INTP enabled; MODE 2-input D flip-flop with R; 
+    CLC2CON = 0x9D;
 
     // Clear the CLC interrupt flag
     PIR3bits.CLC2IF = 0;
@@ -89,23 +90,11 @@ void CLC2_Initialize(void)
 
 void CLC2_ISR(void)
 {
-	if(C_RMOD == true){
-		if ((PORTCbits.RC0 == 0) && (PORTCbits.RC1 == 0))
-			CLC_1_Interrupt();
-		else
-			CLC_2_Interrupt();
-	}else{
-		CLC_2_Interrupt();
-	}
-	
     // Clear the CLC interrupt flag
+     Encoder_AB_Interrupt();
     PIR3bits.CLC2IF = 0;
 }
 
-bool CLC2_OutputStatusGet(void)
-{
-    return(CLC2CONbits.LC2OUT);
-}
 /**
  End of File
 */

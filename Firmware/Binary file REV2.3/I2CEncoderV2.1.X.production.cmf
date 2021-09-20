@@ -1,0 +1,2489 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/Release/production\I2CEncoderV2.1.X.production.o
+cinit CODE 0 32 32 144 2
+text1 CODE 0 12CB 12CB 3 2
+text2 CODE 0 12CE 12CE 3 2
+text5 CODE 0 120C 120C 16 2
+text6 CODE 0 129D 129D 8 2
+text13 CODE 0 127D 127D 10 2
+text14 CODE 0 128D 128D 10 2
+text17 CODE 0 891 891 279 2
+text23 CODE 0 1514 1514 A2 2
+text24 CODE 0 1475 1475 9F 2
+text27 CODE 0 13DE 13DE 97 2
+text32 CODE 0 81D 81D 74 2
+text37 CODE 0 1349 1349 95 2
+text45 CODE 0 7D4 7D4 1D 2
+text48 CODE 0 15B6 15B6 113 2
+text50 CODE 0 B0A B0A 27A 2
+text51 CODE 0 801 801 1C 2
+text52 CODE 0 1222 1222 14 2
+text53 CODE 0 124A 124A 11 2
+text54 CODE 0 125B 125B 11 2
+text58 CODE 0 126C 126C 11 2
+text59 CODE 0 1236 1236 14 2
+text60 CODE 0 11C4 11C4 48 2
+text63 CODE 0 16C9 16C9 137 2
+text69 CODE 0 6EE 6EE E6 2
+text78 CODE 0 D84 D84 27C 2
+text85 CODE 0 1162 1162 62 2
+cstackCOMMON COMMON 1 70 70 E 1
+cstackBANK0 BANK0 1 4C 4C 14 1
+cstackBANK1 BANK1 1 CA CA 10 1
+stringtext1 STRCODE 0 176 176 578 2
+swtext10 CONST 0 1000 1000 E4 2
+intentry CODE 0 4 4 2C 2
+bssBANK0 BANK0 1 20 20 2C 1
+bssBANK1 BANK1 1 A0 A0 2A 1
+swtext1 CONST 0 10E4 10E4 8 2
+swtext2 CONST 0 10EC 10EC 8 2
+swtext3 CONST 0 10F4 10F4 8 2
+swtext4 CONST 0 7F1 7F1 E 2
+swtext5 CONST 0 12A5 12A5 8 2
+swtext6 CONST 0 1100 1100 62 2
+swtext7 CONST 0 12AD 12AD 8 2
+swtext8 CONST 0 12B5 12B5 8 2
+swtext9 CONST 0 12BD 12BD 8 2
+dataBANK1 BANK1 1 DA DA 1 1
+clrtext CODE 0 12C5 12C5 6 2
+config CONFIG 4 8007 8007 4 2
+$C:\Users\Saimon\AppData\Local\Temp\sr8g.o
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 30 30 2 2
+config CONFIG 4 8007 8007 4 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-6F 1
+RAM DB-EF 1
+RAM 120-16F 1
+RAM 1A0-1EF 1
+RAM 220-26F 1
+RAM 2A0-2EF 1
+RAM 320-36F 1
+RAM 3A0-3EF 1
+RAM 420-46F 1
+RAM 4A0-4EF 1
+RAM 520-56F 1
+RAM 5A0-5EF 1
+RAM 620-64F 1
+BANK0 60-6F 1
+BANK1 DB-EF 1
+BANK2 120-16F 1
+BANK3 1A0-1EF 1
+BANK4 220-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-36F 1
+BANK7 3A0-3EF 1
+BANK8 420-46F 1
+BANK9 4A0-4EF 1
+CONST 2-3 2
+CONST 7FF-800 2
+CONST 10FC-10FF 2
+CONST 12D1-1348 2
+CONST 1800-1FFF 2
+ENTRY 2-3 2
+ENTRY 7FF-800 2
+ENTRY 10FC-10FF 2
+ENTRY 12D1-1348 2
+ENTRY 1800-1FFF 2
+IDLOC 8000-8003 2
+SFR10 500-51F 1
+SFR11 580-59F 1
+SFR12 600-61F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+STACK 208B-23EF 1
+CODE 2-3 2
+CODE 7FF-800 2
+CODE 10FC-10FF 2
+CODE 12D1-1348 2
+CODE 1800-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-39F 1
+SFR8 400-41F 1
+SFR9 480-49F 1
+BANK10 520-56F 1
+BANK11 5A0-5EF 1
+BANK12 620-64F 1
+BIGRAM 2000-23EF 1
+EEDATA F000-F0FF 2
+STRCODE 2-3 2
+STRCODE 7FF-800 2
+STRCODE 10FC-10FF 2
+STRCODE 12D1-1348 2
+STRCODE 1800-1FFF 2
+STRING 2-3 2
+STRING 7FF-800 2
+STRING 10FC-10FF 2
+STRING 12D1-1348 2
+STRING 1800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/Release/production\I2CEncoderV2.1.X.production.o
+32 cinit CODE >21095:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+32 cinit CODE >21098:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+32 cinit CODE >21325:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+33 cinit CODE >59:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+34 cinit CODE >21327:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+35 cinit CODE >21344:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+36 cinit CODE >21345:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+37 cinit CODE >21346:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+38 cinit CODE >21347:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+39 cinit CODE >21348:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+3A cinit CODE >21349:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+3D cinit CODE >21353:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+3E cinit CODE >21354:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+3F cinit CODE >21355:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+40 cinit CODE >21356:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+41 cinit CODE >21357:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+42 cinit CODE >21358:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+45 cinit CODE >21364:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+45 cinit CODE >21366:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+46 cinit CODE >21367:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+47 cinit CODE >21368:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+48 cinit CODE >80:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+48 cinit CODE >82:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+4A cinit CODE >88:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+4B cinit CODE >91:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+4C cinit CODE >99:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+4D cinit CODE >100:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+4E cinit CODE >101:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+4F cinit CODE >102:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+50 cinit CODE >103:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+51 cinit CODE >104:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+52 cinit CODE >106:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+55 cinit CODE >107:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+58 cinit CODE >108:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+5A cinit CODE >110:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+5C cinit CODE >111:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+5D cinit CODE >115:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+61 cinit CODE >117:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+62 cinit CODE >118:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+65 cinit CODE >119:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+67 cinit CODE >121:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+69 cinit CODE >66:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+69 cinit CODE >67:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+6B cinit CODE >68:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+6C cinit CODE >72:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+6C cinit CODE >73:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+6E cinit CODE >74:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+6F cinit CODE >75:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+70 cinit CODE >76:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+72 cinit CODE >77:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+74 cinit CODE >78:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+76 cinit CODE >79:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+7B cinit CODE >80:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+7F cinit CODE >81:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+83 cinit CODE >82:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+87 cinit CODE >83:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+88 cinit CODE >84:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+89 cinit CODE >85:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+8A cinit CODE >86:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+8B cinit CODE >87:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+8C cinit CODE >88:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+8D cinit CODE >89:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+8F cinit CODE >90:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+90 cinit CODE >91:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+92 cinit CODE >92:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+94 cinit CODE >93:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+95 cinit CODE >94:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+96 cinit CODE >95:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+98 cinit CODE >96:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+9A cinit CODE >97:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+9B cinit CODE >98:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+9D cinit CODE >100:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+A0 cinit CODE >101:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+A1 cinit CODE >102:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+A2 cinit CODE >103:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+A4 cinit CODE >104:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+A8 cinit CODE >105:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+AA cinit CODE >107:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+AB cinit CODE >296:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+AB cinit CODE >297:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+AE cinit CODE >298:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+B0 cinit CODE >50:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+B0 cinit CODE >53:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+B2 cinit CODE >54:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+B4 cinit CODE >55:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+B6 cinit CODE >56:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+B8 cinit CODE >57:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+BA cinit CODE >58:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+BB cinit CODE >59:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+BE cinit CODE >60:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+BF cinit CODE >61:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+C2 cinit CODE >62:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+C4 cinit CODE >63:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+C5 cinit CODE >64:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+C7 cinit CODE >65:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+C9 cinit CODE >60:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc1.c
+C9 cinit CODE >65:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc1.c
+CC cinit CODE >67:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc1.c
+CE cinit CODE >69:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc1.c
+D0 cinit CODE >71:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc1.c
+D2 cinit CODE >73:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc1.c
+D4 cinit CODE >75:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc1.c
+D5 cinit CODE >77:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc1.c
+D7 cinit CODE >79:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc1.c
+D8 cinit CODE >81:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc1.c
+D9 cinit CODE >83:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc1.c
+DB cinit CODE >86:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc1.c
+DD cinit CODE >88:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc1.c
+DF cinit CODE >89:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc1.c
+E0 cinit CODE >60:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc2.c
+E0 cinit CODE >65:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc2.c
+E3 cinit CODE >67:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc2.c
+E5 cinit CODE >69:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc2.c
+E7 cinit CODE >71:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc2.c
+E9 cinit CODE >73:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc2.c
+EB cinit CODE >75:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc2.c
+ED cinit CODE >77:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc2.c
+EF cinit CODE >79:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc2.c
+F0 cinit CODE >81:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc2.c
+F1 cinit CODE >83:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc2.c
+F3 cinit CODE >86:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc2.c
+F5 cinit CODE >88:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc2.c
+F7 cinit CODE >89:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc2.c
+F8 cinit CODE >22:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+F8 cinit CODE >28:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+FA cinit CODE >30:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+FB cinit CODE >31:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+FC cinit CODE >33:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+FD cinit CODE >34:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+FE cinit CODE >36:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+FF cinit CODE >37:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+100 cinit CODE >39:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+101 cinit CODE >40:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+102 cinit CODE >42:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+103 cinit CODE >43:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+104 cinit CODE >45:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+105 cinit CODE >46:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+106 cinit CODE >48:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+107 cinit CODE >49:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+108 cinit CODE >51:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+10A cinit CODE >52:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+10B cinit CODE >75:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+10B cinit CODE >78:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+10D cinit CODE >80:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+10F cinit CODE >82:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+110 cinit CODE >84:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+111 cinit CODE >86:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+113 cinit CODE >88:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+117 cinit CODE >91:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+119 cinit CODE >93:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+11B cinit CODE >95:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+11C cinit CODE >68:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+11C cinit CODE >71:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+11F cinit CODE >73:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+120 cinit CODE >75:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+121 cinit CODE >77:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+123 cinit CODE >79:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+124 cinit CODE >80:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+125 cinit CODE >56:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pin_manager.c
+125 cinit CODE >61:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pin_manager.c
+127 cinit CODE >62:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pin_manager.c
+128 cinit CODE >63:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pin_manager.c
+129 cinit CODE >68:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pin_manager.c
+12C cinit CODE >69:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pin_manager.c
+12E cinit CODE >70:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pin_manager.c
+130 cinit CODE >75:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pin_manager.c
+132 cinit CODE >76:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pin_manager.c
+134 cinit CODE >77:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pin_manager.c
+135 cinit CODE >82:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pin_manager.c
+138 cinit CODE >83:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pin_manager.c
+13A cinit CODE >84:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pin_manager.c
+13B cinit CODE >89:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pin_manager.c
+13D cinit CODE >90:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pin_manager.c
+13F cinit CODE >91:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pin_manager.c
+140 cinit CODE >93:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pin_manager.c
+145 cinit CODE >94:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pin_manager.c
+149 cinit CODE >95:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pin_manager.c
+14D cinit CODE >96:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pin_manager.c
+151 cinit CODE >97:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pin_manager.c
+156 cinit CODE >98:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pin_manager.c
+15A cinit CODE >99:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pin_manager.c
+15B cinit CODE >88:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+15B cinit CODE >91:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+15E cinit CODE >93:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+160 cinit CODE >95:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+162 cinit CODE >97:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+164 cinit CODE >99:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+166 cinit CODE >101:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+168 cinit CODE >102:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+169 cinit CODE >60:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr0.c
+169 cinit CODE >65:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr0.c
+16B cinit CODE >68:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr0.c
+16D cinit CODE >71:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr0.c
+16E cinit CODE >74:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr0.c
+16F cinit CODE >77:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr0.c
+171 cinit CODE >78:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr0.c
+172 cinit CODE >82:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+172 cinit CODE >85:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+175 cinit CODE >86:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+4 intentry CODE >68:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+4 intentry CODE >52:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/interrupt_manager.c
+6 intentry CODE >55:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/interrupt_manager.c
+8 intentry CODE >57:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/interrupt_manager.c
+E intentry CODE >59:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/interrupt_manager.c
+11 intentry CODE >60:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/interrupt_manager.c
+12 intentry CODE >61:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/interrupt_manager.c
+18 intentry CODE >63:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/interrupt_manager.c
+1B intentry CODE >64:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/interrupt_manager.c
+1C intentry CODE >65:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/interrupt_manager.c
+22 intentry CODE >67:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/interrupt_manager.c
+25 intentry CODE >68:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/interrupt_manager.c
+26 intentry CODE >69:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/interrupt_manager.c
+2C intentry CODE >71:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/interrupt_manager.c
+2E intentry CODE >82:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/interrupt_manager.c
+1162 text85 CODE >4:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flge.c
+1162 text85 CODE >7:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flge.c
+116F text85 CODE >8:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flge.c
+1173 text85 CODE >9:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flge.c
+1180 text85 CODE >10:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flge.c
+1184 text85 CODE >12:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flge.c
+1186 text85 CODE >13:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flge.c
+119B text85 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flge.c
+119D text85 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flge.c
+11B2 text85 CODE >16:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flge.c
+11B4 text85 CODE >17:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flge.c
+11B5 text85 CODE >18:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flge.c
+D84 text78 CODE >91:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc2.c
+D84 text78 CODE >94:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc2.c
+D85 text78 CODE >95:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc2.c
+D87 text78 CODE >96:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc2.c
+D88 text78 CODE >91:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc1.c
+D88 text78 CODE >93:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc1.c
+D89 text78 CODE >95:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc1.c
+D8B text78 CODE >96:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc1.c
+D8C text78 CODE >65:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+D8C text78 CODE >67:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+D90 text78 CODE >68:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+D93 text78 CODE >69:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+D95 text78 CODE >71:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+DA0 text78 CODE >73:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+DA3 text78 CODE >74:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+DB7 text78 CODE >75:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+DBA text78 CODE >76:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+DCD text78 CODE >85:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+DE9 text78 CODE >86:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+DEB text78 CODE >87:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+E00 text78 CODE >88:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+E03 text78 CODE >89:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+E06 text78 CODE >98:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+E12 text78 CODE >100:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+E15 text78 CODE >102:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+E29 text78 CODE >103:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+E2C text78 CODE >104:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+E3F text78 CODE >113:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+E5A text78 CODE >114:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+E5C text78 CODE >115:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+E71 text78 CODE >116:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+E74 text78 CODE >117:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+E76 text78 CODE >118:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+E7E text78 CODE >121:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+E86 text78 CODE >128:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+E87 text78 CODE >129:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+E88 text78 CODE >135:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+E89 text78 CODE >136:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+E8A text78 CODE >137:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+E8B text78 CODE >10:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+E8B text78 CODE >21:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+E8F text78 CODE >22:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+E91 text78 CODE >23:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+E92 text78 CODE >24:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+E93 text78 CODE >28:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+E96 text78 CODE >30:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+E98 text78 CODE >32:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+E9C text78 CODE >33:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+E9C text78 CODE >35:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+E9E text78 CODE >39:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+E9E text78 CODE >41:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+EA2 text78 CODE >44:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+EA6 text78 CODE >46:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+EA9 text78 CODE >47:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+EAA text78 CODE >49:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+EAC text78 CODE >50:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+EAD text78 CODE >51:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+EAE text78 CODE >55:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+EB1 text78 CODE >57:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+EB3 text78 CODE >59:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+EB7 text78 CODE >60:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+EB7 text78 CODE >62:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+EB9 text78 CODE >66:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+EB9 text78 CODE >68:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+EBD text78 CODE >75:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+EC1 text78 CODE >77:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+EC3 text78 CODE >78:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+EC5 text78 CODE >81:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+EC7 text78 CODE >82:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+EC9 text78 CODE >83:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+ECB text78 CODE >84:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+ECD text78 CODE >85:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+ECF text78 CODE >86:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+ED1 text78 CODE >87:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+ED3 text78 CODE >88:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+ED5 text78 CODE >89:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+ED7 text78 CODE >90:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+ED9 text78 CODE >91:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+EDB text78 CODE >92:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+EDD text78 CODE >93:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+EDF text78 CODE >94:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+EE1 text78 CODE >95:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+EE3 text78 CODE >98:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+EE4 text78 CODE >100:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+EF9 text78 CODE >101:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F03 text78 CODE >102:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F07 text78 CODE >103:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F09 text78 CODE >104:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F0A text78 CODE >106:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F0A text78 CODE >109:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F0C text78 CODE >110:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F0F text78 CODE >111:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F10 text78 CODE >112:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F10 text78 CODE >113:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F11 text78 CODE >114:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F11 text78 CODE >115:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F12 text78 CODE >116:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F13 text78 CODE >118:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F17 text78 CODE >119:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F18 text78 CODE >106:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F1C text78 CODE >121:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F1C text78 CODE >124:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F1E text78 CODE >127:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F21 text78 CODE >128:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F26 text78 CODE >132:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F2E text78 CODE >134:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F30 text78 CODE >135:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F32 text78 CODE >136:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F35 text78 CODE >137:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F36 text78 CODE >138:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F36 text78 CODE >139:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F37 text78 CODE >140:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F37 text78 CODE >141:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F38 text78 CODE >142:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F39 text78 CODE >144:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F3D text78 CODE >145:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F3F text78 CODE >153:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F54 text78 CODE >154:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F75 text78 CODE >155:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F77 text78 CODE >156:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F79 text78 CODE >157:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F7A text78 CODE >158:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F81 text78 CODE >162:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F89 text78 CODE >163:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F89 text78 CODE >166:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F92 text78 CODE >167:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F97 text78 CODE >172:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F9B text78 CODE >173:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F9C text78 CODE >174:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F9D text78 CODE >176:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+F9F text78 CODE >177:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FA1 text78 CODE >178:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FA2 text78 CODE >179:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FA2 text78 CODE >180:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FA3 text78 CODE >182:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FA5 text78 CODE >183:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FA6 text78 CODE >171:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FA8 text78 CODE >192:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FA9 text78 CODE >193:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FAB text78 CODE >194:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FAE text78 CODE >198:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FB1 text78 CODE >195:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FB3 text78 CODE >203:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FB6 text78 CODE >204:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FBC text78 CODE >205:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FBE text78 CODE >206:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FC2 text78 CODE >207:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FC3 text78 CODE >208:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FC4 text78 CODE >215:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FC9 text78 CODE >216:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FCD text78 CODE >218:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FCF text78 CODE >219:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FD0 text78 CODE >225:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FD2 text78 CODE >226:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FD3 text78 CODE >227:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FD4 text78 CODE >229:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FD4 text78 CODE >230:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FD5 text78 CODE >232:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FD7 text78 CODE >233:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FD8 text78 CODE >234:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FD9 text78 CODE >237:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FDA text78 CODE >242:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FDA text78 CODE >248:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FDC text78 CODE >249:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FF6 text78 CODE >250:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+FF7 text78 CODE >56:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+FF7 text78 CODE >58:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+FFD text78 CODE >59:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+FFF text78 CODE >61:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+1000 swtext10 CONST >310:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+12BD swtext9 CONST >199:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+12B5 swtext8 CONST >250:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+6EE text69 CODE >243:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+6EE text69 CODE >245:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+6F0 text69 CODE >246:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+6F6 text69 CODE >247:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+6F9 text69 CODE >248:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+6FF text69 CODE >250:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+700 text69 CODE >252:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+702 text69 CODE >253:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+704 text69 CODE >254:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+706 text69 CODE >255:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+70C text69 CODE >256:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+711 text69 CODE >257:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+717 text69 CODE >258:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+719 text69 CODE >259:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+71C text69 CODE >260:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+71D text69 CODE >263:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+71F text69 CODE >264:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+721 text69 CODE >265:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+724 text69 CODE >269:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+726 text69 CODE >270:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+728 text69 CODE >271:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+72A text69 CODE >272:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+72B text69 CODE >275:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+72D text69 CODE >276:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+730 text69 CODE >250:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+744 text69 CODE >282:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+747 text69 CODE >285:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+74A text69 CODE >280:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+75C text69 CODE >290:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+75D text69 CODE >64:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm4.c
+75D text69 CODE >69:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm4.c
+760 text69 CODE >72:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm4.c
+762 text69 CODE >75:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm4.c
+764 text69 CODE >78:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm4.c
+769 text69 CODE >80:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm4.c
+76A text69 CODE >64:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+76B text69 CODE >66:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+76E text69 CODE >68:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+770 text69 CODE >69:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+776 text69 CODE >70:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+779 text69 CODE >71:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+77F text69 CODE >72:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+782 text69 CODE >75:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+786 text69 CODE >76:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+78C text69 CODE >77:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+791 text69 CODE >78:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+797 text69 CODE >79:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+79A text69 CODE >80:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+79A text69 CODE >81:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+79E text69 CODE >83:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+7AA text69 CODE >85:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+7AB text69 CODE >86:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+7AF text69 CODE >87:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+7B1 text69 CODE >88:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+7D3 text69 CODE >90:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+12AD swtext7 CONST >301:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+16C9 text63 CODE >138:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+16C9 text63 CODE >140:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+16CB text63 CODE >141:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+16CD text63 CODE >142:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+16CF text63 CODE >143:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+16D1 text63 CODE >145:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+16D3 text63 CODE >146:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+16D5 text63 CODE >147:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+16D7 text63 CODE >148:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+16D9 text63 CODE >150:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+16DB text63 CODE >151:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+16DD text63 CODE >152:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+16DF text63 CODE >154:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+16E5 text63 CODE >155:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+16EA text63 CODE >156:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+16EE text63 CODE >157:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+16F2 text63 CODE >158:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+16F8 text63 CODE >160:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+16FA text63 CODE >161:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+16FC text63 CODE >163:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+16FE text63 CODE >164:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1700 text63 CODE >165:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1701 text63 CODE >295:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1701 text63 CODE >296:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1703 text63 CODE >297:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1709 text63 CODE >298:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+170C text63 CODE >299:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1712 text63 CODE >301:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1713 text63 CODE >303:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1715 text63 CODE >304:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1717 text63 CODE >305:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1719 text63 CODE >306:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+171F text63 CODE >307:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1724 text63 CODE >308:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+172A text63 CODE >309:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+172C text63 CODE >310:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+172F text63 CODE >311:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1730 text63 CODE >314:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1732 text63 CODE >315:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1734 text63 CODE >316:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1737 text63 CODE >320:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1739 text63 CODE >321:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+173B text63 CODE >322:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+173D text63 CODE >323:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+173E text63 CODE >326:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1740 text63 CODE >327:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1743 text63 CODE >301:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1757 text63 CODE >333:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+175A text63 CODE >336:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+175D text63 CODE >331:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+176F text63 CODE >340:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1770 text63 CODE >64:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm1.c
+1770 text63 CODE >69:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm1.c
+1773 text63 CODE >72:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm1.c
+1775 text63 CODE >75:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm1.c
+1777 text63 CODE >78:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm1.c
+177B text63 CODE >80:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm1.c
+177C text63 CODE >95:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+177D text63 CODE >97:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1780 text63 CODE >99:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1782 text63 CODE >100:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1788 text63 CODE >101:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+178B text63 CODE >102:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1791 text63 CODE >103:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1794 text63 CODE >107:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1797 text63 CODE >108:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+179D text63 CODE >109:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+17A2 text63 CODE >110:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+17A8 text63 CODE >111:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+17AB text63 CODE >112:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+17AE text63 CODE >113:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+17AE text63 CODE >115:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+17B2 text63 CODE >117:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+17BE text63 CODE >119:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+17BF text63 CODE >120:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+17C3 text63 CODE >121:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+17C5 text63 CODE >123:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+17E7 text63 CODE >125:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+17E8 text63 CODE >64:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm2.c
+17E8 text63 CODE >69:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm2.c
+17EA text63 CODE >72:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm2.c
+17EC text63 CODE >75:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm2.c
+17EE text63 CODE >78:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm2.c
+17F2 text63 CODE >80:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm2.c
+17F3 text63 CODE >64:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm3.c
+17F3 text63 CODE >69:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm3.c
+17F6 text63 CODE >72:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm3.c
+17F8 text63 CODE >75:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm3.c
+17FA text63 CODE >78:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm3.c
+17FF text63 CODE >80:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm3.c
+11C4 text60 CODE >112:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+11C4 text60 CODE >114:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+11C9 text60 CODE >115:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+11CE text60 CODE >116:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+11D7 text60 CODE >117:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+11E2 text60 CODE >118:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+11E9 text60 CODE >119:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+11F4 text60 CODE >120:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+11FF text60 CODE >121:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+120B text60 CODE >123:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+1236 text59 CODE >97:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+1236 text59 CODE >100:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+1238 text59 CODE >101:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+1239 text59 CODE >103:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+123A text59 CODE >105:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+123C text59 CODE >107:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+123E text59 CODE >109:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+123F text59 CODE >111:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+1241 text59 CODE >113:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+1245 text59 CODE >116:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+1247 text59 CODE >118:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+1249 text59 CODE >120:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+126C text58 CODE >75:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+126C text58 CODE >78:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+126E text58 CODE >80:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+1270 text58 CODE >82:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+1271 text58 CODE >84:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+1272 text58 CODE >86:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+1274 text58 CODE >88:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+1278 text58 CODE >91:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+127A text58 CODE >93:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+127C text58 CODE >95:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+125B text54 CODE >345:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+125B text54 CODE >346:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1260 text54 CODE >347:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1263 text54 CODE >348:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1265 text54 CODE >349:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1266 text54 CODE >350:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1268 text54 CODE >351:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+126B text54 CODE >355:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+124A text53 CODE >360:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+124A text53 CODE >361:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+124F text53 CODE >362:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1252 text53 CODE >363:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1254 text53 CODE >364:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1255 text53 CODE >366:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1257 text53 CODE >367:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+125A text53 CODE >371:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1222 text52 CODE >376:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1222 text52 CODE >377:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1225 text52 CODE >380:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+122A text52 CODE >381:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+122D text52 CODE >382:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+122F text52 CODE >383:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1230 text52 CODE >384:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1232 text52 CODE >385:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1235 text52 CODE >388:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+801 text51 CODE >6:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\pic\__eewrite.c
+802 text51 CODE >8:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\pic\__eewrite.c
+81C text51 CODE >9:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\pic\__eewrite.c
+1100 swtext6 CONST >109:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B0A text50 CODE >107:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B0C text50 CODE >109:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B0D text50 CODE >111:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B0F text50 CODE >112:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B12 text50 CODE >113:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B14 text50 CODE >114:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B15 text50 CODE >117:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B17 text50 CODE >118:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B19 text50 CODE >119:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B1A text50 CODE >122:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B1C text50 CODE >123:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B1F text50 CODE >124:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B20 text50 CODE >127:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B23 text50 CODE >128:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B25 text50 CODE >129:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B29 text50 CODE >134:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B2C text50 CODE >135:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B2D text50 CODE >139:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B2F text50 CODE >140:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B30 text50 CODE >142:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B32 text50 CODE >143:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B33 text50 CODE >145:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B35 text50 CODE >146:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B36 text50 CODE >148:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B38 text50 CODE >149:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B39 text50 CODE >153:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B3B text50 CODE >154:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B3C text50 CODE >156:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B3E text50 CODE >157:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B3F text50 CODE >159:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B41 text50 CODE >160:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B42 text50 CODE >162:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B44 text50 CODE >163:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B45 text50 CODE >167:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B47 text50 CODE >168:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B48 text50 CODE >170:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B4A text50 CODE >171:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B4B text50 CODE >173:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B4D text50 CODE >174:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B4E text50 CODE >176:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B50 text50 CODE >177:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B51 text50 CODE >181:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B53 text50 CODE >182:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B54 text50 CODE >184:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B56 text50 CODE >185:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B57 text50 CODE >187:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B59 text50 CODE >188:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B5A text50 CODE >190:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B5C text50 CODE >191:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B5D text50 CODE >195:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B5F text50 CODE >197:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B60 text50 CODE >200:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B62 text50 CODE >201:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B63 text50 CODE >204:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B65 text50 CODE >205:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B66 text50 CODE >209:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B68 text50 CODE >210:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B6B text50 CODE >211:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B6C text50 CODE >214:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B6E text50 CODE >215:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B71 text50 CODE >216:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B72 text50 CODE >220:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B75 text50 CODE >221:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B77 text50 CODE >222:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B7B text50 CODE >229:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B7F text50 CODE >230:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B81 text50 CODE >231:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B85 text50 CODE >232:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B88 text50 CODE >233:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B89 text50 CODE >235:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B8C text50 CODE >236:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B99 text50 CODE >237:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B9A text50 CODE >240:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B9D text50 CODE >241:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+B9E text50 CODE >244:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BA0 text50 CODE >245:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BA1 text50 CODE >248:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BA3 text50 CODE >249:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BA7 text50 CODE >250:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BAA text50 CODE >254:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BAC text50 CODE >255:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BB0 text50 CODE >256:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BB3 text50 CODE >260:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BB5 text50 CODE >261:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BB9 text50 CODE >262:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BBC text50 CODE >266:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BBE text50 CODE >267:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BC2 text50 CODE >268:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BC5 text50 CODE >272:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BC7 text50 CODE >273:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BCB text50 CODE >274:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BCE text50 CODE >278:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BCF text50 CODE >284:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BD2 text50 CODE >285:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BD4 text50 CODE >286:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BD6 text50 CODE >287:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BD7 text50 CODE >109:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BE1 text50 CODE >290:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BE6 text50 CODE >292:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BEA text50 CODE >293:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BF1 text50 CODE >296:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BF7 text50 CODE >519:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BF7 text50 CODE >521:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BFB text50 CODE >522:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BFE text50 CODE >523:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+BFF text50 CODE >524:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C01 text50 CODE >528:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C04 text50 CODE >530:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C06 text50 CODE >531:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C08 text50 CODE >533:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C0A text50 CODE >534:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C0C text50 CODE >538:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C0E text50 CODE >539:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C10 text50 CODE >541:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C12 text50 CODE >542:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C14 text50 CODE >548:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C16 text50 CODE >549:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C19 text50 CODE >552:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C1B text50 CODE >553:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C1D text50 CODE >557:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C21 text50 CODE >559:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C23 text50 CODE >560:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C24 text50 CODE >564:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C27 text50 CODE >565:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C2D text50 CODE >566:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C2E text50 CODE >567:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C35 text50 CODE >570:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C38 text50 CODE >571:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C39 text50 CODE >573:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C3A text50 CODE >578:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C3A text50 CODE >581:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C3D text50 CODE >582:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C3F text50 CODE >584:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C41 text50 CODE >588:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+C42 text50 CODE >86:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr0.c
+C43 text50 CODE >89:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr0.c
+C45 text50 CODE >90:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr0.c
+C46 text50 CODE >192:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+C46 text50 CODE >194:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+C48 text50 CODE >195:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+C4E text50 CODE >196:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+C51 text50 CODE >197:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+C57 text50 CODE >199:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+C58 text50 CODE >201:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+C5A text50 CODE >202:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+C5C text50 CODE >203:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+C5E text50 CODE >204:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+C64 text50 CODE >205:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+C69 text50 CODE >206:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+C6F text50 CODE >207:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+C71 text50 CODE >208:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+C74 text50 CODE >209:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+C75 text50 CODE >212:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+C77 text50 CODE >213:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+C79 text50 CODE >214:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+C7C text50 CODE >218:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+C7E text50 CODE >219:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+C80 text50 CODE >220:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+C82 text50 CODE >221:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+C83 text50 CODE >223:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+C85 text50 CODE >224:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+C88 text50 CODE >199:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+C9C text50 CODE >230:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+C9F text50 CODE >233:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+CA2 text50 CODE >228:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+CB4 text50 CODE >238:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+CB5 text50 CODE >58:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm5.c
+CB5 text50 CODE >62:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm5.c
+CB8 text50 CODE >65:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm5.c
+CB9 text50 CODE >68:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm5.c
+CBA text50 CODE >71:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm5.c
+CBE text50 CODE >72:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm5.c
+CBF text50 CODE >30:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+CC1 text50 CODE >32:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+CC4 text50 CODE >34:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+CC6 text50 CODE >35:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+CCC text50 CODE >36:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+CCF text50 CODE >37:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+CD5 text50 CODE >38:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+CD8 text50 CODE >42:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+CDC text50 CODE >43:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+CE2 text50 CODE >44:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+CE7 text50 CODE >45:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+CED text50 CODE >46:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+CF0 text50 CODE >47:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+CF0 text50 CODE >49:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+CF4 text50 CODE >50:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+CF7 text50 CODE >51:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+CF8 text50 CODE >52:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+CF9 text50 CODE >53:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+CFD text50 CODE >54:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+CFF text50 CODE >55:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+D27 text50 CODE >56:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+D4D text50 CODE >59:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+D4E text50 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+D4E text50 CODE >43:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+D50 text50 CODE >45:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+D52 text50 CODE >46:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+D56 text50 CODE >47:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+D58 text50 CODE >48:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+D5A text50 CODE >49:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+D5E text50 CODE >52:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+D62 text50 CODE >53:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+D63 text50 CODE >171:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+D63 text50 CODE >173:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+D65 text50 CODE >174:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+D67 text50 CODE >175:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+D69 text50 CODE >177:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+D6B text50 CODE >178:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+D6D text50 CODE >179:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+D6F text50 CODE >180:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+D71 text50 CODE >182:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+D73 text50 CODE >183:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+D75 text50 CODE >185:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+D77 text50 CODE >186:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+D79 text50 CODE >187:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+D7A text50 CODE >125:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+D7A text50 CODE >127:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+D7E text50 CODE >128:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+D83 text50 CODE >129:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+12A5 swtext5 CONST >61:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+15B6 text48 CODE >121:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+15B6 text48 CODE >129:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+15B7 text48 CODE >130:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+15BB text48 CODE >131:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+15BE text48 CODE >133:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+15C1 text48 CODE >136:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+15C3 text48 CODE >141:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+15C5 text48 CODE >144:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+15C7 text48 CODE >149:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+15C9 text48 CODE >153:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+15CD text48 CODE >156:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+15CF text48 CODE >159:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+15D1 text48 CODE >161:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+15D2 text48 CODE >58:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+15D4 text48 CODE >61:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+15D5 text48 CODE >62:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+15D5 text48 CODE >64:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+15D8 text48 CODE >65:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+15D9 text48 CODE >72:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+15DB text48 CODE >73:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+15DC text48 CODE >77:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+15E4 text48 CODE >78:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+15E6 text48 CODE >79:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+15E7 text48 CODE >70:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+15F0 text48 CODE >83:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+15F1 text48 CODE >84:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+15F2 text48 CODE >87:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+15F7 text48 CODE >88:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+15F9 text48 CODE >89:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+15FA text48 CODE >61:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1604 text48 CODE >100:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1605 text48 CODE >307:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1606 text48 CODE >310:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1607 text48 CODE >312:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+160A text48 CODE >316:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+160D text48 CODE >320:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1610 text48 CODE >324:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1614 text48 CODE >325:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1616 text48 CODE >327:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1618 text48 CODE >332:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+161A text48 CODE >336:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+161D text48 CODE >337:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+161E text48 CODE >338:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1621 text48 CODE >342:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1623 text48 CODE >343:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1624 text48 CODE >344:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1625 text48 CODE >347:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1627 text48 CODE >352:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+162A text48 CODE >353:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+162D text48 CODE >357:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1630 text48 CODE >358:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1632 text48 CODE >359:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1633 text48 CODE >360:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1635 text48 CODE >364:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1638 text48 CODE >365:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+163A text48 CODE >366:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+163B text48 CODE >367:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+163C text48 CODE >368:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+163E text48 CODE >372:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1641 text48 CODE >373:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1643 text48 CODE >374:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1648 text48 CODE >379:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+164B text48 CODE >382:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+164E text48 CODE >385:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1651 text48 CODE >388:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1654 text48 CODE >393:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1657 text48 CODE >396:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+165A text48 CODE >399:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+165D text48 CODE >402:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1660 text48 CODE >407:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1663 text48 CODE >410:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1666 text48 CODE >413:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1669 text48 CODE >416:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+166C text48 CODE >421:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+166F text48 CODE >425:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1672 text48 CODE >429:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1675 text48 CODE >433:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1678 text48 CODE >437:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+167B text48 CODE >441:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+167F text48 CODE >442:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1681 text48 CODE >449:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1683 text48 CODE >453:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1685 text48 CODE >457:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1687 text48 CODE >461:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+168A text48 CODE >466:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+168D text48 CODE >470:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1690 text48 CODE >474:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1693 text48 CODE >478:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1696 text48 CODE >482:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+1699 text48 CODE >490:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+169B text48 CODE >494:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+169D text48 CODE >498:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+169F text48 CODE >499:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+16A0 text48 CODE >310:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+16AA text48 CODE >506:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+16AE text48 CODE >507:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+16B2 text48 CODE >508:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+16B5 text48 CODE >510:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+16B8 text48 CODE >513:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+16B9 text48 CODE >514:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+16BA text48 CODE >6:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\pic\__eeread.c
+16BB text48 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\pic\__eeread.c
+16BD text48 CODE >8:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\pic\__eeread.c
+16BD text48 CODE >9:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\pic\__eeread.c
+16BE text48 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\pic\__eeread.c
+16C1 text48 CODE >18:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\pic\__eeread.c
+16C8 text48 CODE >19:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\pic\__eeread.c
+7D4 text45 CODE >121:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+7D4 text45 CODE >124:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+7D6 text45 CODE >126:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+7D8 text45 CODE >127:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+7DE text45 CODE >98:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+7DE text45 CODE >100:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+7E1 text45 CODE >103:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+7E2 text45 CODE >106:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+7E4 text45 CODE >107:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+7E6 text45 CODE >110:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+7E7 text45 CODE >111:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+7E8 text45 CODE >115:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+7EA text45 CODE >116:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+7EC text45 CODE >118:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+7ED text45 CODE >73:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+7ED text45 CODE >74:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+7F0 text45 CODE >75:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+7F1 swtext4 CONST >229:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+1349 text37 CODE >221:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+1349 text37 CODE >223:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+1352 text37 CODE >224:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+1354 text37 CODE >225:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+1355 text37 CODE >226:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+1359 text37 CODE >231:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+135B text37 CODE >232:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+1360 text37 CODE >233:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+1363 text37 CODE >239:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+1368 text37 CODE >240:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+136B text37 CODE >245:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+1370 text37 CODE >246:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+1373 text37 CODE >251:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+1378 text37 CODE >254:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+1379 text37 CODE >252:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+137B text37 CODE >253:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+137D text37 CODE >254:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+137E text37 CODE >255:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+1380 text37 CODE >256:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+1382 text37 CODE >261:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+1384 text37 CODE >262:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+138C text37 CODE >263:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+138D text37 CODE >264:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+138E text37 CODE >265:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+1392 text37 CODE >270:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+1392 text37 CODE >271:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+1393 text37 CODE >270:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+1395 text37 CODE >271:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+1398 text37 CODE >272:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+139D text37 CODE >273:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+139F text37 CODE >274:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+13A0 text37 CODE >282:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+13A2 text37 CODE >283:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+13A7 text37 CODE >285:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+13A7 text37 CODE >286:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+13A8 text37 CODE >285:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+13A9 text37 CODE >286:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+13AA text37 CODE >229:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+13B4 text37 CODE >291:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+13B5 text37 CODE >47:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+13B5 text37 CODE >50:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+13BA text37 CODE >51:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+13C1 text37 CODE >52:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+13C3 text37 CODE >53:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+13C6 text37 CODE >56:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+13CD text37 CODE >57:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+13CE text37 CODE >58:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+13CF text37 CODE >62:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+13D0 text37 CODE >63:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+13D1 text37 CODE >34:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+13D1 text37 CODE >35:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+13D4 text37 CODE >36:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+13D8 text37 CODE >38:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+13DD text37 CODE >41:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+81D text32 CODE >165:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+81F text32 CODE >167:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+822 text32 CODE >169:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+824 text32 CODE >170:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+82A text32 CODE >171:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+82D text32 CODE >172:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+833 text32 CODE >173:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+836 text32 CODE >178:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+83A text32 CODE >179:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+840 text32 CODE >180:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+845 text32 CODE >181:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+84B text32 CODE >182:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+84E text32 CODE >183:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+851 text32 CODE >184:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+851 text32 CODE >186:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+855 text32 CODE >188:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+864 text32 CODE >190:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+865 text32 CODE >192:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+86A text32 CODE >193:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+86C text32 CODE >195:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+890 text32 CODE >197:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+13DE text27 CODE >30:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+13E0 text27 CODE >32:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+13E3 text27 CODE >34:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+13E5 text27 CODE >35:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+13EB text27 CODE >36:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+13EE text27 CODE >37:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+13F4 text27 CODE >38:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+13F7 text27 CODE >42:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+13FB text27 CODE >43:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1401 text27 CODE >44:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1406 text27 CODE >45:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+140C text27 CODE >46:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+140F text27 CODE >47:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+140F text27 CODE >49:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1413 text27 CODE >50:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1417 text27 CODE >51:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1418 text27 CODE >52:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1419 text27 CODE >53:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+141E text27 CODE >54:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1420 text27 CODE >55:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+144B text27 CODE >56:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1474 text27 CODE >59:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1475 text24 CODE >63:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1475 text24 CODE >65:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+147A text24 CODE >68:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+147D text24 CODE >69:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1481 text24 CODE >70:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1483 text24 CODE >71:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1484 text24 CODE >76:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1489 text24 CODE >77:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+148E text24 CODE >79:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1491 text24 CODE >80:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1492 text24 CODE >82:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1495 text24 CODE >83:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1496 text24 CODE >86:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1499 text24 CODE >87:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+149C text24 CODE >88:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+149D text24 CODE >87:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+149F text24 CODE >88:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+14A1 text24 CODE >90:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+14A3 text24 CODE >64:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+14A5 text24 CODE >66:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+14A8 text24 CODE >68:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+14AA text24 CODE >69:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+14B0 text24 CODE >70:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+14B3 text24 CODE >71:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+14B9 text24 CODE >72:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+14BC text24 CODE >75:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+14C0 text24 CODE >76:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+14C6 text24 CODE >77:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+14CB text24 CODE >78:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+14D1 text24 CODE >79:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+14D4 text24 CODE >80:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+14D4 text24 CODE >81:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+14D8 text24 CODE >83:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+14E7 text24 CODE >85:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+14E8 text24 CODE >86:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+14ED text24 CODE >87:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+14EF text24 CODE >88:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1513 text24 CODE >90:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1514 text23 CODE >101:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1514 text23 CODE >103:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1519 text23 CODE >106:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+151C text23 CODE >107:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1520 text23 CODE >108:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1522 text23 CODE >109:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1523 text23 CODE >114:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1528 text23 CODE >115:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+152D text23 CODE >117:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1530 text23 CODE >118:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1531 text23 CODE >120:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1534 text23 CODE >121:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1535 text23 CODE >124:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1538 text23 CODE >125:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+153B text23 CODE >126:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+153C text23 CODE >125:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+153E text23 CODE >126:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1540 text23 CODE >128:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+1542 text23 CODE >95:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1544 text23 CODE >97:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1547 text23 CODE >99:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1549 text23 CODE >100:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+154F text23 CODE >101:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1552 text23 CODE >102:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1558 text23 CODE >103:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+155B text23 CODE >107:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+155F text23 CODE >108:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1565 text23 CODE >109:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+156A text23 CODE >110:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1570 text23 CODE >111:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1573 text23 CODE >112:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1576 text23 CODE >113:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1576 text23 CODE >115:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+157A text23 CODE >117:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1589 text23 CODE >119:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+158A text23 CODE >120:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+158F text23 CODE >121:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+1591 text23 CODE >123:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+15B5 text23 CODE >125:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+10F4 swtext3 CONST >394:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+10EC swtext2 CONST >440:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+10E4 swtext1 CONST >492:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+891 text17 CODE >535:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+891 text17 CODE >538:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+892 text17 CODE >539:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+895 text17 CODE >540:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+898 text17 CODE >542:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8A1 text17 CODE >543:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8A2 text17 CODE >546:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8A9 text17 CODE >547:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8AA text17 CODE >548:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8AC text17 CODE >549:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8AE text17 CODE >550:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8AF text17 CODE >393:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8AF text17 CODE >394:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8B0 text17 CODE >396:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8B8 text17 CODE >397:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8BA text17 CODE >398:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8BB text17 CODE >401:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8C3 text17 CODE >402:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8C7 text17 CODE >408:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8D4 text17 CODE >409:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8D5 text17 CODE >411:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8D5 text17 CODE >412:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8D8 text17 CODE >413:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8DA text17 CODE >414:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8DC text17 CODE >415:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8DE text17 CODE >416:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8DF text17 CODE >418:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8E3 text17 CODE >422:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8E3 text17 CODE >423:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8E6 text17 CODE >424:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8E7 text17 CODE >425:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8EA text17 CODE >426:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8EC text17 CODE >427:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8EF text17 CODE >394:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8F9 text17 CODE >433:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8FA text17 CODE >438:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8FA text17 CODE >440:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+8FB text17 CODE >442:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+903 text17 CODE >443:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+905 text17 CODE >444:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+906 text17 CODE >448:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+90E text17 CODE >449:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+912 text17 CODE >455:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+91F text17 CODE >456:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+920 text17 CODE >458:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+920 text17 CODE >459:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+923 text17 CODE >460:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+925 text17 CODE >461:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+928 text17 CODE >462:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+92A text17 CODE >463:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+92B text17 CODE >465:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+92F text17 CODE >469:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+92F text17 CODE >470:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+932 text17 CODE >472:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+933 text17 CODE >473:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+936 text17 CODE >474:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+938 text17 CODE >475:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+93B text17 CODE >440:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+946 text17 CODE >482:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+947 text17 CODE >487:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+947 text17 CODE >489:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+94B text17 CODE >494:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+953 text17 CODE >495:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+955 text17 CODE >496:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+956 text17 CODE >500:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+95E text17 CODE >501:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+962 text17 CODE >507:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+96F text17 CODE >508:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+970 text17 CODE >510:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+970 text17 CODE >511:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+973 text17 CODE >512:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+975 text17 CODE >513:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+978 text17 CODE >514:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+97A text17 CODE >515:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+97B text17 CODE >517:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+97F text17 CODE >521:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+97F text17 CODE >522:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+982 text17 CODE >524:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+983 text17 CODE >525:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+986 text17 CODE >526:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+988 text17 CODE >527:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+98B text17 CODE >492:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+996 text17 CODE >533:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+997 text17 CODE >87:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/adc.c
+999 text17 CODE >90:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/adc.c
+9A1 text17 CODE >93:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/adc.c
+9A2 text17 CODE >96:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/adc.c
+9A6 text17 CODE >99:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/adc.c
+9A8 text17 CODE >102:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/adc.c
+9A8 text17 CODE >104:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/adc.c
+9AA text17 CODE >107:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/adc.c
+9B1 text17 CODE >108:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/adc.c
+9B2 text17 CODE >65:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/adc.c
+9B2 text17 CODE >70:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/adc.c
+9B4 text17 CODE >73:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/adc.c
+9B6 text17 CODE >76:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/adc.c
+9B7 text17 CODE >79:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/adc.c
+9B8 text17 CODE >82:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/adc.c
+9B9 text17 CODE >84:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/adc.c
+9BA text17 CODE >135:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+9BA text17 CODE >137:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+9BE text17 CODE >140:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+9C2 text17 CODE >141:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+9C7 text17 CODE >142:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+9C9 text17 CODE >143:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+9CC text17 CODE >146:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+9D1 text17 CODE >147:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+9D3 text17 CODE >148:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+9D5 text17 CODE >151:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+9DA text17 CODE >152:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+9DC text17 CODE >153:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+9DE text17 CODE >157:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+9DF text17 CODE >158:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+9E3 text17 CODE >159:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+9E4 text17 CODE >161:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+9E9 text17 CODE >163:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+9ED text17 CODE >164:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+9EE text17 CODE >166:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+9F1 text17 CODE >167:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+9F2 text17 CODE >170:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+9F6 text17 CODE >171:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+9F9 text17 CODE >172:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+9FA text17 CODE >171:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+9FC text17 CODE >172:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+9FE text17 CODE >173:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+9FF text17 CODE >174:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+A01 text17 CODE >178:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+A06 text17 CODE >180:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+A0A text17 CODE >181:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+A0B text17 CODE >183:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+A0E text17 CODE >184:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+A0F text17 CODE >187:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+A12 text17 CODE >188:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+A15 text17 CODE >189:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+A16 text17 CODE >188:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+A18 text17 CODE >189:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+A1A text17 CODE >190:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+A1B text17 CODE >191:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+A1D text17 CODE >197:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+A22 text17 CODE >199:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+A25 text17 CODE >200:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+A26 text17 CODE >202:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+A29 text17 CODE >203:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+A2A text17 CODE >206:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+A2E text17 CODE >207:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+A31 text17 CODE >208:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+A32 text17 CODE >207:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+A34 text17 CODE >208:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+A35 text17 CODE >211:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+A36 text17 CODE >160:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+A38 text17 CODE >161:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+A3A text17 CODE >162:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+A3D text17 CODE >164:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+A3E text17 CODE >152:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+A40 text17 CODE >153:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+A41 text17 CODE >154:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+A42 text17 CODE >130:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+A44 text17 CODE >132:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+A47 text17 CODE >134:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+A49 text17 CODE >135:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+A4F text17 CODE >136:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+A52 text17 CODE >137:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+A58 text17 CODE >138:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+A5B text17 CODE >142:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+A5F text17 CODE >143:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+A65 text17 CODE >144:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+A6A text17 CODE >145:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+A70 text17 CODE >146:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+A73 text17 CODE >147:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+A76 text17 CODE >148:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+A76 text17 CODE >150:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+A7A text17 CODE >151:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+A89 text17 CODE >153:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+A8A text17 CODE >155:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+A8F text17 CODE >156:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+A91 text17 CODE >158:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+AB4 text17 CODE >160:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+AB5 text17 CODE >56:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+AB5 text17 CODE >58:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+ABB text17 CODE >59:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+ABD text17 CODE >61:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+ABE text17 CODE >143:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+AC0 text17 CODE >144:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+AC1 text17 CODE >145:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+AC3 text17 CODE >135:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+AC4 text17 CODE >136:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+AC6 text17 CODE >137:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+AC7 text17 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+AC7 text17 CODE >43:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+AC9 text17 CODE >45:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+ACB text17 CODE >46:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+ACF text17 CODE >47:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+AD1 text17 CODE >48:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+AD3 text17 CODE >49:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+AD7 text17 CODE >52:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+ADB text17 CODE >53:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+ADC text17 CODE >26:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+ADC text17 CODE >28:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+AE1 text17 CODE >31:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+AE4 text17 CODE >32:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+AE8 text17 CODE >33:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+AEA text17 CODE >34:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+AEC text17 CODE >39:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+AF1 text17 CODE >40:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+AF6 text17 CODE >42:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+AF9 text17 CODE >43:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+AFA text17 CODE >45:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+AFD text17 CODE >46:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+AFE text17 CODE >49:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+B02 text17 CODE >50:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+B05 text17 CODE >51:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+B06 text17 CODE >50:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+B08 text17 CODE >51:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+B09 text17 CODE >53:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+128D text14 CODE >58:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc3.c
+128D text14 CODE >63:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc3.c
+128F text14 CODE >65:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc3.c
+1291 text14 CODE >67:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc3.c
+1293 text14 CODE >69:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc3.c
+1294 text14 CODE >71:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc3.c
+1295 text14 CODE >73:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc3.c
+1296 text14 CODE >75:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc3.c
+1298 text14 CODE >77:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc3.c
+1299 text14 CODE >79:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc3.c
+129A text14 CODE >81:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc3.c
+129C text14 CODE >83:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc3.c
+127D text13 CODE >58:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc4.c
+127D text13 CODE >63:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc4.c
+127E text13 CODE >65:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc4.c
+1280 text13 CODE >67:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc4.c
+1282 text13 CODE >69:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc4.c
+1283 text13 CODE >71:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc4.c
+1284 text13 CODE >73:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc4.c
+1286 text13 CODE >75:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc4.c
+1288 text13 CODE >77:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc4.c
+1289 text13 CODE >79:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc4.c
+128A text13 CODE >81:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc4.c
+128C text13 CODE >83:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc4.c
+129D text6 CODE >62:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr2.c
+129D text6 CODE >67:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr2.c
+12A0 text6 CODE >70:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr2.c
+12A1 text6 CODE >73:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr2.c
+12A2 text6 CODE >76:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr2.c
+12A4 text6 CODE >77:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr2.c
+120C text5 CODE >64:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+120C text5 CODE >69:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+120E text5 CODE >72:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+1210 text5 CODE >75:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+1212 text5 CODE >78:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+121A text5 CODE >81:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+121C text5 CODE >84:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+121E text5 CODE >87:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+1221 text5 CODE >88:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+12CE text2 CODE >80:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr0.c
+12CE text2 CODE >83:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr0.c
+12D0 text2 CODE >84:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr0.c
+12CB text1 CODE >90:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+12CB text1 CODE >93:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+12CD text1 CODE >94:D:\Users\Saimon\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+12C5 clrtext CODE >21333:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+12C5 clrtext CODE >21334:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+12C6 clrtext CODE >21335:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+12C6 clrtext CODE >21336:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+12C7 clrtext CODE >21337:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+12C8 clrtext CODE >21338:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+12C9 clrtext CODE >21339:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+12CA clrtext CODE >21340:C:\Users\Saimon\AppData\Local\Temp\sr8g.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__end_of_GP_Ports_FSM 115E 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+___latbits 2 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__LdataBANK1 0 0 ABS 0 dataBANK1 -
+_I2C1_Initialize 216 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_RGB_EncoderMode 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__Hspace_0 1800 0 ABS 0 - -
+__Hspace_1 DB 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 10012 0 ABS 0 - -
+_PWM_GP3_RLED 2A84 0 CODE 0 text23 dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC1CON F10 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC1POL F11 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC2CON F1A 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC2POL F1B 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC3CON F24 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC3POL F25 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC4CON F2E 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC4POL F2F 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__HidataBANK1 0 0 ABS 0 idataBANK1 -
+__end_of_EncoderSwitch_GetValueFiltered 27A2 0 CODE 0 text37 dist/Release/production\I2CEncoderV2.1.X.production.o
+RegisterWrite@add 50 0 BANK0 1 cstackBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_PWM1_Initialize 2EF8 0 CODE 0 text63 dist/Release/production\I2CEncoderV2.1.X.production.o
+_SSP1STATbits 214 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_PWM5CON 619 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_PWM5DCH 618 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_PWM5DCL 617 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_PWM_GP1 27BC 0 CODE 0 text27 dist/Release/production\I2CEncoderV2.1.X.production.o
+_PWM_GP2 2946 0 CODE 0 text24 dist/Release/production\I2CEncoderV2.1.X.production.o
+PWM_BLED@duty D6 0 BANK1 1 cstackBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+_Encoder_PushButton_FSM 2692 0 CODE 0 text37 dist/Release/production\I2CEncoderV2.1.X.production.o
+_PWMTMRSbits 61F 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_PMD_Initialize 2B6 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+_I2C1_StatusCallback 2BA4 0 CODE 0 text48 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_ofi1_PWM_GP3_RLED 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_FadeProcessSet 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_WDT_Initialize 2EC 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+ADC_GetConversion@channel CD 0 BANK1 1 cstackBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+_BLED 43 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+_CMAX 28 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+_CMIN 24 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+_CVAL 2C 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+_GLED 44 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+_LATA 10C 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_LATB 10D 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_LATC 10E 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_PMD0 911 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_PMD1 912 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_PMD2 913 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_PMD3 914 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_PMD4 915 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_PMD5 916 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_RLED 45 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+_TMR2 1D 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_WPUA 20C 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_WPUB 20D 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_WPUC 20E 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_X1_n B9 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+_X1_p BA 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+_X2_n B7 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+_X2_p B8 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Saimon\AppData\Local\Temp\sr8g.o
+_main 90 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+btemp 7E 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_ADC_GetConversion 1364 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+start 60 0 CODE 0 init C:\Users\Saimon\AppData\Local\Temp\sr8g.o
+_RC3PPSbits EA3 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_enc_status 30 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of___fladd 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of___flsub 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_main 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_I2C1_ISR 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_S_RELATIVE 37 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+?___wmul CA 0 BANK1 1 cstackBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_CLC1_Initialize 1C0 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+_I2C1_AddressSet 1F0 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_PWM5_Initialize 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_STD_EncoderMode 1AC6 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_ofi1_EncoderStatusUpdate 1D16 0 CODE 0 text78 dist/Release/production\I2CEncoderV2.1.X.production.o
+__LidataBANK1 0 0 ABS 0 idataBANK1 -
+__end_of_Encoder_FSM 160 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_RegisterWrite 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_Int2StatusUpdate 1586 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+__size_of_TMR0_Reload 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_PWM_GP3_RLED 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_TMR2_Initialize 253A 0 CODE 0 text6 dist/Release/production\I2CEncoderV2.1.X.production.o
+_Encoder_AB_Interrupt 1B18 0 CODE 0 text78 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_Int2StatusUpdate 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Saimon\AppData\Local\Temp\sr8g.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Saimon\AppData\Local\Temp\sr8g.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Saimon\AppData\Local\Temp\sr8g.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Saimon\AppData\Local\Temp\sr8g.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Saimon\AppData\Local\Temp\sr8g.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Saimon\AppData\Local\Temp\sr8g.o
+_PWM1_Initialize 2EE0 0 CODE 0 text63 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_EncoderStatusUpdate 158E 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_ADC_Initialize 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_FadeProcessClear 147C 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+wtemp0 7E 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_Config_GP1 188C 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+_Config_GP2 DDC 0 CODE 0 text69 dist/Release/production\I2CEncoderV2.1.X.production.o
+_Config_GP3 2E02 0 CODE 0 text63 dist/Release/production\I2CEncoderV2.1.X.production.o
+i1_EncoderStatusUpdate 1D10 0 CODE 0 text78 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_DataInitSet 156 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+__end_of_PMD_Initialize 2D2 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+_FirstConfig 17EE 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+_gp1_fsm B1 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+_gp2_fsm B0 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+_gp3_fsm AF 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_TimerInt 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_FadeProcessClear 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+__end_of_EncoderSwitch_GetValue 27BC 0 CODE 0 text37 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_PWM_GP3_RLED 2B6C 0 CODE 0 text23 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_RegisterWrite 17EE 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+___wmul@multiplicand CC 0 BANK1 1 cstackBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+_C_DTYPE BC 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+_C_ETYPE 39 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+_C_MBANK C0 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_TMR3_Initialize 2444 0 CODE 0 text5 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_TMR3_StartTimer 259C 0 CODE 0 text1 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_TMR3_WriteTimer FDA 0 CODE 0 text45 dist/Release/production\I2CEncoderV2.1.X.production.o
+_C_RESET C1 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+_ADCON0 9D 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_ADCON1 9E 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_ADRESH 9C 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_ADRESL 9B 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_C_WRAPE 38 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+_ANSELA 18C 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_ANSELB 18D 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_ANSELC 18E 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_I2C1_Initialize 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC1_Initialize 192 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+EncoderStatusUpdate@stat CA 0 BANK1 1 cstackBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+RegisterRead@return_value 72 0 COMMON 1 cstackCOMMON dist/Release/production\I2CEncoderV2.1.X.production.o
+_I2C1_ISR 2B6C 0 CODE 0 text48 dist/Release/production\I2CEncoderV2.1.X.production.o
+_CCPR1H 292 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CCPR1L 291 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CCPR2H 296 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CCPR2L 295 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CCPR3H 312 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CCPR3L 311 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CCPR4H 316 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CCPR4L 315 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_INTERRUPT_InterruptManager 60 0 CODE 0 intentry dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_PWM2_Initialize 2FE6 0 CODE 0 text63 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_ofi1_I2C1_Initialize 24FA 0 CODE 0 text58 dist/Release/production\I2CEncoderV2.1.X.production.o
+_C_DIRE BD 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+_C_IPUD BE 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+_C_RMOD BF 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of___flge 2388 0 CODE 0 text85 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of___wmul 15B8 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_I2C1_ISR 2BA4 0 CODE 0 text48 dist/Release/production\I2CEncoderV2.1.X.production.o
+_EncoderReg B6 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+_intclear B5 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+_FADEGP 3F 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__end_of_I2C1_StatusCallback 2C0A 0 CODE 0 text48 dist/Release/production\I2CEncoderV2.1.X.production.o
+_ADC_GetConversion 132E 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+_EncoderSwitch_GetValueFiltered 276A 0 CODE 0 text37 dist/Release/production\I2CEncoderV2.1.X.production.o
+_GCONF2 C2 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+i1_SetInterrupt 1FEE 0 CODE 0 text78 dist/Release/production\I2CEncoderV2.1.X.production.o
+_GP1CONF 48 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+_GP1_FSM 115E 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+_GP2CONF 47 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+_GP2_FSM 11F4 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+_GP3CONF 46 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+_GP3_FSM 128E 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+_GP1REG 42 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+_GP2REG 41 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+_GP3REG 40 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of___fladd 1FB4 0 CODE 0 text78 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of___flsub 1FEE 0 CODE 0 text78 dist/Release/production\I2CEncoderV2.1.X.production.o
+eeprom_write@addr 71 0 COMMON 1 cstackCOMMON dist/Release/production\I2CEncoderV2.1.X.production.o
+EncoderSwitch_GetValueFiltered@pb_status AA 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_I2C1_AddressSet 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+___stackhi 23EF 0 ABS 0 - C:\Users\Saimon\AppData\Local\Temp\sr8g.o
+___stacklo 208B 0 ABS 0 - C:\Users\Saimon\AppData\Local\Temp\sr8g.o
+__end_of_CLC2_Initialize 1F0 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+_double_push_delay A0 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+_I2C1_Initialize_ClockStreach 246C 0 CODE 0 text59 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_STD_EncoderMode 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_UpdateOut_GP1 24B6 0 CODE 0 text54 dist/Release/production\I2CEncoderV2.1.X.production.o
+_UpdateOut_GP2 2494 0 CODE 0 text53 dist/Release/production\I2CEncoderV2.1.X.production.o
+_UpdateOut_GP3 2444 0 CODE 0 text52 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_ofi1___wmul 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_Config_GP1 196A 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_Config_GP2 EBA 0 CODE 0 text69 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_Config_GP3 2EE0 0 CODE 0 text63 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_FirstDataSplit 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_TimerInt FDA 0 CODE 0 text45 dist/Release/production\I2CEncoderV2.1.X.production.o
+_eeprom_read 2D74 0 CODE 0 text48 dist/Release/production\I2CEncoderV2.1.X.production.o
+___fladd@a 74 0 COMMON 1 cstackCOMMON dist/Release/production\I2CEncoderV2.1.X.production.o
+___fladd@b 70 0 COMMON 1 cstackCOMMON dist/Release/production\I2CEncoderV2.1.X.production.o
+___flsub@a 54 0 BANK0 1 cstackBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+___flsub@b 58 0 BANK0 1 cstackBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+_DEBOUNCE A6 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+_RB7PPSbits E9F 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_TMR2_Initialize 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_TMR3_Initialize 2418 0 CODE 0 text5 dist/Release/production\I2CEncoderV2.1.X.production.o
+_TMR3_StartTimer 2596 0 CODE 0 text1 dist/Release/production\I2CEncoderV2.1.X.production.o
+_TMR3_WriteTimer FBC 0 CODE 0 text45 dist/Release/production\I2CEncoderV2.1.X.production.o
+RegisterRead@add 71 0 COMMON 1 cstackCOMMON dist/Release/production\I2CEncoderV2.1.X.production.o
+PWM_GLED@duty D6 0 BANK1 1 cstackBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+_PIN_MANAGER_Initialize 24A 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+_WPUBbits 20D 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_WPUCbits 20E 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+start_initialization 64 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_TimerInt FE2 0 CODE 0 text45 dist/Release/production\I2CEncoderV2.1.X.production.o
+_ODCONA 28C 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_ODCONB 28D 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_ODCONC 28E 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CCPTMRSbits 29F 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_OSCFRQ 91F 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_PWM1_Initialize 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_PWM2_Initialize 2FD0 0 CODE 0 text63 dist/Release/production\I2CEncoderV2.1.X.production.o
+_TRISCbits 8E 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_Encoder_PushButton_FSM 276A 0 CODE 0 text37 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_SYSTEM_Initialize 192 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_gamma_table DDC 0 STRCODE 0 stringtext1 dist/Release/production\I2CEncoderV2.1.X.production.o
+_I2STATUS C7 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+clear_ram0 258A 0 CODE 0 clrtext dist/Release/production\I2CEncoderV2.1.X.production.o
+__pcstackBANK0 4C 0 BANK0 1 cstackBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+__pcstackBANK1 CA 0 BANK1 1 cstackBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+_T0CON0 17 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_T0CON1 18 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_T3GCON 414 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_CLC1_ISR 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_CLC2_ISR 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_temp_green 32 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_ofi1_SetInterrupt 2000 0 CODE 0 text78 dist/Release/production\I2CEncoderV2.1.X.production.o
+_int2clear B4 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_Encoder_FSM 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_RB6PPSbits E9E 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_CLC1_Initialize 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC2_Initialize 1C0 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+_ClearInterrupt D2 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+_WDTCON 97 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+i1___wmul@multiplicand 72 0 COMMON 1 cstackCOMMON dist/Release/production\I2CEncoderV2.1.X.production.o
+i1_I2C1_Initialize 24D8 0 CODE 0 text58 dist/Release/production\I2CEncoderV2.1.X.production.o
+_ANTBOUNC C5 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\Saimon\AppData\Local\Temp\sr8g.o
+i1___wmul 1A9C 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_PWM3_Initialize 3000 0 CODE 0 text63 dist/Release/production\I2CEncoderV2.1.X.production.o
+_gp_fade_cnt AE 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 ABS 0 bank7 -
+__Hbank8 0 0 ABS 0 bank8 -
+__Hbank9 0 0 ABS 0 bank9 -
+__Hcinit 2EC 0 CODE 0 cinit -
+i1___wmul@product 74 0 COMMON 1 cstackCOMMON dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hstack 0 0 STACK 2 stack -
+_fade_cnt AB 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+_NVMADRH 892 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_NVMADRL 891 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_NVMCON2 896 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_NVMDATH 894 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_NVMDATL 893 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__Hbank10 0 0 ABS 0 bank10 -
+__Hbank11 0 0 ABS 0 bank11 -
+__Hbank12 0 0 ABS 0 bank12 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Hbank15 0 0 BANK15 1 bank15 -
+__Hbank16 0 0 BANK16 1 bank16 -
+__Hbank17 0 0 BANK17 1 bank17 -
+__Hbank18 0 0 BANK18 1 bank18 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+__size_of_DataInitSet 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+i1EncoderStatusUpdate@stat 70 0 COMMON 1 cstackCOMMON dist/Release/production\I2CEncoderV2.1.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10016 0 CONFIG 4 config -
+__end_ofi1___wmul 1AC6 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+TMR3_WriteTimer@timerVal 70 0 COMMON 1 cstackCOMMON dist/Release/production\I2CEncoderV2.1.X.production.o
+_TMR0_Reload 1884 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 ABS 0 bank7 -
+__Lbank8 0 0 ABS 0 bank8 -
+__Lbank9 0 0 ABS 0 bank9 -
+__Lcinit 64 0 CODE 0 cinit -
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lstack 0 0 STACK 2 stack -
+_DoublePush A4 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+PWM_GP1@duty D8 0 BANK1 1 cstackBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+_GAMMAGP3_RLED 3C 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+_PORTAbits C 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_PORTBbits D 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_PORTCbits E 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_double_push_cnt A2 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+PWM_GP2@duty D6 0 BANK1 1 cstackBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+_INTCONbits B 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_CLC3_Initialize 253A 0 CODE 0 text14 dist/Release/production\I2CEncoderV2.1.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 60 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 60 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+__pstringtext1 2EC 0 STRCODE 0 stringtext1 dist/Release/production\I2CEncoderV2.1.X.production.o
+_SSP1CON1 215 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_SSP1CON2 216 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_SSP1CON3 217 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_SSP1STAT 214 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+___flge 22C4 0 CODE 0 text85 dist/Release/production\I2CEncoderV2.1.X.production.o
+___wmul 158E 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__size_of_UpdateOut_GP1 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_UpdateOut_GP2 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_UpdateOut_GP3 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+int$flags 7E 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_PWM_GP1 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_PWM_GP2 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__size_of_INTERRUPT_InterruptManager 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC1GLS0 F16 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC1GLS1 F17 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC1GLS2 F18 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC1GLS3 F19 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC1SEL0 F12 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC1SEL1 F13 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC1SEL2 F14 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC1SEL3 F15 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC1_ISR 1B10 0 CODE 0 text78 dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC2GLS0 F20 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC2GLS1 F21 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC2GLS2 F22 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC2GLS3 F23 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC2SEL0 F1C 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC2SEL1 F1D 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC2SEL2 F1E 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC2SEL3 F1F 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC2_ISR 1B08 0 CODE 0 text78 dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC3GLS0 F2A 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC3GLS1 F2B 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC3GLS2 F2C 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC3GLS3 F2D 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC3SEL0 F26 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC3SEL1 F27 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC3SEL2 F28 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC3SEL3 F29 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC4GLS0 F34 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC4GLS1 F35 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC4GLS2 F36 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC4GLS3 F37 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC4SEL0 F30 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC4SEL1 F31 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC4SEL2 F32 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC4SEL3 F33 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_WDT_Initialize 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_PR2 1E 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__S0 1800 0 ABS 0 - -
+__S1 DB 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__size_of_EncoderSwitch_GetValue 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_TMR3_ISR 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_TMR3_Initialize 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_TMR3_StartTimer 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_TMR3_WriteTimer 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+i1_PWM_GP3_RLED 2EF8 0 CODE 0 text63 dist/Release/production\I2CEncoderV2.1.X.production.o
+_FadeProcessSet 147C 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+i1___wmul@multiplier 70 0 COMMON 1 cstackCOMMON dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_ClearInterrupt D8 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+FadeProcessSet@stat CA 0 BANK1 1 cstackBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_CLC1_ISR 1B18 0 CODE 0 text78 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_CLC2_ISR 1B10 0 CODE 0 text78 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_PWM2_Initialize 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_PWM3_Initialize 2FE6 0 CODE 0 text63 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_SecondDataSplit 1B08 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+_SYSTEM_Initialize 160 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+_RegisterRead 2C0A 0 CODE 0 text48 dist/Release/production\I2CEncoderV2.1.X.production.o
+eeprom_write@value 70 0 COMMON 1 cstackCOMMON dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_UpdateOut_GP1 24D8 0 CODE 0 text54 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_UpdateOut_GP2 24B6 0 CODE 0 text53 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_UpdateOut_GP3 246C 0 CODE 0 text52 dist/Release/production\I2CEncoderV2.1.X.production.o
+__Lintentry 8 0 CODE 0 intentry -
+__end_of_FirstConfig 1874 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_ofi1_EncoderStatusUpdate 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Saimon\AppData\Local\Temp\sr8g.o
+_eeprom_write 1002 0 CODE 0 text51 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_I2C1_Initialize_ClockStreach 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__pdataBANK1 DA 0 BANK1 1 dataBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of___flge 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of___wmul 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_CLC2_Initialize 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+_CLC3_Initialize 251A 0 CODE 0 text14 dist/Release/production\I2CEncoderV2.1.X.production.o
+__Lstringtext1 0 0 ABS 0 stringtext1 -
+_INTERRUPT_InterruptManager 8 0 CODE 0 intentry dist/Release/production\I2CEncoderV2.1.X.production.o
+_ADC_Initialize 1364 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_I2C1_Initialize_ClockStreach 2494 0 CODE 0 text59 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_Config_GP1 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_Config_GP2 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_Config_GP3 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_FADE_LEDS 146C 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_PWM4_Initialize ED4 0 CODE 0 text69 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_PMD_Initialize 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_PIE1bits 91 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_PIE3bits 93 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+?_ADC_GetConversion CA 0 BANK1 1 cstackBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_FADE_LEDS 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+___fladd@signs 78 0 COMMON 1 cstackCOMMON dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext10 238 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext11 216 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext12 1F0 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext13 24FA 0 CODE 0 text13 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext14 251A 0 CODE 0 text14 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext15 1C0 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext16 192 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext17 1122 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext18 128E 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext19 11F4 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext20 115E 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext21 1364 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext22 132E 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext23 2A28 0 CODE 0 text23 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext24 28EA 0 CODE 0 text24 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext25 2946 0 CODE 0 text24 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext26 15B8 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext27 27BC 0 CODE 0 text27 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext28 156 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext29 1374 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext30 2A84 0 CODE 0 text23 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext31 1484 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext32 103A 0 CODE 0 text32 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext33 158E 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext34 147C 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext35 146C 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext36 157C 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext37 2692 0 CODE 0 text37 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext38 156A 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext39 276A 0 CODE 0 text37 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext40 27A2 0 CODE 0 text37 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext41 1586 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext42 D8 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext43 D2 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext45 FA8 0 CODE 0 text45 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext46 FDA 0 CODE 0 text45 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext47 FBC 0 CODE 0 text45 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext48 2B6C 0 CODE 0 text48 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext49 2BA4 0 CODE 0 text48 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext50 1614 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext51 1002 0 CODE 0 text51 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext52 2444 0 CODE 0 text52 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext53 2494 0 CODE 0 text53 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext54 24B6 0 CODE 0 text54 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext55 1884 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext56 1AF4 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext57 1874 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext58 24D8 0 CODE 0 text58 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext59 246C 0 CODE 0 text59 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext60 2388 0 CODE 0 text60 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext61 17EE 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext62 1AC6 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext63 2D92 0 CODE 0 text63 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext64 2FE6 0 CODE 0 text63 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext65 2FD0 0 CODE 0 text63 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext66 2E02 0 CODE 0 text63 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext67 2EF8 0 CODE 0 text63 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext68 2EE0 0 CODE 0 text63 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext69 DDC 0 CODE 0 text69 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext70 ED4 0 CODE 0 text69 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext71 EBA 0 CODE 0 text69 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext72 188C 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext73 197E 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext74 1A9C 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext75 196A 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext76 2C0A 0 CODE 0 text48 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext77 2D74 0 CODE 0 text48 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext78 1B08 0 CODE 0 text78 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext79 1B10 0 CODE 0 text78 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext80 1B18 0 CODE 0 text78 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext81 1FEE 0 CODE 0 text78 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext82 1D10 0 CODE 0 text78 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext83 1FB4 0 CODE 0 text78 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext84 1D16 0 CODE 0 text78 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext85 22C4 0 CODE 0 text85 dist/Release/production\I2CEncoderV2.1.X.production.o
+_TMR3_ISR FA8 0 CODE 0 text45 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_ofi1_PWM_GP3_RLED 2FD0 0 CODE 0 text63 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_PIN_MANAGER_Initialize 2B6 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_TMR0_Initialize 2E4 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_FadeProcessSet 1484 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_TMR0_StartTimer 25A2 0 CODE 0 text2 dist/Release/production\I2CEncoderV2.1.X.production.o
+___fladd 1D16 0 CODE 0 text78 dist/Release/production\I2CEncoderV2.1.X.production.o
+___flsub 1FB4 0 CODE 0 text78 dist/Release/production\I2CEncoderV2.1.X.production.o
+__Lbank10 0 0 ABS 0 bank10 -
+__Lbank11 0 0 ABS 0 bank11 -
+__Lbank12 0 0 ABS 0 bank12 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+_SSP1CLKPPSbits E20 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__pmaintext 90 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+_temp_blu 31 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+_temp_gp1 36 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+_temp_gp2 35 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+_temp_gp3 34 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+_temp_red 33 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+__Lbigram 0 0 ABS 0 bigram -
+_pb_cnt AC 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+_pb_fsm AD 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+_SecondDataSplit 1AF4 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_TMR3_ISR FBC 0 CODE 0 text45 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_RegisterRead 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+___wmul@multiplier CA 0 BANK1 1 cstackBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+_LATBbits 10D 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_LATCbits 10E 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_Encoder_AB_Interrupt 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+i1PWM_GP1@duty 4C 0 BANK0 1 cstackBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_ofi1_PWM_GP1 1A9C 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_ofi1_PWM_GP2 FA8 0 CODE 0 text69 dist/Release/production\I2CEncoderV2.1.X.production.o
+_FADE_LEDS 1374 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_CLC4_Initialize 251A 0 CODE 0 text13 dist/Release/production\I2CEncoderV2.1.X.production.o
+i1PWM_GP2@duty 7C 0 COMMON 1 cstackCOMMON dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_ofi1_PWM_GP1 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_ofi1_PWM_GP2 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_Encoder_PushButton_FSM 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_eeprom_write 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+?i1___wmul 70 0 COMMON 1 cstackCOMMON dist/Release/production\I2CEncoderV2.1.X.production.o
+i1PWM_GP3_RLED@duty 7C 0 COMMON 1 cstackCOMMON dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_PWM_GP1 28EA 0 CODE 0 text27 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_PWM_GP2 2A28 0 CODE 0 text24 dist/Release/production\I2CEncoderV2.1.X.production.o
+_SecondConfig 1874 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+_ESTATUS 4A 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+_OSCCON1 919 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_OSCCON3 91B 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_OSCTUNE 91E 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_eeprom_read 2D92 0 CODE 0 text48 dist/Release/production\I2CEncoderV2.1.X.production.o
+_ADCON0bits 9D 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+___fladd@grs 7B 0 COMMON 1 cstackCOMMON dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_Encoder_AB_Interrupt 1D10 0 CODE 0 text78 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_GP1_FSM 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_GP2_FSM 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+RegisterWrite@data 4F 0 BANK0 1 cstackBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_GP3_FSM 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_Encoder_FSM 156 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_RegisterRead 2D74 0 CODE 0 text48 dist/Release/production\I2CEncoderV2.1.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+_CPUDOZEbits 918 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+i1_PWM_GP1 197E 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+i1_PWM_GP2 ED4 0 CODE 0 text69 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_PWM3_Initialize 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_RGB_EncoderMode 2E02 0 CODE 0 text63 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_ADC_Initialize 1374 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+_PWM4_Initialize EBA 0 CODE 0 text69 dist/Release/production\I2CEncoderV2.1.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+___flge@ff1 70 0 COMMON 1 cstackCOMMON dist/Release/production\I2CEncoderV2.1.X.production.o
+___flge@ff2 74 0 COMMON 1 cstackCOMMON dist/Release/production\I2CEncoderV2.1.X.production.o
+_PIR0bits 10 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_PIR1bits 11 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_PIR3bits 13 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__Lend_init 60 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__end_of_eeprom_write 103A 0 CODE 0 text51 dist/Release/production\I2CEncoderV2.1.X.production.o
+end_of_initialization 8A 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+_TMR0_Initialize 2D2 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+_DPPERIOD C4 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+I2C1_ISR@i2c_data 52 0 BANK0 1 cstackBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+_TMR0_StartTimer 259C 0 CODE 0 text2 dist/Release/production\I2CEncoderV2.1.X.production.o
+_FirstDataSplit 2388 0 CODE 0 text60 dist/Release/production\I2CEncoderV2.1.X.production.o
+__Hintentry 60 0 CODE 0 intentry -
+_PPSLOCKbits E0F 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__Lstrings 0 0 ABS 0 strings -
+?___fladd 70 0 COMMON 1 cstackCOMMON dist/Release/production\I2CEncoderV2.1.X.production.o
+?___flsub 54 0 BANK0 1 cstackBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+_DataInitSet D8 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec -
+_RC7PPSbits EA7 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__size_of_SecondConfig 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLCIN3PPSbits E2B 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_SetInterrupt 156A 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_PWM_BLED 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_PWM_GLED 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_CLC3_Initialize 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLC4_Initialize 24FA 0 CODE 0 text13 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext1 2596 0 CODE 0 text1 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext2 259C 0 CODE 0 text2 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext3 160 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext4 2E4 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext5 2418 0 CODE 0 text5 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext6 253A 0 CODE 0 text6 dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext7 2D2 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext8 2B6 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+__ptext9 24A 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_PWM5_Initialize 197E 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+_PMD2bits 913 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+FadeProcessClear@stat CC 0 BANK1 1 cstackBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_EncoderSwitch_GetValueFiltered 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__size_ofi1_SetInterrupt 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_gp_timer B2 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+___fladd@aexp 79 0 COMMON 1 cstackCOMMON dist/Release/production\I2CEncoderV2.1.X.production.o
+___fladd@bexp 7A 0 COMMON 1 cstackCOMMON dist/Release/production\I2CEncoderV2.1.X.production.o
+_FADERGB C3 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+PWM_GP3_RLED@duty D6 0 BANK1 1 cstackBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+__Hstringtext1 0 0 ABS 0 stringtext1 -
+_RGB_EncoderMode 2D92 0 CODE 0 text63 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_SecondDataSplit 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_SecondConfig 1884 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+_i2c_address 4B 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_ADC_GetConversion 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_FirstConfig 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_RC6PPSbits EA6 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_EncoderStatusUpdate 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_FADE_GP1 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_FADE_GP2 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_FADE_GP3 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_TMR0_Reload 188C 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of__initialization 8A 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+_CLCIN2PPSbits E2A 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_GP_Ports_FSM 1122 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+_INTCONF C9 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__end_of_FirstDataSplit 2418 0 CODE 0 text60 dist/Release/production\I2CEncoderV2.1.X.production.o
+_NVMCON1bits 895 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__pidataBANK1 0 0 CODE 0 idataBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+Int2StatusUpdate@stat CB 0 BANK1 1 cstackBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+__size_of_SetInterrupt 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_SSP1CON1bits 215 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_SSP1CON2bits 216 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_EncoderSwitch_GetValue 27A2 0 CODE 0 text37 dist/Release/production\I2CEncoderV2.1.X.production.o
+_I2C1_slaveWriteData DA 0 BANK1 1 dataBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+__pswtext10 2000 0 CONST 0 swtext10 dist/Release/production\I2CEncoderV2.1.X.production.o
+_GAMMABLED 3A 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+_GAMMAGLED 3B 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/Release/production\I2CEncoderV2.1.X.production.o
+I2C1_StatusCallback@slaveWriteType B3 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_GP1_FSM 11F4 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_GP2_FSM 128E 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+_T3CONbits 413 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_GP3_FSM 132E 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+_T0CON0bits 17 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_PWM_BLED 103A 0 CODE 0 text32 dist/Release/production\I2CEncoderV2.1.X.production.o
+_PWM_GLED 1484 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_I2C1_Initialize 238 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+_SSP1ADD 212 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_SSP1BUF 211 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_SSP1MSK 213 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__Hend_init 64 0 CODE 0 end_init -
+_timer3ReloadVal A8 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_PWM4_Initialize 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_PWM5_Initialize 196A 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+_RegisterWrite 1614 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+_fsm_tmr C8 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_main D2 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+_RC5PPSbits EA5 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_ADACT 9F 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CCPR1 291 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CCPR2 295 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CCPR3 311 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CCPR4 315 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_ODCONCbits 28E 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_GCONF 49 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+_ISTEP 20 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+_OSCEN 91D 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_PORTC E 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_T2CON 1F 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_T3CON 413 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_TMR0H 16 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_TMR0L 15 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_TMR3H 412 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_TMR3L 411 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_TRISA 8C 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_TRISB 8D 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_TRISC 8E 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_PWM_BLED 1122 0 CODE 0 text32 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_PWM_GLED 156A 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_TMR0_Initialize 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_TMR0_StartTimer 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__end_of_SetInterrupt 157C 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+_Int2StatusUpdate 157C 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+eeprom_read@addr 70 0 COMMON 1 cstackCOMMON dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_WDT_Initialize 2E4 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+_CCP1CON 293 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CCP2CON 297 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/Release/production\I2CEncoderV2.1.X.production.o
+_CCP3CON 313 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_CCP4CON 317 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_SSP1DATPPSbits E21 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_GP_Ports_FSM 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_I2C1_StatusCallback 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_EncoderStatusUpdate 1586 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__HdataBANK1 0 0 ABS 0 dataBANK1 -
+__size_of_ClearInterrupt 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_OSCILLATOR_Initialize 24A 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+__initialization 64 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+_gamma_table 2EC 0 STRCODE 0 stringtext1 dist/Release/production\I2CEncoderV2.1.X.production.o
+_FADE_GP1 15B8 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+_FADE_GP2 28EA 0 CODE 0 text24 dist/Release/production\I2CEncoderV2.1.X.production.o
+_FADE_GP3 2A28 0 CODE 0 text23 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_eeprom_read 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__pbssBANK0 20 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+__pbssBANK1 A0 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_of_CLC4_Initialize 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_PPSLOCK E0F 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_GAMMAGP1 3E 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+_GAMMAGP2 3D 0 BANK0 1 bssBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+_FadeProcessClear 146C 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_I2C1_AddressSet 216 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+___wmul@product CE 0 BANK1 1 cstackBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_STD_EncoderMode 1AF4 0 CODE 0 text50 dist/Release/production\I2CEncoderV2.1.X.production.o
+__size_ofi1_I2C1_Initialize 0 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+I2C1_StatusCallback@i2c_bus_state 51 0 BANK0 1 cstackBANK0 dist/Release/production\I2CEncoderV2.1.X.production.o
+_FSTATUS C6 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+_STATUSbits 3 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+_ANSELCbits 18E 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_FADE_GP1 1614 0 CODE 0 text17 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_FADE_GP2 2946 0 CODE 0 text24 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_FADE_GP3 2A84 0 CODE 0 text23 dist/Release/production\I2CEncoderV2.1.X.production.o
+_RC4PPSbits EA4 0 ABS 0 - dist/Release/production\I2CEncoderV2.1.X.production.o
+TMR0_Reload@periodVal 70 0 COMMON 1 cstackCOMMON dist/Release/production\I2CEncoderV2.1.X.production.o
+__pswtext1 21C8 0 CONST 0 swtext1 dist/Release/production\I2CEncoderV2.1.X.production.o
+__pswtext2 21D8 0 CONST 0 swtext2 dist/Release/production\I2CEncoderV2.1.X.production.o
+__pswtext3 21E8 0 CONST 0 swtext3 dist/Release/production\I2CEncoderV2.1.X.production.o
+__pswtext4 FE2 0 CONST 0 swtext4 dist/Release/production\I2CEncoderV2.1.X.production.o
+__pswtext5 254A 0 CONST 0 swtext5 dist/Release/production\I2CEncoderV2.1.X.production.o
+__pswtext6 2200 0 CONST 0 swtext6 dist/Release/production\I2CEncoderV2.1.X.production.o
+__pswtext7 255A 0 CONST 0 swtext7 dist/Release/production\I2CEncoderV2.1.X.production.o
+__pswtext8 256A 0 CONST 0 swtext8 dist/Release/production\I2CEncoderV2.1.X.production.o
+__pswtext9 257A 0 CONST 0 swtext9 dist/Release/production\I2CEncoderV2.1.X.production.o
+_OSCILLATOR_Initialize 238 0 CODE 0 cinit dist/Release/production\I2CEncoderV2.1.X.production.o
+_S_CKSRC BB 0 BANK1 1 bssBANK1 dist/Release/production\I2CEncoderV2.1.X.production.o
+__end_of_TMR2_Initialize 254A 0 CODE 0 text6 dist/Release/production\I2CEncoderV2.1.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text17 0 891 1122 279 2
+text23 0 1514 2A28 A2 2
+text24 0 1475 28EA 9F 2
+text27 0 13DE 27BC 97 2
+text32 0 81D 103A 74 2
+text37 0 1349 2692 95 2
+text48 0 15B6 2B6C 113 2
+text50 0 B0A 1614 27A 2
+text51 0 801 1002 1C 2
+text63 0 16C9 2D92 137 2
+text69 0 6EE DDC 103 2
+text78 0 D84 1B08 27C 2
+text85 0 1162 22C4 143 2
+cstackCOMMON 1 70 70 E 1
+stringtext1 0 176 2EC 578 2
+swtext10 0 1000 2000 FC 2
+intentry 0 4 8 172 2
+reset_vec 0 0 0 2 2
+bssBANK0 1 20 20 40 1
+bssBANK1 1 A0 A0 3B 1
+swtext4 0 7F1 FE2 E 2
+swtext5 0 12A5 254A 20 2
+swtext6 0 1100 2200 62 2
+clrtext 0 12C5 258A C 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

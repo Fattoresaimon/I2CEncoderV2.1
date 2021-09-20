@@ -50,12 +50,12 @@
 
 #include <xc.h>
 #include "tmr3.h"
+#include "../main.h"
 
 /**
   Section: Global Variables Definitions
 */
 volatile uint16_t timer3ReloadVal;
-void (*TMR3_InterruptHandler)(void);
 
 /**
   Section: TMR3 APIs
@@ -83,9 +83,6 @@ void TMR3_Initialize(void)
     // Enabling TMR3 interrupt.
     PIE3bits.TMR3IE = 1;
 
-    // Set Default Interrupt Handler
-    TMR3_SetInterruptHandler(TMR3_DefaultInterruptHandler);
-
     // T3CKPS 1:1; T3SOSC T3CKI_enabled; T3SYNC synchronize; TMR3CS FOSC/4; TMR3ON enabled; 
     T3CON = 0x01;
 }
@@ -96,26 +93,7 @@ void TMR3_StartTimer(void)
     T3CONbits.TMR3ON = 1;
 }
 
-void TMR3_StopTimer(void)
-{
-    // Stop the Timer by writing to TMRxON bit
-    T3CONbits.TMR3ON = 0;
-}
 
-uint16_t TMR3_ReadTimer(void)
-{
-    uint16_t readVal;
-    uint8_t readValHigh;
-    uint8_t readValLow;
-    
-	
-    readValLow = TMR3L;
-    readValHigh = TMR3H;
-    
-    readVal = ((uint16_t)readValHigh << 8) | readValLow;
-
-    return readVal;
-}
 
 void TMR3_WriteTimer(uint16_t timerVal)
 {
@@ -139,50 +117,18 @@ void TMR3_WriteTimer(uint16_t timerVal)
     }
 }
 
-void TMR3_Reload(void)
-{
-    TMR3_WriteTimer(timer3ReloadVal);
-}
-
-void TMR3_StartSinglePulseAcquisition(void)
-{
-    T3GCONbits.T3GGO_nDONE = 1;
-}
-
-uint8_t TMR3_CheckGateValueStatus(void)
-{
-    return (T3GCONbits.T3GVAL);
-}
 
 void TMR3_ISR(void)
 {
 
+    TimerInt();
     // Clear the TMR3 interrupt flag
     PIR3bits.TMR3IF = 0;
     TMR3_WriteTimer(timer3ReloadVal);
 
-    // ticker function call;
-    // ticker is 1 -> Callback function gets called everytime this ISR executes
-    TMR3_CallBack();
 }
 
-void TMR3_CallBack(void)
-{
-    // Add your custom callback code here
-    if(TMR3_InterruptHandler)
-    {
-        TMR3_InterruptHandler();
-    }
-}
 
-void TMR3_SetInterruptHandler(void (* InterruptHandler)(void)){
-    TMR3_InterruptHandler = InterruptHandler;
-}
-
-void TMR3_DefaultInterruptHandler(void){
-    // add your TMR3 interrupt custom code
-    // or set custom function using TMR3_SetInterruptHandler()
-}
 
 /**
   End of File

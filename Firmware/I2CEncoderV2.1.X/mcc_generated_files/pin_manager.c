@@ -50,8 +50,7 @@
 #include "pin_manager.h"
 #include "stdbool.h"
 
-
-
+#include "../Encoder.h"
 
 
 void PIN_MANAGER_Initialize(void)
@@ -90,25 +89,15 @@ void PIN_MANAGER_Initialize(void)
     ODCONA = 0x00;
     ODCONB = 0x20;
     ODCONC = 0x00;
-	
 
-
-
-
-   
-    
-	
     SSP1CLKPPSbits.SSP1CLKPPS = 0x0E;   //RB6->MSSP1:SCL1;    
     SSP1DATPPSbits.SSP1DATPPS = 0x0F;   //RB7->MSSP1:SDA1;    
-    CLCIN1PPSbits.CLCIN1PPS = 0x11;   //RC1->CLC2:CLCIN1;    
-    CLCIN0PPSbits.CLCIN0PPS = 0x10;   //RC0->CLC2:CLCIN0;    
+    CLCIN2PPSbits.CLCIN2PPS = 0x10;   //RC0->CLC4:CLCIN2;    
+    CLCIN3PPSbits.CLCIN3PPS = 0x11;   //RC1->CLC4:CLCIN3;    
     RB7PPSbits.RB7PPS = 0x19;   //RB7->MSSP1:SDA1;    
     RB6PPSbits.RB6PPS = 0x18;   //RB6->MSSP1:SCL1;    
 }
-  
-void PIN_MANAGER_IOC(void)
-{   
-}
+  	
 
 /**
  End of File

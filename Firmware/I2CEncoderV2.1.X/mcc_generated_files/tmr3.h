@@ -60,7 +60,6 @@
 
 #endif
 
-#define TMR3_INTERRUPT_TICKER_FACTOR    1
 
 /**
   Section: TMR3 APIs
@@ -235,80 +234,9 @@ uint16_t TMR3_ReadTimer(void);
 */
 void TMR3_WriteTimer(uint16_t timerVal);
 
-/**
-  @Summary
-    Reload the TMR3 register.
 
-  @Description
-    This function reloads the TMR3 register.
-    This function must be called to write initial value into TMR3 register.
 
-  @Preconditions
-    Initialize  the TMR3 before calling this function.
 
-  @Param
-    None
-
-  @Returns
-    None
-
-  @Example
-    <code>
-    while(1)
-    {
-        if(TMR3IF)
-        {
-            // Do something else...
-
-            // clear the TMR3 interrupt flag
-            TMR3IF = 0;
-
-            // Reload the initial value of TMR3
-            TMR3_Reload();
-        }
-    }
-    </code>
-*/
-void TMR3_Reload(void);
-
-/**
-  @Summary
-    Starts the single pulse acquisition in TMR3 gate operation.
-
-  @Description
-    This function starts the single pulse acquisition in TMR3 gate operation.
-    This function must be used when the TMR3 gate is enabled.
-
-  @Preconditions
-    Initialize  the TMR3 with gate enable before calling this function.
-
-  @Param
-    None
-
-  @Returns
-    None
-
-  @Example
-    <code>
-    uint16_t xVal;
-    uint16_t yVal;
-
-    // enable TMR3 singlepulse mode
-    TMR3_StartSinglePulseAcquistion();
-
-    // check TMR3 gate status
-    if(TMR3_CheckGateValueStatus()== 0)
-        xVal = TMR3_ReadTimer();
-
-    // wait untill gate interrupt occured
-    while(TMR3GIF == 0)
-    {
-    }
-
-    yVal = TMR3_ReadTimer();
-    </code>
-*/
-void TMR3_StartSinglePulseAcquisition(void);
 
 /**
   @Summary
@@ -366,77 +294,7 @@ uint8_t TMR3_CheckGateValueStatus(void);
     None
 */
 void TMR3_ISR(void);
-/**
-  @Summary
-    CallBack function.
 
-  @Description
-    This routine is called by the Interrupt Manager.
-
-  @Preconditions
-    Initialize  the TMR3 module with interrupt before calling this function.
-
-  @Param
-    None
-
-  @Returns
-    None
-*/
-void TMR3_CallBack(void);
-
-/**
-  @Summary
-    Set Timer Interrupt Handler
-
-  @Description
-    This sets the function to be called during the ISR
-
-  @Preconditions
-    Initialize  the TMR3 module with interrupt before calling this.
-
-  @Param
-    Address of function to be set
-
-  @Returns
-    None
-*/
- void TMR3_SetInterruptHandler(void (* InterruptHandler)(void));
-
-/**
-  @Summary
-    Timer Interrupt Handler
-
-  @Description
-    This is a function pointer to the function that will be called during the ISR
-
-  @Preconditions
-    Initialize  the TMR3 module with interrupt before calling this isr.
-
-  @Param
-    None
-
-  @Returns
-    None
-*/
-extern void (*TMR3_InterruptHandler)(void);
-
-/**
-  @Summary
-    Default Timer Interrupt Handler
-
-  @Description
-    This is the default Interrupt Handler function
-
-  @Preconditions
-    Initialize  the TMR3 module with interrupt before calling this isr.
-
-  @Param
-    None
-
-  @Returns
-    None
-*/
-void TMR3_DefaultInterruptHandler(void);
 
 #ifdef __cplusplus  // Provide C++ Compatibility
 

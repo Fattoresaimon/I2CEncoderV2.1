@@ -13,7 +13,7 @@
 
 
 #define  IDCODE 0x53; 
-#define VERSION 0x21 
+#define VERSION 0x23 
 
 extern volatile uint8_t i2c_address;
 

@@ -20,7 +20,7 @@ When the counter value is outside of the limit set by the thresholds registers, 
 I2C Encoder V2.1 also has an open-drain interrupt pin. It is set to logic low every time an interrupt occurs, the source of interrupt can be customized.
 
 ## Where you can get this board?
-This project is avaiable on our [Tindie store!](https://www.tindie.com/products/Saimon/i2c-encoder-v2/)
+This project is available on our [DuPPa store](https://www.duppa.net/duppa-shop/) and also in our [Tindie store!](https://www.tindie.com/products/Saimon/i2c-encoder-v2/)
 
 
 
@@ -29,7 +29,7 @@ This project is avaiable on our [Tindie store!](https://www.tindie.com/products/
 * [Raspberry Library:](/Python%20Raspberry%20Library) Ready to use library in Python for the Raspberry board with example.
 * [Firmware:](/Firmware) Project folder of Microchip MPLAB X contain the code running inside of the PIC16F18345
 * [Hardware:](/Hardware) Folder containing the gerber file, schematic and BOM. 
-* [Datasheet EncoderI2C V2.1:](EncoderI2CV2.1_v1.0.pdf) Datasheet of the board with the description of the registers and some useful information.
+* [Datasheet EncoderI2C V2.1:](EncoderI2CV2.1_v1.2.pdf) Datasheet of the board with the description of the registers and some useful information.
 
 **The HW project is also available on [CircuitMaker](https://workspace.circuitmaker.com/Projects/Details/Simone--Caron/I2C-Encoder-V2)**
 

@@ -96,7 +96,6 @@ void main(void) {
     // Disable the Peripheral Interrupts
     //INTERRUPT_PeripheralInterruptDisable();
 
-    TMR3_SetInterruptHandler(TimerInt);
     DataInitSet();
     PWM_LB_SWC_SetDigitalInput();
     PWM_LG_SW_SetDigitalInput();
@@ -105,6 +104,7 @@ void main(void) {
     GP1_SetDigitalInput();
 
     TMR3_StartTimer();
+    TMR0_StartTimer();
     ClearInterrupt();
 
     CPUDOZEbits.IDLEN = 1;

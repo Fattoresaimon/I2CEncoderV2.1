@@ -79,29 +79,6 @@ void PWM3_Initialize(void)
     
 }
 
-void PWM3_LoadDutyValue(uint16_t dutyValue)
-{
-    dutyValue &= 0x03FF;
-    
-    // Load duty cycle value
-    if(CCP3CONbits.CCP3FMT)
-    {
-        dutyValue <<= 6;
-        CCPR3H = dutyValue >> 8;
-        CCPR3L = dutyValue;
-    }
-    else
-    {
-        CCPR3H = dutyValue >> 8;
-        CCPR3L = dutyValue;
-    }
-}
-
-bool PWM3_OutputStatusGet(void)
-{
-    // Returns the output status
-    return(CCP3CONbits.CCP3OUT);
-}
 /**
  End of File
 */

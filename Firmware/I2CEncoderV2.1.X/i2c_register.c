@@ -8,6 +8,8 @@
 #include "DataVariable.h"
 #include "Encoder.h"
 
+#include "mcc_generated_files/tmr0.h"
+
 
 volatile uint8_t EncoderReg = 0;
 volatile bool intclear = false;
@@ -224,8 +226,10 @@ void RegisterWrite(uint8_t add, uint8_t data) {
 
             // timing register
         case REG_ANTBOUNC:
+            if (ANTBOUNC < 1)
+                ANTBOUNC = 1;
             ANTBOUNC = data;
-            DEBOUNCE = (uint16_t) ANTBOUNC * 10;
+            TMR0_Reload(ANTBOUNC);
             break;
         case REG_DPPERIOD:
             DPPERIOD = data;
@@ -351,14 +355,14 @@ uint8_t RegisterRead(uint8_t add) {
             break;
         case REG_CVALB3:
             return_value = CVAL.bval[BYTE3];
-            if (S_RELATIVE == true){
+            if (S_RELATIVE == true) {
                 CVAL.bval[BYTE4] = 0;
                 CVAL.bval[BYTE3] = 0;
             }
             break;
         case REG_CVALB2:
             return_value = CVAL.bval[BYTE2];
-            if (S_RELATIVE == true){
+            if (S_RELATIVE == true) {
                 CVAL.bval[BYTE4] = 0;
                 CVAL.bval[BYTE3] = 0;
                 CVAL.bval[BYTE2] = 0;
@@ -522,15 +526,23 @@ void FirstConfig(void) {
 
 
     if (C_DIRE == true) {
-        UNLOCK_PPS;
-        CLCIN1PPSbits.CLCIN1PPS = 0x11; //RC1->CLC2:CLCIN1;
-        CLCIN0PPSbits.CLCIN0PPS = 0x10; //RC0->CLC2:CLCIN0;
-        LOCK_PPS;
+
+        X1_p = 4;
+        X1_n = 8;
+
+        X2_p = 11;
+        X2_n = 7;
+
     } else {
-        UNLOCK_PPS;
-        CLCIN1PPSbits.CLCIN1PPS = 0x10; //RC0->CLC2:CLCIN1;
-        CLCIN0PPSbits.CLCIN0PPS = 0x11; //RC1->CLC2:CLCIN0;
-        LOCK_PPS;
+
+        X1_p = 8;
+        X1_n = 4;
+
+        X2_p = 7;
+        X2_n = 11;
+
+
+
     }
 
     if (C_IPUD == true) {
@@ -542,29 +554,12 @@ void FirstConfig(void) {
 
     }
 
-    if (C_RMOD == true) {
-        PIR3bits.CLC1IF = 0;
-        PIE3bits.CLC1IE = 0;
-        CLC1CON = 0x9D;
-        PIE3bits.CLC1IE = 1;
+    if (C_RMOD == false) {
 
-        PIR3bits.CLC2IF = 0;
-        PIE3bits.CLC2IE = 0;
-        CLC2CON = 0x9D;
-        PIE3bits.CLC2IE = 1;
+        X2_n = 0xff;
+        X2_p = 0xff;
 
-    } else {
-        PIR3bits.CLC1IF = 0;
-        PIE3bits.CLC1IE = 0;
-        CLC1CON = 0x95;
-        PIE3bits.CLC1IE = 1;
-
-        PIR3bits.CLC2IF = 0;
-        PIE3bits.CLC2IE = 0;
-        CLC2CON = 0x95;
-        PIE3bits.CLC2IE = 1;
     }
-
 
     if (C_DTYPE == INT_DATA_TYPE) {
         ISTEP.val = 1;

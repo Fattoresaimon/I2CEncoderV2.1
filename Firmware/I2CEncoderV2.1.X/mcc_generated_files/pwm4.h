@@ -123,37 +123,7 @@ void PWM4_Initialize(void);
 */
 void PWM4_LoadDutyValue(uint16_t dutyValue);
 
-/**
-  @Summary
-    Read pwm output status.
 
-  @Description
-    This routine returns the pwm output status.
-
-  @Preconditions
-    PWM4_Initialize() function should have been
-    called before calling this function.
-
-  @Param
-    None
-
-  @Returns
-    true : output high
-    false: output low
-
-  @Example
-    <code>
-    uint16_t dutyCycle;
-    bool status;
-    PWM4_Initialize();
-    PWM4_LoadDutyValue(dutyCycle);
-    while(1)
-    {
-            status = PWM4_OutputStatusGet();
-    }
-    </code>
-*/
-bool PWM4_OutputStatusGet(void);
         
 #ifdef __cplusplus  // Provide C++ Compatibility
 

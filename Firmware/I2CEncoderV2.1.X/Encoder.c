@@ -17,10 +17,15 @@ uint8_t temp_red = 0;
 uint8_t temp_green = 0;
 uint8_t temp_blu = 0;
 
-uint16_t en_deb = 0;
-uint8_t en_prev = 0;
-#define ENC_1 0
-#define ENC_2 1
+
+volatile uint8_t X1_p; // X1/X2 mode increment
+volatile uint8_t X1_n; // X1/X2 mode decrement
+volatile uint8_t X2_n; // X2 mode decrement
+volatile uint8_t X2_p; // X2 mode increment
+
+
+
+volatile uint8_t enc_status;
 
 /**
  * @brief function return the status of the encoder switch
@@ -57,82 +62,65 @@ bool EncoderSwitch_GetValueFiltered(void) {
     return pb_status;
 }
 
-/**
- * @brief function that is called on one direction of the encoder
- */
-void CLC_1_Interrupt(void) {
+void Encoder_AB_Interrupt(void) {
 
-    if (en_prev == ENC_2)
-        if (en_deb < DEBOUNCE)
-            return;
+    enc_status = (enc_status << 2);
+    enc_status = enc_status | ((uint8_t) PORTC & 0x03);
+    enc_status = enc_status & 0x0f;
 
+    if ((enc_status == X1_p) || (enc_status == X2_p)) {
 
-    en_deb = 0;
-    en_prev = ENC_1;
-
-    if (C_DTYPE == INT_DATA_TYPE) {
-        CVAL.val = CVAL.val + ISTEP.val;
-        EncoderStatusUpdate(S_RINC);
-        if (CVAL.val > CMAX.val) {
-            EncoderStatusUpdate(S_RMAX);
-            if (C_WRAPE == true) {
-                CVAL.val = CMIN.val;
-            } else {
-                CVAL.val = CMAX.val;
+        if (C_DTYPE == INT_DATA_TYPE) {
+            CVAL.val = CVAL.val + ISTEP.val;
+            EncoderStatusUpdate(S_RINC);
+            if (CVAL.val > CMAX.val) {
+                EncoderStatusUpdate(S_RMAX);
+                if (C_WRAPE == true) {
+                    CVAL.val = CMIN.val;
+                } else {
+                    CVAL.val = CMAX.val;
+                }
+            }
+        } else {
+            CVAL.fval = CVAL.fval + ISTEP.fval;
+            EncoderStatusUpdate(S_RINC);
+            if (CVAL.fval > CMAX.fval) {
+                EncoderStatusUpdate(S_RMAX);
+                if (C_WRAPE == true) {
+                    CVAL.fval = CMIN.fval;
+                } else {
+                    CVAL.fval = CMAX.fval;
+                }
             }
         }
     } else {
-        CVAL.fval = CVAL.fval + ISTEP.fval;
-        EncoderStatusUpdate(S_RINC);
-        if (CVAL.fval > CMAX.fval) {
-            EncoderStatusUpdate(S_RMAX);
-            if (C_WRAPE == true) {
-                CVAL.fval = CMIN.fval;
+
+        if ((enc_status == X1_n) || (enc_status == X2_n) ) {
+
+            if (C_DTYPE == INT_DATA_TYPE) {
+
+                CVAL.val = CVAL.val - ISTEP.val;
+                EncoderStatusUpdate(S_RDEC);
+                if (CVAL.val < CMIN.val) {
+                    EncoderStatusUpdate(S_RMIN);
+                    if (C_WRAPE == true) {
+                        CVAL.val = CMAX.val;
+                    } else {
+                        CVAL.val = CMIN.val;
+                    }
+                }
             } else {
-                CVAL.fval = CMAX.fval;
-            }
-        }
-    }
+                CVAL.fval = CVAL.fval - ISTEP.fval;
+                EncoderStatusUpdate(S_RDEC);
+                if (CVAL.fval < CMIN.fval) {
+                    EncoderStatusUpdate(S_RMIN);
+                    if (C_WRAPE == true) {
+                        CVAL.fval = CMAX.fval;
+                    } else {
 
-
-    SetInterrupt();
-}
-
-/**
- * @brief function that is called on the other direction of the encoder
- */
-
-void CLC_2_Interrupt(void) {
-
-    if (en_prev == ENC_1)
-        if (en_deb < DEBOUNCE)
-            return;
-
-    en_deb = 0;
-    en_prev = ENC_2;
-
-    if (C_DTYPE == INT_DATA_TYPE) {
-
-        CVAL.val = CVAL.val - ISTEP.val;
-        EncoderStatusUpdate(S_RDEC);
-        if (CVAL.val < CMIN.val) {
-            EncoderStatusUpdate(S_RMIN);
-            if (C_WRAPE == true) {
-                CVAL.val = CMAX.val;
-            } else {
-                CVAL.val = CMIN.val;
-            }
-        }
-    } else {
-        CVAL.fval = CVAL.fval - ISTEP.fval;
-        EncoderStatusUpdate(S_RDEC);
-        if (CVAL.fval < CMIN.fval) {
-            EncoderStatusUpdate(S_RMIN);
-            if (C_WRAPE == true) {
-                CVAL.fval = CMAX.fval;
-            } else {
-
-                CVAL.fval = CMIN.fval;
+                        CVAL.fval = CMIN.fval;
+                    }
+                }
             }
         }
     }
@@ -262,7 +250,7 @@ void Encoder_PushButton_FSM(void) {
         case ENCODER_WAITDOUBLERELEASED:
             if (EncoderSwitch_GetValueFiltered() == false) {
                 double_push_cnt = 0;
-                double_push_delay=0;
+                double_push_delay = 0;
                 pb_fsm = ENCODER_DOUBLEDELAY;
                 EncoderStatusUpdate(S_PUSHD);
                 SetInterrupt();
@@ -306,10 +294,7 @@ void Encoder_PushButton_FSM(void) {
  @brief FMS for managing the RGB led fade, the push button and the debounce of the encoder
  */
 void Encoder_FSM(void) {
-    if (en_deb < DEBOUNCE) {
-        en_deb++;
-    }
-
     FADE_LEDS();
     Encoder_PushButton_FSM();
+
 }

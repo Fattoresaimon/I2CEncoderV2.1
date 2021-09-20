@@ -79,29 +79,6 @@ void PWM4_Initialize(void)
     
 }
 
-void PWM4_LoadDutyValue(uint16_t dutyValue)
-{
-    dutyValue &= 0x03FF;
-    
-    // Load duty cycle value
-    if(CCP4CONbits.CCP4FMT)
-    {
-        dutyValue <<= 6;
-        CCPR4H = dutyValue >> 8;
-        CCPR4L = dutyValue;
-    }
-    else
-    {
-        CCPR4H = dutyValue >> 8;
-        CCPR4L = dutyValue;
-    }
-}
-
-bool PWM4_OutputStatusGet(void)
-{
-    // Returns the output status
-    return(CCP4CONbits.CCP4OUT);
-}
 /**
  End of File
 */

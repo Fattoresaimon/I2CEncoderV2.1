@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/Release/production\I2CEncoderV2.1.X.production.hex">
+    <memory name="program">
+      <units>words</units>
+      <length>8192</length>
+      <used>6016</used>
+      <free>2176</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>1024</length>
+      <used>139</used>
+      <free>885</free>
+    </memory>
+  </executable>
+</project>

@@ -101,32 +101,7 @@
   */
  void PWM5_Initialize(void);
 
- /**
-   @Summary
-     Loads 16-bit duty cycle.
 
-   @Description
-     This routine loads the 16 bit duty cycle value.
-
-   @Preconditions
-     PWM5_Initialize() function should have been called 
-         before calling this function.
-
-   @Param
-     Pass 16bit duty cycle value.
-
-   @Returns
-     None
-
-   @Example
-     <code>
-     uint16_t dutycycle;
-
-     PWM5_Initialize();
-     PWM5_LoadDutyValue(dutycycle);
-     </code>
- */
- void PWM5_LoadDutyValue(uint16_t dutyValue);
 
  
  #ifdef __cplusplus  // Provide C++ Compatibility

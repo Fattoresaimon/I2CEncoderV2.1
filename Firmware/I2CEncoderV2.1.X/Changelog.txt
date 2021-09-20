@@ -1,0 +1,8 @@
+V2.1:
+
+- Added gamma correction for all the PWM
+- Added Version and ID code
+- Added Clock strech option
+- Added a delay after the double push
+- the interrupt and register clear is immediatly the reading, and not after I2C stop
+- ISTEP default now is 0

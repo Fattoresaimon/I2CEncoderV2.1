@@ -108,27 +108,7 @@ void CLC1_Initialize(void);
 
 */
 void CLC1_ISR(void);
-/**
-  @Summary
-    Returns output pin status of the CLC module.
 
-  @Description
-    This routine returns output pin status of the CLC module.
-
-  @Param
-    None.
-
-  @Returns
-    Output pin status
- 
-  @Example 
-    <code>
-    bool outputStatus;
-    outputStatus = CLC1_OutputStatusGet();
-    </code>
-*/
-
-bool CLC1_OutputStatusGet(void);
 
 #ifdef __cplusplus  // Provide C++ Compatibility
 

@@ -79,29 +79,6 @@ void PWM2_Initialize(void)
     
 }
 
-void PWM2_LoadDutyValue(uint16_t dutyValue)
-{
-    dutyValue &= 0x03FF;
-    
-    // Load duty cycle value
-    if(CCP2CONbits.CCP2FMT)
-    {
-        dutyValue <<= 6;
-        CCPR2H = dutyValue >> 8;
-        CCPR2L = dutyValue;
-    }
-    else
-    {
-        CCPR2H = dutyValue >> 8;
-        CCPR2L = dutyValue;
-    }
-}
-
-bool PWM2_OutputStatusGet(void)
-{
-    // Returns the output status
-    return(CCP2CONbits.CCP2OUT);
-}
 /**
  End of File
 */

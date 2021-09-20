@@ -1,0 +1,1627 @@
+[p PRO_MODE GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E SPEEDOPT ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18345 ]
+[d frameptr 6 ]
+"136 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+[e E6762 . `uc
+I2C1_SLAVE_WRITE_REQUEST 0
+I2C1_SLAVE_READ_REQUEST 1
+I2C1_SLAVE_WRITE_COMPLETED 2
+I2C1_SLAVE_READ_COMPLETED 3
+]
+"87 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/adc.c
+[e E6505 . `uc
+A_GP3 21
+A_GP2 22
+A_GP1 23
+channel_AVSS 60
+channel_Temp 61
+channel_DAC1 62
+channel_FVR 63
+]
+"134 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+[e E77 . `uc
+S_PUSHR 1
+S_PUSHP 2
+S_PUSHD 4
+S_RINC 8
+S_RDEC 16
+S_RMAX 32
+S_RMIN 64
+S_INT2 128
+]
+"142
+[e E87 . `uc
+E_GP1POS 1
+E_GP1NEG 2
+E_GP2POS 4
+E_GP2NEG 8
+E_GP3POS 16
+E_GP3NEG 32
+E_GPFADE 64
+]
+"151
+[e E96 . `uc
+F_FER 1
+F_FEG 2
+F_FEB 4
+F_FGP1 8
+F_FGP2 16
+F_FGP3 32
+]
+"56 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+[e E75 . `uc
+I2C1_SLAVE_WRITE_REQUEST 0
+I2C1_SLAVE_READ_REQUEST 1
+I2C1_SLAVE_WRITE_COMPLETED 2
+I2C1_SLAVE_READ_COMPLETED 3
+]
+"57
+[e E81 . `uc
+SLAVE_NORMAL_DATA 0
+SLAVE_DATA_ADDRESS 1
+]
+"107
+[e E29 . `uc
+REG_GCONF 0
+REG_GP1CONF 1
+REG_GP2CONF 2
+REG_GP3CONF 3
+REG_INTCONF 4
+REG_ESTATUS 5
+REG_I2STATUS 6
+REG_FSTATUS 7
+REG_CVALB4 8
+REG_CVALB3 9
+REG_CVALB2 10
+REG_CVALB1 11
+REG_CMAXB4 12
+REG_CMAXB3 13
+REG_CMAXB2 14
+REG_CMAXB1 15
+REG_CMINB4 16
+REG_CMINB3 17
+REG_CMINB2 18
+REG_CMINB1 19
+REG_ISTEPB4 20
+REG_ISTEPB3 21
+REG_ISTEPB2 22
+REG_ISTEPB1 23
+REG_RLED 24
+REG_GLED 25
+REG_BLED 26
+REG_GP1REG 27
+REG_GP2REG 28
+REG_GP3REG 29
+REG_ANTBOUNC 30
+REG_DPPERIOD 31
+REG_FADERGB 32
+REG_FADEGP 33
+REG_GAMRLED 39
+REG_GAMGLED 40
+REG_GAMBLED 41
+REG_GAMMAGP1 42
+REG_GAMMAGP2 43
+REG_GAMMAGP3 44
+REG_GCONF2 48
+REG_IDCODE 112
+REG_VERSION 113
+REG_EEPROMS 128
+]
+"16 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+[e E6822 . `uc
+GP_CHECKMODE 0
+GP_ADC_MODE 1
+GP_WAITRISE 2
+GP_WAITFALL 3
+]
+"51
+[e E6759 . `uc
+F_FER 1
+F_FEG 2
+F_FEB 4
+F_FGP1 8
+F_FGP2 16
+F_FGP3 32
+]
+"408
+[e E6673 . `uc
+A_GP3 21
+A_GP2 22
+A_GP1 23
+channel_AVSS 60
+channel_Temp 61
+channel_DAC1 62
+channel_FVR 63
+]
+"414
+[e E6750 . `uc
+E_GP1POS 1
+E_GP1NEG 2
+E_GP2POS 4
+E_GP2NEG 8
+E_GP3POS 16
+E_GP3NEG 32
+E_GPFADE 64
+]
+"11 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+[e E6785 . `uc
+ENCODER_WAITPUSH 0
+ENCODER_WAITRELEASE 1
+ENCODER_WAITDOUBLEPUSH 2
+ENCODER_WAITDOUBLERELEASED 3
+ENCODER_DOUBLEDELAY 4
+ENCODER_TIMEOUT 5
+ENCODER_PUSHRESET 6
+]
+"75
+[e E6740 . `uc
+S_PUSHR 1
+S_PUSHP 2
+S_PUSHD 4
+S_RINC 8
+S_RDEC 16
+S_RMAX 32
+S_RMIN 64
+S_INT2 128
+]
+"184
+[e E6759 . `uc
+F_FER 1
+F_FEG 2
+F_FEB 4
+F_FGP1 8
+F_FGP2 16
+F_FGP3 32
+]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"242
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+[v i1___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\pic\__eeread.c
+[v _eeprom_read eeprom_read `(uc  1 e 1 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\pic\__eewrite.c
+[v _eeprom_write eeprom_write `(v  1 e 1 0 ]
+"72 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+[v _DataInitSet DataInitSet `(v  1 e 1 0 ]
+"111
+[v _FirstDataSplit FirstDataSplit `(v  1 e 1 0 ]
+"124
+[v _SecondDataSplit SecondDataSplit `(v  1 e 1 0 ]
+"134
+[v _EncoderStatusUpdate EncoderStatusUpdate `(v  1 e 1 0 ]
+[v i1_EncoderStatusUpdate EncoderStatusUpdate `(v  1 e 1 0 ]
+"142
+[v _Int2StatusUpdate Int2StatusUpdate `(v  1 e 1 0 ]
+"151
+[v _FadeProcessSet FadeProcessSet `(v  1 e 1 0 ]
+"159
+[v _FadeProcessClear FadeProcessClear `(v  1 e 1 0 ]
+"29 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+[v _EncoderSwitch_GetValue EncoderSwitch_GetValue `(uc  1 e 1 0 ]
+"42
+[v _EncoderSwitch_GetValueFiltered EncoderSwitch_GetValueFiltered `(uc  1 e 1 0 ]
+"63
+[v _CLC_1_Interrupt CLC_1_Interrupt `(v  1 e 1 0 ]
+"105
+[v _CLC_2_Interrupt CLC_2_Interrupt `(v  1 e 1 0 ]
+"147
+[v _FADE_LEDS FADE_LEDS `(v  1 e 1 0 ]
+"233
+[v _Encoder_PushButton_FSM Encoder_PushButton_FSM `(v  1 e 1 0 ]
+"308
+[v _Encoder_FSM Encoder_FSM `(v  1 e 1 0 ]
+"26 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+[v _FADE_GP1 FADE_GP1 `(v  1 e 1 0 ]
+"63
+[v _FADE_GP2 FADE_GP2 `(v  1 e 1 0 ]
+"101
+[v _FADE_GP3 FADE_GP3 `(v  1 e 1 0 ]
+"138
+[v _RGB_EncoderMode RGB_EncoderMode `(v  1 e 1 0 ]
+"171
+[v _STD_EncoderMode STD_EncoderMode `(v  1 e 1 0 ]
+"192
+[v _Config_GP1 Config_GP1 `(v  1 e 1 0 ]
+"243
+[v _Config_GP2 Config_GP2 `(v  1 e 1 0 ]
+"295
+[v _Config_GP3 Config_GP3 `(v  1 e 1 0 ]
+"345
+[v _UpdateOut_GP1 UpdateOut_GP1 `(v  1 e 1 0 ]
+"360
+[v _UpdateOut_GP2 UpdateOut_GP2 `(v  1 e 1 0 ]
+"376
+[v _UpdateOut_GP3 UpdateOut_GP3 `(v  1 e 1 0 ]
+"393
+[v _GP1_FSM GP1_FSM `(v  1 e 1 0 ]
+"438
+[v _GP2_FSM GP2_FSM `(v  1 e 1 0 ]
+"487
+[v _GP3_FSM GP3_FSM `(v  1 e 1 0 ]
+"535
+[v _GP_Ports_FSM GP_Ports_FSM `(v  1 e 1 0 ]
+"20 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+[v _I2C1_AddressSet I2C1_AddressSet `(v  1 e 1 0 ]
+"56
+[v _I2C1_StatusCallback I2C1_StatusCallback `(v  1 e 1 0 ]
+"105
+[v _RegisterWrite RegisterWrite `(v  1 e 1 0 ]
+"303
+[v _RegisterRead RegisterRead `(uc  1 e 1 0 ]
+"515
+[v _FirstConfig FirstConfig `(v  1 e 1 0 ]
+"583
+[v _SecondConfig SecondConfig `(v  1 e 1 0 ]
+"56 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+[v _SetInterrupt SetInterrupt `(v  1 e 1 0 ]
+[v i1_SetInterrupt SetInterrupt `(v  1 e 1 0 ]
+"66
+[v _ClearInterrupt ClearInterrupt `(v  1 e 1 0 ]
+"73
+[v _TimerInt TimerInt `(v  1 e 1 0 ]
+"80
+[v _main main `(v  1 e 1 0 ]
+"65 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+"113
+[v _ADC_GetConversion ADC_GetConversion `(ui  1 e 2 0 ]
+"60 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc1.c
+[v _CLC1_Initialize CLC1_Initialize `(v  1 e 1 0 ]
+"91
+[v _CLC1_ISR CLC1_ISR `(v  1 e 1 0 ]
+"59 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc2.c
+[v _CLC2_Initialize CLC2_Initialize `(v  1 e 1 0 ]
+"90
+[v _CLC2_ISR CLC2_ISR `(v  1 e 1 0 ]
+"75 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+[v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
+[v i1_I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
+"97
+[v _I2C1_Initialize_ClockStreach I2C1_Initialize_ClockStreach `(v  1 e 1 0 ]
+"121
+[v _I2C1_ISR I2C1_ISR `(v  1 e 1 0 ]
+"52 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"50 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"66
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"80
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"86
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"57 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"64 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm1.c
+[v _PWM1_Initialize PWM1_Initialize `(v  1 e 1 0 ]
+"64 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm2.c
+[v _PWM2_Initialize PWM2_Initialize `(v  1 e 1 0 ]
+"64 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm3.c
+[v _PWM3_Initialize PWM3_Initialize `(v  1 e 1 0 ]
+"64 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm4.c
+[v _PWM4_Initialize PWM4_Initialize `(v  1 e 1 0 ]
+"58 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm5.c
+[v _PWM5_Initialize PWM5_Initialize `(v  1 e 1 0 ]
+"62 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"64 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+[v _TMR3_Initialize TMR3_Initialize `(v  1 e 1 0 ]
+"93
+[v _TMR3_StartTimer TMR3_StartTimer `(v  1 e 1 0 ]
+"120
+[v _TMR3_WriteTimer TMR3_WriteTimer `(v  1 e 1 0 ]
+"157
+[v _TMR3_ISR TMR3_ISR `(v  1 e 1 0 ]
+"169
+[v _TMR3_CallBack TMR3_CallBack `(v  1 e 1 0 ]
+"178
+[v _TMR3_SetInterruptHandler TMR3_SetInterruptHandler `(v  1 e 1 0 ]
+"182
+[v _TMR3_DefaultInterruptHandler TMR3_DefaultInterruptHandler `(v  1 e 1 0 ]
+"30 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+[v _PWM_GP1 PWM_GP1 `(v  1 e 1 0 ]
+[v i1_PWM_GP1 PWM_GP1 `(v  1 e 1 0 ]
+"64
+[v _PWM_GP2 PWM_GP2 `(v  1 e 1 0 ]
+[v i1_PWM_GP2 PWM_GP2 `(v  1 e 1 0 ]
+"95
+[v _PWM_GP3_RLED PWM_GP3_RLED `(v  1 e 1 0 ]
+[v i1_PWM_GP3_RLED PWM_GP3_RLED `(v  1 e 1 0 ]
+"130
+[v _PWM_GLED PWM_GLED `(v  1 e 1 0 ]
+"165
+[v _PWM_BLED PWM_BLED `(v  1 e 1 0 ]
+[s S2426 . 1 `uc 1 C 1 0 :1:0 
+`uc 1 DC 1 0 :1:1 
+`uc 1 Z 1 0 :1:2 
+`uc 1 nPD 1 0 :1:3 
+`uc 1 nTO 1 0 :1:4 
+]
+"131 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f18345.h
+[s S2432 . 1 `uc 1 CARRY 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ZERO 1 0 :1:2 
+]
+[u S2436 . 1 `S2426 1 . 1 0 `S2432 1 . 1 0 ]
+[v _STATUSbits STATUSbits `VES2436  1 e 1 @3 ]
+[s S78 . 1 `uc 1 INTEDG 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"364
+[u S83 . 1 `S78 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES83  1 e 1 @11 ]
+[s S1508 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+]
+"399
+[u S1515 . 1 `S1508 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES1515  1 e 1 @12 ]
+[s S1525 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"448
+[u S1531 . 1 `S1525 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES1531  1 e 1 @13 ]
+[s S268 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"490
+[u S277 . 1 `S268 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES277  1 e 1 @14 ]
+[s S162 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 BCL1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"585
+[u S171 . 1 `S162 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES171  1 e 1 @17 ]
+[s S112 . 1 `uc 1 CLC1IF 1 0 :1:0 
+`uc 1 CLC2IF 1 0 :1:1 
+`uc 1 CLC3IF 1 0 :1:2 
+`uc 1 CLC4IF 1 0 :1:3 
+`uc 1 TMR3IF 1 0 :1:4 
+`uc 1 TMR3GIF 1 0 :1:5 
+`uc 1 CSWIF 1 0 :1:6 
+`uc 1 OSFIF 1 0 :1:7 
+]
+"709
+[u S121 . 1 `S112 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES121  1 e 1 @19 ]
+"1439
+[v _TMR2 TMR2 `VEuc  1 e 1 @29 ]
+"1459
+[v _PR2 PR2 `VEuc  1 e 1 @30 ]
+"1479
+[v _T2CON T2CON `VEuc  1 e 1 @31 ]
+"1550
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1595
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1634
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S1324 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1651
+[u S1333 . 1 `S1324 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES1333  1 e 1 @142 ]
+[s S141 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 BCL1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1746
+[u S150 . 1 `S141 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES150  1 e 1 @145 ]
+[s S91 . 1 `uc 1 CLC1IE 1 0 :1:0 
+`uc 1 CLC2IE 1 0 :1:1 
+`uc 1 CLC3IE 1 0 :1:2 
+`uc 1 CLC4IE 1 0 :1:3 
+`uc 1 TMR3IE 1 0 :1:4 
+`uc 1 TMR3GIE 1 0 :1:5 
+`uc 1 CSWIE 1 0 :1:6 
+`uc 1 OSFIE 1 0 :1:7 
+]
+"1870
+[u S100 . 1 `S91 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES100  1 e 1 @147 ]
+"1977
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"2043
+[v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
+"2063
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"2083
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+[s S979 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :6:2 
+]
+"2109
+[s S983 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+`uc 1 CHS5 1 0 :1:7 
+]
+[s S992 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[u S995 . 1 `S979 1 . 1 0 `S983 1 . 1 0 `S992 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES995  1 e 1 @157 ]
+"2169
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+"2241
+[v _ADACT ADACT `VEuc  1 e 1 @159 ]
+"2293
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"2338
+[v _LATB LATB `VEuc  1 e 1 @269 ]
+[s S1294 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"2352
+[u S1300 . 1 `S1294 1 . 1 0 ]
+[v _LATBbits LATBbits `VES1300  1 e 1 @269 ]
+"2377
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+[s S2001 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"2394
+[u S2010 . 1 `S2001 1 . 1 0 ]
+[v _LATCbits LATCbits `VES2010  1 e 1 @270 ]
+"2932
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2977
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"3016
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+[s S1857 . 1 `uc 1 ANSC0 1 0 :1:0 
+`uc 1 ANSC1 1 0 :1:1 
+`uc 1 ANSC2 1 0 :1:2 
+`uc 1 ANSC3 1 0 :1:3 
+`uc 1 ANSC4 1 0 :1:4 
+`uc 1 ANSC5 1 0 :1:5 
+`uc 1 ANSC6 1 0 :1:6 
+`uc 1 ANSC7 1 0 :1:7 
+]
+"3033
+[u S1866 . 1 `S1857 1 . 1 0 ]
+[v _ANSELCbits ANSELCbits `VES1866  1 e 1 @398 ]
+"3944
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"3994
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+[s S1739 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 WPUB4 1 0 :1:4 
+`uc 1 WPUB5 1 0 :1:5 
+`uc 1 WPUB6 1 0 :1:6 
+`uc 1 WPUB7 1 0 :1:7 
+]
+"4008
+[u S1745 . 1 `S1739 1 . 1 0 ]
+[v _WPUBbits WPUBbits `VES1745  1 e 1 @525 ]
+"4033
+[v _WPUC WPUC `VEuc  1 e 1 @526 ]
+[s S1899 . 1 `uc 1 WPUC0 1 0 :1:0 
+`uc 1 WPUC1 1 0 :1:1 
+`uc 1 WPUC2 1 0 :1:2 
+`uc 1 WPUC3 1 0 :1:3 
+`uc 1 WPUC4 1 0 :1:4 
+`uc 1 WPUC5 1 0 :1:5 
+`uc 1 WPUC6 1 0 :1:6 
+`uc 1 WPUC7 1 0 :1:7 
+]
+"4050
+[u S1908 . 1 `S1899 1 . 1 0 ]
+[v _WPUCbits WPUCbits `VES1908  1 e 1 @526 ]
+"4095
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @529 ]
+"4349
+[v _SSP1ADD SSP1ADD `VEuc  1 e 1 @530 ]
+"4603
+[v _SSP1MSK SSP1MSK `VEuc  1 e 1 @531 ]
+"4857
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @532 ]
+[s S396 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"4879
+[u S405 . 1 `S396 1 . 1 0 ]
+[v _SSP1STATbits SSP1STATbits `VES405  1 e 1 @532 ]
+"4979
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @533 ]
+[s S448 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"5012
+[s S454 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[u S459 . 1 `S448 1 . 1 0 `S454 1 . 1 0 ]
+[v _SSP1CON1bits SSP1CON1bits `VES459  1 e 1 @533 ]
+"5249
+[v _SSP1CON2 SSP1CON2 `VEuc  1 e 1 @534 ]
+[s S417 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"5271
+[u S426 . 1 `S417 1 . 1 0 ]
+[v _SSP1CON2bits SSP1CON2bits `VES426  1 e 1 @534 ]
+"5371
+[v _SSP1CON3 SSP1CON3 `VEuc  1 e 1 @535 ]
+"6201
+[v _ODCONA ODCONA `VEuc  1 e 1 @652 ]
+"6246
+[v _ODCONB ODCONB `VEuc  1 e 1 @653 ]
+"6285
+[v _ODCONC ODCONC `VEuc  1 e 1 @654 ]
+[s S1878 . 1 `uc 1 ODCC0 1 0 :1:0 
+`uc 1 ODCC1 1 0 :1:1 
+`uc 1 ODCC2 1 0 :1:2 
+`uc 1 ODCC3 1 0 :1:3 
+`uc 1 ODCC4 1 0 :1:4 
+`uc 1 ODCC5 1 0 :1:5 
+`uc 1 ODCC6 1 0 :1:6 
+`uc 1 ODCC7 1 0 :1:7 
+]
+"6302
+[u S1887 . 1 `S1878 1 . 1 0 ]
+[v _ODCONCbits ODCONCbits `VES1887  1 e 1 @654 ]
+"6347
+[v _CCPR1 CCPR1 `VEus  1 e 2 @657 ]
+"6354
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @657 ]
+"6374
+[v _CCPR1H CCPR1H `VEuc  1 e 1 @658 ]
+"6394
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @659 ]
+"6505
+[v _CCPR2 CCPR2 `VEus  1 e 2 @661 ]
+"6512
+[v _CCPR2L CCPR2L `VEuc  1 e 1 @661 ]
+"6532
+[v _CCPR2H CCPR2H `VEuc  1 e 1 @662 ]
+"6552
+[v _CCP2CON CCP2CON `VEuc  1 e 1 @663 ]
+[s S782 . 1 `uc 1 C1TSEL 1 0 :2:0 
+`uc 1 C2TSEL 1 0 :2:2 
+`uc 1 C3TSEL 1 0 :2:4 
+`uc 1 C4TSEL 1 0 :2:6 
+]
+"6686
+[s S787 . 1 `uc 1 C1TSEL0 1 0 :1:0 
+`uc 1 C1TSEL1 1 0 :1:1 
+`uc 1 C2TSEL0 1 0 :1:2 
+`uc 1 C2TSEL1 1 0 :1:3 
+`uc 1 C3TSEL0 1 0 :1:4 
+`uc 1 C3TSEL1 1 0 :1:5 
+`uc 1 C4TSEL0 1 0 :1:6 
+`uc 1 C4TSEL1 1 0 :1:7 
+]
+[u S796 . 1 `S782 1 . 1 0 `S787 1 . 1 0 ]
+[v _CCPTMRSbits CCPTMRSbits `VES796  1 e 1 @671 ]
+"6897
+[v _CCPR3 CCPR3 `VEus  1 e 2 @785 ]
+"6904
+[v _CCPR3L CCPR3L `VEuc  1 e 1 @785 ]
+"6924
+[v _CCPR3H CCPR3H `VEuc  1 e 1 @786 ]
+"6944
+[v _CCP3CON CCP3CON `VEuc  1 e 1 @787 ]
+"7055
+[v _CCPR4 CCPR4 `VEus  1 e 2 @789 ]
+"7062
+[v _CCPR4L CCPR4L `VEuc  1 e 1 @789 ]
+"7082
+[v _CCPR4H CCPR4H `VEuc  1 e 1 @790 ]
+"7102
+[v _CCP4CON CCP4CON `VEuc  1 e 1 @791 ]
+"8093
+[v _TMR3L TMR3L `VEuc  1 e 1 @1041 ]
+"8113
+[v _TMR3H TMR3H `VEuc  1 e 1 @1042 ]
+"8133
+[v _T3CON T3CON `VEuc  1 e 1 @1043 ]
+[s S1193 . 1 `uc 1 TMR3ON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 T3SYNC 1 0 :1:2 
+`uc 1 T3SOSC 1 0 :1:3 
+`uc 1 T3CKPS 1 0 :2:4 
+`uc 1 TMR3CS 1 0 :2:6 
+]
+"8155
+[s S1200 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 T3CKPS0 1 0 :1:4 
+`uc 1 T3CKPS1 1 0 :1:5 
+`uc 1 TMR3CS0 1 0 :1:6 
+`uc 1 TMR3CS1 1 0 :1:7 
+]
+[u S1206 . 1 `S1193 1 . 1 0 `S1200 1 . 1 0 ]
+[v _T3CONbits T3CONbits `VES1206  1 e 1 @1043 ]
+"8205
+[v _T3GCON T3GCON `VEuc  1 e 1 @1044 ]
+"8932
+[v _PWM5DCL PWM5DCL `VEuc  1 e 1 @1559 ]
+"8968
+[v _PWM5DCH PWM5DCH `VEuc  1 e 1 @1560 ]
+"9038
+[v _PWM5CON PWM5CON `VEuc  1 e 1 @1561 ]
+[s S611 . 1 `uc 1 P5TSEL 1 0 :2:0 
+`uc 1 P6TSEL 1 0 :2:2 
+]
+"9293
+[s S614 . 1 `uc 1 P5TSEL0 1 0 :1:0 
+`uc 1 P5TSEL1 1 0 :1:1 
+`uc 1 P6TSEL0 1 0 :1:2 
+`uc 1 P6TSEL1 1 0 :1:3 
+]
+[u S619 . 1 `S611 1 . 1 0 `S614 1 . 1 0 ]
+[v _PWMTMRSbits PWMTMRSbits `VES619  1 e 1 @1567 ]
+"10818
+[v _NVMADRL NVMADRL `VEuc  1 e 1 @2193 ]
+"11070
+[v _NVMADRH NVMADRH `VEuc  1 e 1 @2194 ]
+"11320
+[v _NVMDATL NVMDATL `VEuc  1 e 1 @2195 ]
+"11572
+[v _NVMDATH NVMDATH `VEuc  1 e 1 @2196 ]
+[s S2396 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 LWLO 1 0 :1:5 
+`uc 1 NVMREGS 1 0 :1:6 
+]
+"11817
+[s S2404 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 CFGS 1 0 :1:6 
+]
+[u S2407 . 1 `S2396 1 . 1 0 `S2404 1 . 1 0 ]
+[v _NVMCON1bits NVMCON1bits `VES2407  1 e 1 @2197 ]
+"11977
+[v _NVMCON2 NVMCON2 `VEuc  1 e 1 @2198 ]
+"12136
+[v _PMD0 PMD0 `VEuc  1 e 1 @2321 ]
+"12181
+[v _PMD1 PMD1 `VEuc  1 e 1 @2322 ]
+"12243
+[v _PMD2 PMD2 `VEuc  1 e 1 @2323 ]
+[s S2046 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 CMP1MD 1 0 :1:1 
+`uc 1 CMP2MD 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 ADCMD 1 0 :1:5 
+`uc 1 DACMD 1 0 :1:6 
+]
+"12258
+[u S2053 . 1 `S2046 1 . 1 0 ]
+[v _PMD2bits PMD2bits `VES2053  1 e 1 @2323 ]
+"12283
+[v _PMD3 PMD3 `VEuc  1 e 1 @2324 ]
+"12345
+[v _PMD4 PMD4 `VEuc  1 e 1 @2325 ]
+"12379
+[v _PMD5 PMD5 `VEuc  1 e 1 @2326 ]
+[s S1346 . 1 `uc 1 DOZE 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 DOE 1 0 :1:4 
+`uc 1 ROI 1 0 :1:5 
+`uc 1 DOZEN 1 0 :1:6 
+`uc 1 IDLEN 1 0 :1:7 
+]
+"12443
+[s S1353 . 1 `uc 1 DOZE0 1 0 :1:0 
+`uc 1 DOZE1 1 0 :1:1 
+`uc 1 DOZE2 1 0 :1:2 
+]
+[u S1357 . 1 `S1346 1 . 1 0 `S1353 1 . 1 0 ]
+[v _CPUDOZEbits CPUDOZEbits `VES1357  1 e 1 @2328 ]
+"12488
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @2329 ]
+"12628
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @2331 ]
+"12725
+[v _OSCEN OSCEN `VEuc  1 e 1 @2333 ]
+"12771
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @2334 ]
+"12829
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2335 ]
+"12875
+[v _PPSLOCK PPSLOCK `VEuc  1 e 1 @3599 ]
+[s S1707 . 1 `uc 1 PPSLOCKED 1 0 :1:0 
+]
+"12885
+[u S1709 . 1 `S1707 1 . 1 0 ]
+[v _PPSLOCKbits PPSLOCKbits `VES1709  1 e 1 @3599 ]
+[s S651 . 1 `uc 1 SSP1CLKPPS 1 0 :5:0 
+]
+"13744
+[s S653 . 1 `uc 1 SSP1CLKPPS0 1 0 :1:0 
+`uc 1 SSP1CLKPPS1 1 0 :1:1 
+`uc 1 SSP1CLKPPS2 1 0 :1:2 
+`uc 1 SSP1CLKPPS3 1 0 :1:3 
+`uc 1 SSP1CLKPPS4 1 0 :1:4 
+]
+[u S659 . 1 `S651 1 . 1 0 `S653 1 . 1 0 ]
+[v _SSP1CLKPPSbits SSP1CLKPPSbits `VES659  1 e 1 @3616 ]
+[s S671 . 1 `uc 1 SSP1DATPPS 1 0 :5:0 
+]
+"13796
+[s S673 . 1 `uc 1 SSP1DATPPS0 1 0 :1:0 
+`uc 1 SSP1DATPPS1 1 0 :1:1 
+`uc 1 SSP1DATPPS2 1 0 :1:2 
+`uc 1 SSP1DATPPS3 1 0 :1:3 
+`uc 1 SSP1DATPPS4 1 0 :1:4 
+]
+[u S679 . 1 `S671 1 . 1 0 `S673 1 . 1 0 ]
+[v _SSP1DATPPSbits SSP1DATPPSbits `VES679  1 e 1 @3617 ]
+[s S711 . 1 `uc 1 CLCIN0PPS 1 0 :5:0 
+]
+"14004
+[s S713 . 1 `uc 1 CLCIN0PPS0 1 0 :1:0 
+`uc 1 CLCIN0PPS1 1 0 :1:1 
+`uc 1 CLCIN0PPS2 1 0 :1:2 
+`uc 1 CLCIN0PPS3 1 0 :1:3 
+`uc 1 CLCIN0PPS4 1 0 :1:4 
+]
+[u S719 . 1 `S711 1 . 1 0 `S713 1 . 1 0 ]
+[v _CLCIN0PPSbits CLCIN0PPSbits `VES719  1 e 1 @3624 ]
+[s S691 . 1 `uc 1 CLCIN1PPS 1 0 :5:0 
+]
+"14056
+[s S693 . 1 `uc 1 CLCIN1PPS0 1 0 :1:0 
+`uc 1 CLCIN1PPS1 1 0 :1:1 
+`uc 1 CLCIN1PPS2 1 0 :1:2 
+`uc 1 CLCIN1PPS3 1 0 :1:3 
+`uc 1 CLCIN1PPS4 1 0 :1:4 
+]
+[u S699 . 1 `S691 1 . 1 0 `S693 1 . 1 0 ]
+[v _CLCIN1PPSbits CLCIN1PPSbits `VES699  1 e 1 @3625 ]
+[s S751 . 1 `uc 1 RB6PPS 1 0 :5:0 
+]
+"14656
+[s S753 . 1 `uc 1 RB6PPS0 1 0 :1:0 
+`uc 1 RB6PPS1 1 0 :1:1 
+`uc 1 RB6PPS2 1 0 :1:2 
+`uc 1 RB6PPS3 1 0 :1:3 
+`uc 1 RB6PPS4 1 0 :1:4 
+]
+[u S759 . 1 `S751 1 . 1 0 `S753 1 . 1 0 ]
+[v _RB6PPSbits RB6PPSbits `VES759  1 e 1 @3742 ]
+[s S731 . 1 `uc 1 RB7PPS 1 0 :5:0 
+]
+"14708
+[s S733 . 1 `uc 1 RB7PPS0 1 0 :1:0 
+`uc 1 RB7PPS1 1 0 :1:1 
+`uc 1 RB7PPS2 1 0 :1:2 
+`uc 1 RB7PPS3 1 0 :1:3 
+`uc 1 RB7PPS4 1 0 :1:4 
+]
+[u S739 . 1 `S731 1 . 1 0 `S733 1 . 1 0 ]
+[v _RB7PPSbits RB7PPSbits `VES739  1 e 1 @3743 ]
+[s S1978 . 1 `uc 1 RC3PPS 1 0 :5:0 
+]
+"14916
+[s S1980 . 1 `uc 1 RC3PPS0 1 0 :1:0 
+`uc 1 RC3PPS1 1 0 :1:1 
+`uc 1 RC3PPS2 1 0 :1:2 
+`uc 1 RC3PPS3 1 0 :1:3 
+`uc 1 RC3PPS4 1 0 :1:4 
+]
+[u S1986 . 1 `S1978 1 . 1 0 `S1980 1 . 1 0 ]
+[v _RC3PPSbits RC3PPSbits `VES1986  1 e 1 @3747 ]
+[s S1958 . 1 `uc 1 RC4PPS 1 0 :5:0 
+]
+"14968
+[s S1960 . 1 `uc 1 RC4PPS0 1 0 :1:0 
+`uc 1 RC4PPS1 1 0 :1:1 
+`uc 1 RC4PPS2 1 0 :1:2 
+`uc 1 RC4PPS3 1 0 :1:3 
+`uc 1 RC4PPS4 1 0 :1:4 
+]
+[u S1966 . 1 `S1958 1 . 1 0 `S1960 1 . 1 0 ]
+[v _RC4PPSbits RC4PPSbits `VES1966  1 e 1 @3748 ]
+[s S1938 . 1 `uc 1 RC5PPS 1 0 :5:0 
+]
+"15020
+[s S1940 . 1 `uc 1 RC5PPS0 1 0 :1:0 
+`uc 1 RC5PPS1 1 0 :1:1 
+`uc 1 RC5PPS2 1 0 :1:2 
+`uc 1 RC5PPS3 1 0 :1:3 
+`uc 1 RC5PPS4 1 0 :1:4 
+]
+[u S1946 . 1 `S1938 1 . 1 0 `S1940 1 . 1 0 ]
+[v _RC5PPSbits RC5PPSbits `VES1946  1 e 1 @3749 ]
+[s S2064 . 1 `uc 1 RC6PPS 1 0 :5:0 
+]
+"15072
+[s S2066 . 1 `uc 1 RC6PPS0 1 0 :1:0 
+`uc 1 RC6PPS1 1 0 :1:1 
+`uc 1 RC6PPS2 1 0 :1:2 
+`uc 1 RC6PPS3 1 0 :1:3 
+`uc 1 RC6PPS4 1 0 :1:4 
+]
+[u S2072 . 1 `S2064 1 . 1 0 `S2066 1 . 1 0 ]
+[v _RC6PPSbits RC6PPSbits `VES2072  1 e 1 @3750 ]
+[s S2025 . 1 `uc 1 RC7PPS 1 0 :5:0 
+]
+"15124
+[s S2027 . 1 `uc 1 RC7PPS0 1 0 :1:0 
+`uc 1 RC7PPS1 1 0 :1:1 
+`uc 1 RC7PPS2 1 0 :1:2 
+`uc 1 RC7PPS3 1 0 :1:3 
+`uc 1 RC7PPS4 1 0 :1:4 
+]
+[u S2033 . 1 `S2025 1 . 1 0 `S2027 1 . 1 0 ]
+[v _RC7PPSbits RC7PPSbits `VES2033  1 e 1 @3751 ]
+"15197
+[v _CLC1CON CLC1CON `VEuc  1 e 1 @3856 ]
+"15315
+[v _CLC1POL CLC1POL `VEuc  1 e 1 @3857 ]
+"15393
+[v _CLC1SEL0 CLC1SEL0 `VEuc  1 e 1 @3858 ]
+"15497
+[v _CLC1SEL1 CLC1SEL1 `VEuc  1 e 1 @3859 ]
+"15601
+[v _CLC1SEL2 CLC1SEL2 `VEuc  1 e 1 @3860 ]
+"15705
+[v _CLC1SEL3 CLC1SEL3 `VEuc  1 e 1 @3861 ]
+"15809
+[v _CLC1GLS0 CLC1GLS0 `VEuc  1 e 1 @3862 ]
+"15921
+[v _CLC1GLS1 CLC1GLS1 `VEuc  1 e 1 @3863 ]
+"16033
+[v _CLC1GLS2 CLC1GLS2 `VEuc  1 e 1 @3864 ]
+"16145
+[v _CLC1GLS3 CLC1GLS3 `VEuc  1 e 1 @3865 ]
+"16257
+[v _CLC2CON CLC2CON `VEuc  1 e 1 @3866 ]
+"16375
+[v _CLC2POL CLC2POL `VEuc  1 e 1 @3867 ]
+"16453
+[v _CLC2SEL0 CLC2SEL0 `VEuc  1 e 1 @3868 ]
+"16557
+[v _CLC2SEL1 CLC2SEL1 `VEuc  1 e 1 @3869 ]
+"16661
+[v _CLC2SEL2 CLC2SEL2 `VEuc  1 e 1 @3870 ]
+"16765
+[v _CLC2SEL3 CLC2SEL3 `VEuc  1 e 1 @3871 ]
+"16869
+[v _CLC2GLS0 CLC2GLS0 `VEuc  1 e 1 @3872 ]
+"16981
+[v _CLC2GLS1 CLC2GLS1 `VEuc  1 e 1 @3873 ]
+"17093
+[v _CLC2GLS2 CLC2GLS2 `VEuc  1 e 1 @3874 ]
+"17205
+[v _CLC2GLS3 CLC2GLS3 `VEuc  1 e 1 @3875 ]
+"12 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+[v _i2c_address i2c_address `VEuc  1 e 1 0 ]
+"16
+[v _GCONF GCONF `VEuc  1 e 1 0 ]
+"18
+[v _GP1CONF GP1CONF `VEuc  1 e 1 0 ]
+"19
+[v _GP2CONF GP2CONF `VEuc  1 e 1 0 ]
+"20
+[v _GP3CONF GP3CONF `VEuc  1 e 1 0 ]
+"23
+[v _INTCONF INTCONF `VEuc  1 e 1 0 ]
+"26
+[v _ESTATUS ESTATUS `VEuc  1 e 1 0 ]
+"27
+[v _I2STATUS I2STATUS `VEuc  1 e 1 0 ]
+"28
+[v _FSTATUS FSTATUS `VEuc  1 e 1 0 ]
+[u S1411 Data_v 4 `d 1 fval 4 0 `l 1 val 4 0 `[4]uc 1 bval 4 0 ]
+"31
+[v _CVAL CVAL `VES1411  1 e 4 0 ]
+"32
+[v _CMAX CMAX `VES1411  1 e 4 0 ]
+"33
+[v _CMIN CMIN `VES1411  1 e 4 0 ]
+"34
+[v _ISTEP ISTEP `VES1411  1 e 4 0 ]
+"37
+[v _RLED RLED `VEuc  1 e 1 0 ]
+"38
+[v _GLED GLED `VEuc  1 e 1 0 ]
+"39
+[v _BLED BLED `VEuc  1 e 1 0 ]
+"42
+[v _GP1REG GP1REG `VEuc  1 e 1 0 ]
+"43
+[v _GP2REG GP2REG `VEuc  1 e 1 0 ]
+"44
+[v _GP3REG GP3REG `VEuc  1 e 1 0 ]
+"47
+[v _ANTBOUNC ANTBOUNC `VEuc  1 e 1 0 ]
+"48
+[v _DPPERIOD DPPERIOD `VEuc  1 e 1 0 ]
+"49
+[v _FADERGB FADERGB `VEuc  1 e 1 0 ]
+"50
+[v _FADEGP FADEGP `VEuc  1 e 1 0 ]
+"53
+[v _GAMMAGP1 GAMMAGP1 `VEuc  1 e 1 0 ]
+"54
+[v _GAMMAGP2 GAMMAGP2 `VEuc  1 e 1 0 ]
+"55
+[v _GAMMAGP3_RLED GAMMAGP3_RLED `VEuc  1 e 1 0 ]
+"56
+[v _GAMMAGLED GAMMAGLED `VEuc  1 e 1 0 ]
+"57
+[v _GAMMABLED GAMMABLED `VEuc  1 e 1 0 ]
+"59
+[v _GCONF2 GCONF2 `VEuc  1 e 1 0 ]
+"63
+[v _C_RMOD C_RMOD `VEuc  1 e 1 0 ]
+[v _C_RESET C_RESET `VEuc  1 e 1 0 ]
+[v _C_MBANK C_MBANK `VEuc  1 e 1 0 ]
+[v _C_ETYPE C_ETYPE `VEuc  1 e 1 0 ]
+[v _C_IPUD C_IPUD `VEuc  1 e 1 0 ]
+[v _C_DIRE C_DIRE `VEuc  1 e 1 0 ]
+[v _C_WRAPE C_WRAPE `VEuc  1 e 1 0 ]
+[v _C_DTYPE C_DTYPE `VEuc  1 e 1 0 ]
+"66
+[v _S_CKSRC S_CKSRC `VEuc  1 e 1 0 ]
+[v _S_RELATIVE S_RELATIVE `VEuc  1 e 1 0 ]
+"69
+[v _DEBOUNCE DEBOUNCE `VEui  1 e 2 0 ]
+"70
+[v _DoublePush DoublePush `VEui  1 e 2 0 ]
+"11 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+[v _pb_fsm pb_fsm `uc  1 e 1 0 ]
+"12
+[v _pb_cnt pb_cnt `c  1 e 1 0 ]
+"13
+[v _double_push_cnt double_push_cnt `ui  1 e 2 0 ]
+"14
+[v _double_push_delay double_push_delay `ui  1 e 2 0 ]
+"15
+[v _fade_cnt fade_cnt `uc  1 e 1 0 ]
+"16
+[v _temp_red temp_red `uc  1 e 1 0 ]
+"17
+[v _temp_green temp_green `uc  1 e 1 0 ]
+"18
+[v _temp_blu temp_blu `uc  1 e 1 0 ]
+"20
+[v _en_deb en_deb `ui  1 e 2 0 ]
+"21
+[v _en_prev en_prev `uc  1 e 1 0 ]
+"11 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+[v _gp_timer gp_timer `uc  1 e 1 0 ]
+"12
+[v _temp_gp1 temp_gp1 `uc  1 e 1 0 ]
+"13
+[v _temp_gp2 temp_gp2 `uc  1 e 1 0 ]
+"14
+[v _temp_gp3 temp_gp3 `uc  1 e 1 0 ]
+"16
+[v _gp1_fsm gp1_fsm `uc  1 e 1 0 ]
+"17
+[v _gp2_fsm gp2_fsm `uc  1 e 1 0 ]
+"18
+[v _gp3_fsm gp3_fsm `uc  1 e 1 0 ]
+"20
+[v _gp_fade_cnt gp_fade_cnt `uc  1 e 1 0 ]
+"12 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+[v _EncoderReg EncoderReg `VEuc  1 e 1 0 ]
+"13
+[v _intclear intclear `VEuc  1 e 1 0 ]
+"14
+[v _int2clear int2clear `VEuc  1 e 1 0 ]
+"51 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+[v _fsm_tmr fsm_tmr `uc  1 e 1 0 ]
+"59 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+[v _I2C1_slaveWriteData I2C1_slaveWriteData `VEuc  1 e 1 0 ]
+"57 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+[v _timer3ReloadVal timer3ReloadVal `VEui  1 e 2 0 ]
+"58
+[v _TMR3_InterruptHandler TMR3_InterruptHandler `*.37(v  1 e 2 0 ]
+"17 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+[v _gamma_table gamma_table `DC[7][100]ui  1 e 1400 0 ]
+"80 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"125
+} 0
+"93 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+[v _TMR3_StartTimer TMR3_StartTimer `(v  1 e 1 0 ]
+{
+"97
+} 0
+"50 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"64
+} 0
+"80
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"84
+} 0
+"64 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+[v _TMR3_Initialize TMR3_Initialize `(v  1 e 1 0 ]
+{
+"91
+} 0
+"178
+[v _TMR3_SetInterruptHandler TMR3_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR3_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"180
+} 0
+"62 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"77
+} 0
+"86 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"100
+} 0
+"57 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"107
+} 0
+"66 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"78
+} 0
+"75 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+[v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
+{
+"95
+} 0
+"20 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+[v _I2C1_AddressSet I2C1_AddressSet `(v  1 e 1 0 ]
+{
+"50
+} 0
+"59 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc2.c
+[v _CLC2_Initialize CLC2_Initialize `(v  1 e 1 0 ]
+{
+"88
+} 0
+"60 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc1.c
+[v _CLC1_Initialize CLC1_Initialize `(v  1 e 1 0 ]
+{
+"89
+} 0
+"535 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+[v _GP_Ports_FSM GP_Ports_FSM `(v  1 e 1 0 ]
+{
+"552
+} 0
+"487
+[v _GP3_FSM GP3_FSM `(v  1 e 1 0 ]
+{
+"533
+} 0
+"438
+[v _GP2_FSM GP2_FSM `(v  1 e 1 0 ]
+{
+"482
+} 0
+"393
+[v _GP1_FSM GP1_FSM `(v  1 e 1 0 ]
+{
+"433
+} 0
+"65 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+{
+"84
+} 0
+"113
+[v _ADC_GetConversion ADC_GetConversion `(ui  1 e 2 0 ]
+{
+[v ADC_GetConversion@channel channel `E6505  1 a 1 wreg ]
+[v ADC_GetConversion@channel channel `E6505  1 a 1 wreg ]
+"116
+[v ADC_GetConversion@channel channel `E6505  1 a 1 3 ]
+"134
+} 0
+"101 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+[v _FADE_GP3 FADE_GP3 `(v  1 e 1 0 ]
+{
+"133
+} 0
+"63
+[v _FADE_GP2 FADE_GP2 `(v  1 e 1 0 ]
+{
+"95
+} 0
+"64 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+[v _PWM_GP2 PWM_GP2 `(v  1 e 1 0 ]
+{
+[v PWM_GP2@duty duty `uc  1 a 1 wreg ]
+[v PWM_GP2@duty duty `uc  1 a 1 wreg ]
+"66
+[v PWM_GP2@duty duty `uc  1 a 1 12 ]
+"90
+} 0
+"26 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+[v _FADE_GP1 FADE_GP1 `(v  1 e 1 0 ]
+{
+"58
+} 0
+"30 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+[v _PWM_GP1 PWM_GP1 `(v  1 e 1 0 ]
+{
+[v PWM_GP1@duty duty `uc  1 a 1 wreg ]
+[v PWM_GP1@duty duty `uc  1 a 1 wreg ]
+"32
+[v PWM_GP1@duty duty `uc  1 a 1 14 ]
+"59
+} 0
+"308 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+[v _Encoder_FSM Encoder_FSM `(v  1 e 1 0 ]
+{
+"315
+} 0
+"147
+[v _FADE_LEDS FADE_LEDS `(v  1 e 1 0 ]
+{
+"227
+} 0
+"95 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+[v _PWM_GP3_RLED PWM_GP3_RLED `(v  1 e 1 0 ]
+{
+[v PWM_GP3_RLED@duty duty `uc  1 a 1 wreg ]
+[v PWM_GP3_RLED@duty duty `uc  1 a 1 wreg ]
+"97
+[v PWM_GP3_RLED@duty duty `uc  1 a 1 12 ]
+"125
+} 0
+"130
+[v _PWM_GLED PWM_GLED `(v  1 e 1 0 ]
+{
+[v PWM_GLED@duty duty `uc  1 a 1 wreg ]
+[v PWM_GLED@duty duty `uc  1 a 1 wreg ]
+"132
+[v PWM_GLED@duty duty `uc  1 a 1 12 ]
+"160
+} 0
+"165
+[v _PWM_BLED PWM_BLED `(v  1 e 1 0 ]
+{
+[v PWM_BLED@duty duty `uc  1 a 1 wreg ]
+[v PWM_BLED@duty duty `uc  1 a 1 wreg ]
+"167
+[v PWM_BLED@duty duty `uc  1 a 1 12 ]
+"197
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"151 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+[v _FadeProcessSet FadeProcessSet `(v  1 e 1 0 ]
+{
+[v FadeProcessSet@stat stat `E96  1 a 1 wreg ]
+[v FadeProcessSet@stat stat `E96  1 a 1 wreg ]
+[v FadeProcessSet@stat stat `E96  1 a 1 0 ]
+"153
+} 0
+"159
+[v _FadeProcessClear FadeProcessClear `(v  1 e 1 0 ]
+{
+[v FadeProcessClear@stat stat `E96  1 a 1 wreg ]
+[v FadeProcessClear@stat stat `E96  1 a 1 wreg ]
+[v FadeProcessClear@stat stat `E96  1 a 1 2 ]
+"164
+} 0
+"142
+[v _Int2StatusUpdate Int2StatusUpdate `(v  1 e 1 0 ]
+{
+[v Int2StatusUpdate@stat stat `E87  1 a 1 wreg ]
+[v Int2StatusUpdate@stat stat `E87  1 a 1 wreg ]
+[v Int2StatusUpdate@stat stat `E87  1 a 1 1 ]
+"145
+} 0
+"233 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+[v _Encoder_PushButton_FSM Encoder_PushButton_FSM `(v  1 e 1 0 ]
+{
+"303
+} 0
+"56 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+[v _SetInterrupt SetInterrupt `(v  1 e 1 0 ]
+{
+"61
+} 0
+"42 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+[v _EncoderSwitch_GetValueFiltered EncoderSwitch_GetValueFiltered `(uc  1 e 1 0 ]
+{
+"43
+[v EncoderSwitch_GetValueFiltered@pb_status pb_status `uc  1 s 1 pb_status ]
+"58
+} 0
+"29
+[v _EncoderSwitch_GetValue EncoderSwitch_GetValue `(uc  1 e 1 0 ]
+{
+"36
+} 0
+"134 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+[v _EncoderStatusUpdate EncoderStatusUpdate `(v  1 e 1 0 ]
+{
+[v EncoderStatusUpdate@stat stat `E77  1 a 1 wreg ]
+[v EncoderStatusUpdate@stat stat `E77  1 a 1 wreg ]
+[v EncoderStatusUpdate@stat stat `E77  1 a 1 0 ]
+"136
+} 0
+"72
+[v _DataInitSet DataInitSet `(v  1 e 1 0 ]
+{
+"106
+} 0
+"66 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+[v _ClearInterrupt ClearInterrupt `(v  1 e 1 0 ]
+{
+"68
+} 0
+"52 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"82
+} 0
+"157 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/tmr3.c
+[v _TMR3_ISR TMR3_ISR `(v  1 e 1 0 ]
+{
+"167
+} 0
+"120
+[v _TMR3_WriteTimer TMR3_WriteTimer `(v  1 e 1 0 ]
+{
+[v TMR3_WriteTimer@timerVal timerVal `ui  1 p 2 0 ]
+"140
+} 0
+"169
+[v _TMR3_CallBack TMR3_CallBack `(v  1 e 1 0 ]
+{
+"176
+} 0
+"182
+[v _TMR3_DefaultInterruptHandler TMR3_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"185
+} 0
+"73 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+[v _TimerInt TimerInt `(v  1 e 1 0 ]
+{
+"75
+} 0
+"121 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+[v _I2C1_ISR I2C1_ISR `(v  1 e 1 0 ]
+{
+"123
+[v I2C1_ISR@i2c_data i2c_data `uc  1 a 1 6 ]
+"161
+} 0
+"56 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+[v _I2C1_StatusCallback I2C1_StatusCallback `(v  1 e 1 0 ]
+{
+[v I2C1_StatusCallback@i2c_bus_state i2c_bus_state `E75  1 a 1 wreg ]
+[v I2C1_StatusCallback@i2c_bus_state i2c_bus_state `E75  1 a 1 wreg ]
+"57
+[v I2C1_StatusCallback@slaveWriteType slaveWriteType `uc  1 s 1 slaveWriteType ]
+"56
+[v I2C1_StatusCallback@i2c_bus_state i2c_bus_state `E75  1 a 1 5 ]
+"98
+} 0
+"105
+[v _RegisterWrite RegisterWrite `(v  1 e 1 0 ]
+{
+[v RegisterWrite@add add `uc  1 a 1 wreg ]
+[v RegisterWrite@add add `uc  1 a 1 wreg ]
+[v RegisterWrite@data data `uc  1 p 1 3 ]
+[v RegisterWrite@add add `uc  1 a 1 4 ]
+"295
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\pic\__eewrite.c
+[v _eeprom_write eeprom_write `(v  1 e 1 0 ]
+{
+[v eeprom_write@addr addr `uc  1 a 1 wreg ]
+[v eeprom_write@addr addr `uc  1 a 1 wreg ]
+[v eeprom_write@value value `uc  1 p 1 0 ]
+[v eeprom_write@addr addr `uc  1 a 1 1 ]
+"9
+} 0
+"376 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+[v _UpdateOut_GP3 UpdateOut_GP3 `(v  1 e 1 0 ]
+{
+"388
+} 0
+"360
+[v _UpdateOut_GP2 UpdateOut_GP2 `(v  1 e 1 0 ]
+{
+"371
+} 0
+"345
+[v _UpdateOut_GP1 UpdateOut_GP1 `(v  1 e 1 0 ]
+{
+"355
+} 0
+"124 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+[v _SecondDataSplit SecondDataSplit `(v  1 e 1 0 ]
+{
+"128
+} 0
+"583 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+[v _SecondConfig SecondConfig `(v  1 e 1 0 ]
+{
+"593
+} 0
+"75 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/i2c1.c
+[v i1_I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
+{
+"95
+} 0
+"97
+[v _I2C1_Initialize_ClockStreach I2C1_Initialize_ClockStreach `(v  1 e 1 0 ]
+{
+"120
+} 0
+"111 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+[v _FirstDataSplit FirstDataSplit `(v  1 e 1 0 ]
+{
+"122
+} 0
+"515 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+[v _FirstConfig FirstConfig `(v  1 e 1 0 ]
+{
+"578
+} 0
+"171 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+[v _STD_EncoderMode STD_EncoderMode `(v  1 e 1 0 ]
+{
+"187
+} 0
+"138
+[v _RGB_EncoderMode RGB_EncoderMode `(v  1 e 1 0 ]
+{
+"166
+} 0
+"64 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm3.c
+[v _PWM3_Initialize PWM3_Initialize `(v  1 e 1 0 ]
+{
+"80
+} 0
+"64 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm2.c
+[v _PWM2_Initialize PWM2_Initialize `(v  1 e 1 0 ]
+{
+"80
+} 0
+"295 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+[v _Config_GP3 Config_GP3 `(v  1 e 1 0 ]
+{
+"340
+} 0
+"95 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+[v i1_PWM_GP3_RLED PWM_GP3_RLED `(v  1 e 1 0 ]
+{
+[v i1PWM_GP3_RLED@duty duty `uc  1 a 1 wreg ]
+[v i1PWM_GP3_RLED@duty duty `uc  1 a 1 wreg ]
+"97
+[v i1PWM_GP3_RLED@duty duty `uc  1 a 1 12 ]
+"125
+} 0
+"64 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm1.c
+[v _PWM1_Initialize PWM1_Initialize `(v  1 e 1 0 ]
+{
+"80
+} 0
+"243 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+[v _Config_GP2 Config_GP2 `(v  1 e 1 0 ]
+{
+"290
+} 0
+"64 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+[v i1_PWM_GP2 PWM_GP2 `(v  1 e 1 0 ]
+{
+[v i1PWM_GP2@duty duty `uc  1 a 1 wreg ]
+[v i1PWM_GP2@duty duty `uc  1 a 1 wreg ]
+"66
+[v i1PWM_GP2@duty duty `uc  1 a 1 12 ]
+"90
+} 0
+"64 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm4.c
+[v _PWM4_Initialize PWM4_Initialize `(v  1 e 1 0 ]
+{
+"80
+} 0
+"192 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\GPports.c
+[v _Config_GP1 Config_GP1 `(v  1 e 1 0 ]
+{
+"238
+} 0
+"30 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\PWM.c
+[v i1_PWM_GP1 PWM_GP1 `(v  1 e 1 0 ]
+{
+[v i1PWM_GP1@duty duty `uc  1 a 1 wreg ]
+[v i1PWM_GP1@duty duty `uc  1 a 1 wreg ]
+"32
+[v i1PWM_GP1@duty duty `uc  1 a 1 0 ]
+"59
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+[v i1___wmul __wmul `(ui  1 e 2 0 ]
+{
+[v i1___wmul@product __wmul `ui  1 a 2 4 ]
+[v i1___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v i1___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"58 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/pwm5.c
+[v _PWM5_Initialize PWM5_Initialize `(v  1 e 1 0 ]
+{
+"72
+} 0
+"303 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\i2c_register.c
+[v _RegisterRead RegisterRead `(uc  1 e 1 0 ]
+{
+[v RegisterRead@add add `uc  1 a 1 wreg ]
+"304
+[v RegisterRead@return_value return_value `uc  1 a 1 2 ]
+"303
+[v RegisterRead@add add `uc  1 a 1 wreg ]
+[v RegisterRead@add add `uc  1 a 1 1 ]
+"510
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\pic\__eeread.c
+[v _eeprom_read eeprom_read `(uc  1 e 1 0 ]
+{
+[v eeprom_read@addr addr `uc  1 a 1 wreg ]
+[v eeprom_read@addr addr `uc  1 a 1 wreg ]
+"9
+[v eeprom_read@addr addr `uc  1 a 1 0 ]
+"19
+} 0
+"90 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc2.c
+[v _CLC2_ISR CLC2_ISR `(v  1 e 1 0 ]
+{
+"103
+} 0
+"91 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\mcc_generated_files/clc1.c
+[v _CLC1_ISR CLC1_ISR `(v  1 e 1 0 ]
+{
+"104
+} 0
+"105 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+[v _CLC_2_Interrupt CLC_2_Interrupt `(v  1 e 1 0 ]
+{
+"141
+} 0
+"242 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcadd.c
+[v ___flsub __flsub `(d  1 e 4 0 ]
+{
+[v ___flsub@a a `d  1 p 4 8 ]
+[v ___flsub@b b `d  1 p 4 12 ]
+"250
+} 0
+"63 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\Encoder.c
+[v _CLC_1_Interrupt CLC_1_Interrupt `(v  1 e 1 0 ]
+{
+"99
+} 0
+"56 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\main.c
+[v i1_SetInterrupt SetInterrupt `(v  1 e 1 0 ]
+{
+"61
+} 0
+"134 D:\Users\Saimon\Documents\Git\I2CEncoder\FW\I2CEncoderV2.1.X\DataVariable.c
+[v i1_EncoderStatusUpdate EncoderStatusUpdate `(v  1 e 1 0 ]
+{
+[v i1EncoderStatusUpdate@stat stat `E77  1 a 1 wreg ]
+[v i1EncoderStatusUpdate@stat stat `E77  1 a 1 wreg ]
+[v i1EncoderStatusUpdate@stat stat `E77  1 a 1 0 ]
+"136
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+{
+[v ___flge@ff1 ff1 `d  1 p 4 0 ]
+[v ___flge@ff2 ff2 `d  1 p 4 4 ]
+"19
+} 0
+"10 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 11 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 10 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 9 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 8 ]
+"10
+[v ___fladd@b b `d  1 p 4 0 ]
+[v ___fladd@a a `d  1 p 4 4 ]
+"237
+} 0

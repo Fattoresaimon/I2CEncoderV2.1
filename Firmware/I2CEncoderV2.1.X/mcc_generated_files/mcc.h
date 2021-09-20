@@ -52,6 +52,7 @@
 #include <stdbool.h>
 #include "interrupt_manager.h"
 #include "i2c1.h"
+#include "tmr0.h"
 #include "tmr3.h"
 #include "tmr2.h"
 #include "pwm4.h"
@@ -59,6 +60,8 @@
 #include "pwm1.h"
 #include "pwm2.h"
 #include "pwm3.h"
+#include "clc4.h"
+#include "clc3.h"
 #include "clc2.h"
 #include "clc1.h"
 #include "adc.h"

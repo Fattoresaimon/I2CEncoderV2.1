@@ -8,6 +8,15 @@
 extern "C" {
 #endif /* __cplusplus */
 
+extern volatile uint8_t X1_p;
+extern volatile uint8_t X1_n;
+extern volatile uint8_t X2_p;
+extern volatile uint8_t X2_n;
+extern volatile uint8_t X4_p;
+extern volatile uint8_t X4_pp;
+extern volatile uint8_t X4_n;
+extern volatile uint8_t X4_nn;
+    
 #define PB_DEBOUNCE 50
 
     /** FSM for the push button **/
@@ -23,6 +32,7 @@ extern "C" {
 
     bool EncoderSwitch_GetValue(void);
     bool EncoderSwitch_GetValueFiltered(void);
+    void Encoder_AB_Interrupt(void);
     void CLC_1_Interrupt(void);
     void CLC_2_Interrupt(void);
 

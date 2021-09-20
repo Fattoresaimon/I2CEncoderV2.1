@@ -71,14 +71,6 @@
     PWMTMRSbits.P5TSEL = 1;
  }
 
- void PWM5_LoadDutyValue(uint16_t dutyValue)
- {
-     // Writing to 8 MSBs of PWM duty cycle in PWMDCH register
-     PWM5DCH = (dutyValue & 0x03FC)>>2;
-     
-     // Writing to 2 LSBs of PWM duty cycle in PWMDCL register
-     PWM5DCL = (dutyValue & 0x0003)<<6;
- }
  /**
   End of File
  */
